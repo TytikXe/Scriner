@@ -1,0 +1,25 @@
+{
+  "period_start_utc": "2026-07-08T01:13:00+00:00",
+  "period_end_utc": "2026-07-09T20:59:59.999000+00:00",
+  "raw_total": 116814,
+  "raw_by_day_utc": {
+    "2026-07-08": 63039,
+    "2026-07-09": 53775
+  },
+  "decision_summary": {
+    "candidate_decisions_total": 2533784,
+    "debug_published_decisions_before_publication_rules": 116814,
+    "rejected_total": 2416970,
+    "rejected_by_reason": {
+      "min_retreat": 493946,
+      "max_breakout_wick_ratio": 23928,
+      "ttl": 261242,
+      "max_publish_distance": 880991,
+      "min_breakout_body_ratio": 63724,
+      "score": 9559,
+      "min_close_atr_multiplier": 511,
+      "price_not_at_zone": 683069
+    }
+  },
+  "candidate_file": "D:\\Кейсы тг боты\\Скринер\\apps\\bot\\calibration_artifacts\\digash-week-20260703-20260709\\baseline\\supplement_candidates_20260708_0113_to_20260709_2059.jsonl"
+}

@@ -1,0 +1,1457 @@
+[
+  {
+    "symbol": "1000PEPEUSDT",
+    "timeframe": "1m",
+    "side": "support",
+    "zone_low": 0.0025273,
+    "zone_high": 0.0025277,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-03T18:42:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\03.07.2026\\Снимок экрана 2026-07-09 223542.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6oyp0BHe 0.0025273$,0.0025277$ $ Ha TaMmΦpeMe 1m"
+    ],
+    "_ocr_numbers": [
+      0.0025273,
+      0.0025277
+    ]
+  },
+  {
+    "symbol": "KORUUSDT",
+    "timeframe": "5m",
+    "side": "support",
+    "zone_low": 600.0,
+    "zone_high": 600.54,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-03T18:05:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\03.07.2026\\Снимок экрана 2026-07-09 223546.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o ypoBHe 600$ ,600.54$ $ Ha TamΦpeMMe 1m"
+    ],
+    "_ocr_numbers": [
+      600.0,
+      600.54
+    ]
+  },
+  {
+    "symbol": "BIRBUSDT",
+    "timeframe": "1m",
+    "side": "support",
+    "zone_low": 0.07429,
+    "zone_high": 0.07481,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-03T16:19:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\03.07.2026\\Снимок экрана 2026-07-09 223550.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o yp0BHe 0.07429$ ,0.07481$ $ Ha taMmΦpeiMe 1m"
+    ],
+    "_ocr_numbers": [
+      0.07429,
+      0.07481
+    ]
+  },
+  {
+    "symbol": "ZKPUSDT",
+    "timeframe": "1m",
+    "side": "support",
+    "zone_low": null,
+    "zone_high": null,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-03T15:33:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\03.07.2026\\Снимок экрана 2026-07-09 223554.png",
+    "_parse_ok": false,
+    "_level_lines": [],
+    "_ocr_numbers": []
+  },
+  {
+    "symbol": "BREVUSDT",
+    "timeframe": "3m",
+    "side": "resistance",
+    "zone_low": 0.08371,
+    "zone_high": 0.08399,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-03T13:08:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\03.07.2026\\Снимок экрана 2026-07-09 223558.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o yp0BHe 0.08399$ ,0.08371$ $ Ha tamΦpeMMe 1m"
+    ],
+    "_ocr_numbers": [
+      0.08399,
+      0.08371
+    ]
+  },
+  {
+    "symbol": "ALLOUSDT",
+    "timeframe": "1m",
+    "side": "resistance",
+    "zone_low": 0.35012,
+    "zone_high": 0.35201,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-03T06:27:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\03.07.2026\\Снимок экрана 2026-07-09 223602.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6oyp0BHe 0.35201$,0.35012$ $ Ha ta0mΦpeme 1m"
+    ],
+    "_ocr_numbers": [
+      0.35201,
+      0.35012
+    ]
+  },
+  {
+    "symbol": "LITUSDT",
+    "timeframe": "3m",
+    "side": "resistance",
+    "zone_low": 2.0856,
+    "zone_high": 2.0873,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-03T04:18:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\03.07.2026\\Снимок экрана 2026-07-09 223606.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o ypoBHe 2.0873$ ,2.0856$ $ Ha TamΦpeme 1m"
+    ],
+    "_ocr_numbers": [
+      2.0873,
+      2.0856
+    ]
+  },
+  {
+    "symbol": "SNDKUSDT",
+    "timeframe": "1m",
+    "side": "support",
+    "zone_low": 1779.4,
+    "zone_high": 1782.41,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-03T04:06:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\03.07.2026\\Снимок экрана 2026-07-09 223609.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o ypoBHe 1782.41$ ,1779.4$ $ Ha tamΦpeme 1m"
+    ],
+    "_ocr_numbers": [
+      1782.41,
+      1779.4
+    ]
+  },
+  {
+    "symbol": "SOXLUSDT",
+    "timeframe": "1m",
+    "side": "support",
+    "zone_low": 181.5,
+    "zone_high": 181.82,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-03T03:18:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\03.07.2026\\Снимок экрана 2026-07-09 223613.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o ypoBHe 181.5$ ,181.82$ $ Ha tamΦpeme 1m"
+    ],
+    "_ocr_numbers": [
+      181.5,
+      181.82
+    ]
+  },
+  {
+    "symbol": "AERGOUSDT",
+    "timeframe": "1m",
+    "side": "support",
+    "zone_low": 0.02887,
+    "zone_high": 0.02893,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-03T02:36:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\03.07.2026\\Снимок экрана 2026-07-09 223619.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o yp0BHe 0.02887$ ,0.02893$ $ Ha tamΦpeme 1m"
+    ],
+    "_ocr_numbers": [
+      0.02887,
+      0.02893
+    ]
+  },
+  {
+    "symbol": "OUSDT",
+    "timeframe": "1h",
+    "side": "support",
+    "zone_low": 0.6131,
+    "zone_high": 0.6235,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-04T23:31:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\04.07.2026\\Снимок экрана 2026-07-09 223356.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o yp0BHe 0.6235$,0.6131$ $ Ha tamΦpeme 1h"
+    ],
+    "_ocr_numbers": [
+      0.6235,
+      0.6131
+    ]
+  },
+  {
+    "symbol": "OUSDT",
+    "timeframe": "15m",
+    "side": "resistance",
+    "zone_low": 0.6044,
+    "zone_high": 0.6131,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-04T23:20:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\04.07.2026\\Снимок экрана 2026-07-09 223402.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o ypoBHen 0.6131$ ,0.6044$ $ Ha tamΦpeme 15m"
+    ],
+    "_ocr_numbers": [
+      0.6131,
+      0.6044
+    ]
+  },
+  {
+    "symbol": "ARPAUSDT",
+    "timeframe": "1m",
+    "side": "support",
+    "zone_low": 0.01037,
+    "zone_high": 0.01039,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-04T18:16:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\04.07.2026\\Снимок экрана 2026-07-09 223416.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o yp0BHe 0.01039$ ,0.01037$ $ Ha tamΦpeme 1m"
+    ],
+    "_ocr_numbers": [
+      0.01039,
+      0.01037
+    ]
+  },
+  {
+    "symbol": "THEUSDT",
+    "timeframe": "1m",
+    "side": "support",
+    "zone_low": 0.06271,
+    "zone_high": 0.06276,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-04T17:58:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\04.07.2026\\Снимок экрана 2026-07-09 223437.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o yp0BHe 0.06271$ ,0.06276$ $ Ha tamΦpeme 1m"
+    ],
+    "_ocr_numbers": [
+      0.06271,
+      0.06276
+    ]
+  },
+  {
+    "symbol": "SLXUSDT",
+    "timeframe": "1m",
+    "side": "support",
+    "zone_low": 0.35214,
+    "zone_high": 0.35431,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-04T16:18:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\04.07.2026\\Снимок экрана 2026-07-09 223445.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o ypoBHe 0.35214$ ,0.35431$ $ Ha TamΦpeMMe 1m"
+    ],
+    "_ocr_numbers": [
+      0.35214,
+      0.35431
+    ]
+  },
+  {
+    "symbol": "XPLUSDT",
+    "timeframe": "1m",
+    "side": "resistance",
+    "zone_low": 0.10787,
+    "zone_high": 0.10838,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-04T05:03:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\04.07.2026\\Снимок экрана 2026-07-09 223449.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o yp0BHe 0.10838$ ,0.10787$ $ Ha taMmΦpeme 1m"
+    ],
+    "_ocr_numbers": [
+      0.10838,
+      0.10787
+    ]
+  },
+  {
+    "symbol": "LABUSDT",
+    "timeframe": "1m",
+    "side": "support",
+    "zone_low": 5.831,
+    "zone_high": 5.858,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-04T04:09:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\04.07.2026\\Снимок экрана 2026-07-09 223454.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o ypoBHe 5.831$ ,5.858$ $ Ha tamΦpeme 1m"
+    ],
+    "_ocr_numbers": [
+      5.831,
+      5.858
+    ]
+  },
+  {
+    "symbol": "REUSDT",
+    "timeframe": "1m",
+    "side": "support",
+    "zone_low": 0.628,
+    "zone_high": 0.6306,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-04T03:12:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\04.07.2026\\Снимок экрана 2026-07-09 223459.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o yp0BHe 0.6306$ ,0.628$ $ Ha tamΦpeme 1m"
+    ],
+    "_ocr_numbers": [
+      0.6306,
+      0.628
+    ]
+  },
+  {
+    "symbol": "LABUSDT",
+    "timeframe": "1m",
+    "side": "support",
+    "zone_low": 16.38,
+    "zone_high": 16.5,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-05T20:32:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\05.07.2026\\Снимок экрана 2026-07-09 223224.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o yp0BHe 16.5$ ,16.38$ ,16.271$ $ Ha tamΦpeme 1m"
+    ],
+    "_ocr_numbers": [
+      16.5,
+      16.38,
+      16.271
+    ]
+  },
+  {
+    "symbol": "EPICUSDT",
+    "timeframe": "1h",
+    "side": "support",
+    "zone_low": 0.3665,
+    "zone_high": 0.3946,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-05T12:46:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\05.07.2026\\Снимок экрана 2026-07-09 223230.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "lpo6o yp0BHe 0.3665$ ,0.3946$ ,0.4087$ $ Ha TamΦpeMe"
+    ],
+    "_ocr_numbers": [
+      0.3665,
+      0.3946,
+      0.4087
+    ]
+  },
+  {
+    "symbol": "EPICUSDT",
+    "timeframe": "15m",
+    "side": "support",
+    "zone_low": 0.4413,
+    "zone_high": 0.4575,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-05T12:11:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\05.07.2026\\Снимок экрана 2026-07-09 223235.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o ypoBHen 0.4413$ ,0.4575$ $ Ha tamΦpeme 15m"
+    ],
+    "_ocr_numbers": [
+      0.4413,
+      0.4575
+    ]
+  },
+  {
+    "symbol": "OGNUSDT",
+    "timeframe": "1m",
+    "side": "support",
+    "zone_low": 0.01795,
+    "zone_high": 0.01796,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-05T09:25:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\05.07.2026\\Снимок экрана 2026-07-09 223239.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o ypoBHe 0.01795$ ,0.01796$ $ Ha tamΦpeme 1m"
+    ],
+    "_ocr_numbers": [
+      0.01795,
+      0.01796
+    ]
+  },
+  {
+    "symbol": "EPICUSDT",
+    "timeframe": "4h",
+    "side": "resistance",
+    "zone_low": 0.768,
+    "zone_high": 0.8262,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-05T03:18:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\05.07.2026\\Снимок экрана 2026-07-09 223247.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "lpo6o yp0BHe 0.8262$ ,0.768$ $ Ha tamΦpeMe 4h"
+    ],
+    "_ocr_numbers": [
+      0.8262,
+      0.768
+    ]
+  },
+  {
+    "symbol": "VANRYUSDT",
+    "timeframe": "1m",
+    "side": "support",
+    "zone_low": 0.004355,
+    "zone_high": 0.004368,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-05T03:03:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\05.07.2026\\Снимок экрана 2026-07-09 223251.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o yp0BHe 0.004355$ ,0.004368$ $ Ha TamΦpeMMe 1m"
+    ],
+    "_ocr_numbers": [
+      0.004355,
+      0.004368
+    ]
+  },
+  {
+    "symbol": "SAMSUNGUSDT",
+    "timeframe": "15m",
+    "side": "resistance",
+    "zone_low": 212.63,
+    "zone_high": 213.27,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-06T23:05:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\06.07.2026\\Снимок экрана 2026-07-09 222943.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o ypoBHe 213.27$ ,212.63$ $ Ha tamΦpeme 15m"
+    ],
+    "_ocr_numbers": [
+      213.27,
+      212.63
+    ]
+  },
+  {
+    "symbol": "SPCXUSDT",
+    "timeframe": "5m",
+    "side": "support",
+    "zone_low": 160.19,
+    "zone_high": 160.72,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-06T17:48:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\06.07.2026\\Снимок экрана 2026-07-09 222948.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o ypoBHe 160.19$ ,160.72$ $ Ha tamΦpeMe 5m"
+    ],
+    "_ocr_numbers": [
+      160.19,
+      160.72
+    ]
+  },
+  {
+    "symbol": "MUUSDT",
+    "timeframe": "1m",
+    "side": "resistance",
+    "zone_low": 1013.85,
+    "zone_high": 1015.02,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-06T17:11:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\06.07.2026\\Снимок экрана 2026-07-09 222954.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o ypoBHe 1015.02$ ,1013.85$ $ Ha tamΦpeme 1m"
+    ],
+    "_ocr_numbers": [
+      1015.02,
+      1013.85
+    ]
+  },
+  {
+    "symbol": "MRVLUSDT",
+    "timeframe": "5m",
+    "side": "resistance",
+    "zone_low": 258.14,
+    "zone_high": 258.84,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-06T16:54:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\06.07.2026\\Снимок экрана 2026-07-09 223000.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o ypoBHen 258.84$ ,258.14$ $ Ha tamΦpeme 5m"
+    ],
+    "_ocr_numbers": [
+      258.84,
+      258.14
+    ]
+  },
+  {
+    "symbol": "MRVLUSDT",
+    "timeframe": "3m",
+    "side": "resistance",
+    "zone_low": 258.84,
+    "zone_high": 259.59,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-06T16:53:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\06.07.2026\\Снимок экрана 2026-07-09 223006.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o yp0BHe 259.59$ ,258.84$ $ Ha tamΦpeMe 15m"
+    ],
+    "_ocr_numbers": [
+      259.59,
+      258.84
+    ]
+  },
+  {
+    "symbol": "SPCXUSDT",
+    "timeframe": "1m",
+    "side": "support",
+    "zone_low": 162.62,
+    "zone_high": 162.81,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-06T16:39:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\06.07.2026\\Снимок экрана 2026-07-09 223010.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o ypoBHe 162.62$ ,162.81$ $ Ha tamΦpeme 1m"
+    ],
+    "_ocr_numbers": [
+      162.62,
+      162.81
+    ]
+  },
+  {
+    "symbol": "INTCUSDT",
+    "timeframe": "1m",
+    "side": "resistance",
+    "zone_low": 124.95,
+    "zone_high": 125.09,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-06T16:35:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\06.07.2026\\Снимок экрана 2026-07-09 223015.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o ypoBHe 125.09$,124.95$ $ Ha TamΦpeme 1m"
+    ],
+    "_ocr_numbers": [
+      125.09,
+      124.95
+    ]
+  },
+  {
+    "symbol": "KORUUSDT",
+    "timeframe": "1m",
+    "side": "support",
+    "zone_low": 621.3,
+    "zone_high": 622.12,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-06T15:30:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\06.07.2026\\Снимок экрана 2026-07-09 223021.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o ypoBHe 621.3$ ,622.12$ $ Ha tamΦpeMMe 1m"
+    ],
+    "_ocr_numbers": [
+      621.3,
+      622.12
+    ]
+  },
+  {
+    "symbol": "SYNUSDT",
+    "timeframe": "1m",
+    "side": "support",
+    "zone_low": 0.36839,
+    "zone_high": 0.3691,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-06T13:00:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\06.07.2026\\Снимок экрана 2026-07-09 223026.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o ypoBHe 0.36839$ ,0.3691$ $ Ha tamΦpeme 1m"
+    ],
+    "_ocr_numbers": [
+      0.36839,
+      0.3691
+    ]
+  },
+  {
+    "symbol": "SLXUSDT",
+    "timeframe": "1m",
+    "side": "support",
+    "zone_low": 0.20881,
+    "zone_high": 0.20916,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-06T12:04:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\06.07.2026\\Снимок экрана 2026-07-09 223031.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o yp0BHe 0.20916$ ,0.20881$ $ Ha TamΦpeMMe 1m"
+    ],
+    "_ocr_numbers": [
+      0.20916,
+      0.20881
+    ]
+  },
+  {
+    "symbol": "HOTUSDT",
+    "timeframe": "1m",
+    "side": "resistance",
+    "zone_low": 0.0003685,
+    "zone_high": 0.0003698,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-06T07:41:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\06.07.2026\\Снимок экрана 2026-07-09 223036.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o yp0BHe 0.0003698$ ,0.0003685$ $ Ha tamΦpeme 1m"
+    ],
+    "_ocr_numbers": [
+      0.0003698,
+      0.0003685
+    ]
+  },
+  {
+    "symbol": "EPICUSDT",
+    "timeframe": "1m",
+    "side": "support",
+    "zone_low": 0.4095,
+    "zone_high": 0.4103,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-06T06:18:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\06.07.2026\\Снимок экрана 2026-07-09 223041.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o ypoBHe 0.4103$ ,0.4095$ $ Ha tamΦpeme 1m"
+    ],
+    "_ocr_numbers": [
+      0.4103,
+      0.4095
+    ]
+  },
+  {
+    "symbol": "ARXUSDT",
+    "timeframe": "1m",
+    "side": "support",
+    "zone_low": 0.2321,
+    "zone_high": 0.233,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-06T05:30:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\06.07.2026\\Снимок экрана 2026-07-09 223045.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o yp0BHe 0.2321$ ,0.233$ $ Ha TamΦpeme 1m"
+    ],
+    "_ocr_numbers": [
+      0.2321,
+      0.233
+    ]
+  },
+  {
+    "symbol": "VANRYUSDT",
+    "timeframe": "5m",
+    "side": "resistance",
+    "zone_low": 0.005827,
+    "zone_high": 0.005838,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-06T04:58:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\06.07.2026\\Снимок экрана 2026-07-09 223050.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o ypoBHe 0.005838$ ,0.005827$ $ Ha TamΦpeme 1m"
+    ],
+    "_ocr_numbers": [
+      0.005838,
+      0.005827
+    ]
+  },
+  {
+    "symbol": "SNDKUSDT",
+    "timeframe": "5m",
+    "side": "support",
+    "zone_low": 1820.01,
+    "zone_high": 1820.34,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-06T04:48:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\06.07.2026\\Снимок экрана 2026-07-09 223055.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6oyp0BHe1820.01$,1820.34$,1825$，1828.75$$"
+    ],
+    "_ocr_numbers": [
+      1820.01,
+      1820.34,
+      1825.0,
+      1828.75
+    ]
+  },
+  {
+    "symbol": "EWYUSDT",
+    "timeframe": "5m",
+    "side": "support",
+    "zone_low": 188.82,
+    "zone_high": 189.08,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-06T04:48:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\06.07.2026\\Снимок экрана 2026-07-09 223100.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "p06o yp0BHe 188.82$ ,189.08$ ,189.42$ $ Ha TamΦpeMe"
+    ],
+    "_ocr_numbers": [
+      188.82,
+      189.08,
+      189.42
+    ]
+  },
+  {
+    "symbol": "EWYUSDT",
+    "timeframe": "3m",
+    "side": "support",
+    "zone_low": 188.82,
+    "zone_high": 189.08,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-06T04:46:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\06.07.2026\\Снимок экрана 2026-07-09 223103.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o ypoBHe 188.82$ ,189.08$ $ Ha tamΦpeme 15m"
+    ],
+    "_ocr_numbers": [
+      188.82,
+      189.08
+    ]
+  },
+  {
+    "symbol": "OUSDT",
+    "timeframe": "1m",
+    "side": "support",
+    "zone_low": 0.5466,
+    "zone_high": 0.5475,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-06T03:34:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\06.07.2026\\Снимок экрана 2026-07-09 223107.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o yp0BHe 0.5466$ ,0.5475$ $ Ha tamΦpeiMe 1m"
+    ],
+    "_ocr_numbers": [
+      0.5466,
+      0.5475
+    ]
+  },
+  {
+    "symbol": "KORUUSDT",
+    "timeframe": "5m",
+    "side": "support",
+    "zone_low": 615.0,
+    "zone_high": 616.95,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-06T02:50:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\06.07.2026\\Снимок экрана 2026-07-09 223111.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o ypoBHe 615$ ,616.95$ $ Ha TamΦpeMMe 5m"
+    ],
+    "_ocr_numbers": [
+      615.0,
+      616.95
+    ]
+  },
+  {
+    "symbol": "BTWUSDT",
+    "timeframe": "1m",
+    "side": "resistance",
+    "zone_low": 0.07642,
+    "zone_high": 0.07694,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-06T02:28:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\06.07.2026\\Снимок экрана 2026-07-09 223116.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o yp0BHe 0.07694$ ,0.07642$ $ Ha tamΦpeme 1m"
+    ],
+    "_ocr_numbers": [
+      0.07694,
+      0.07642
+    ]
+  },
+  {
+    "symbol": "MUUSDT",
+    "timeframe": "5m",
+    "side": "resistance",
+    "zone_low": 947.75,
+    "zone_high": 950.49,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-07T20:42:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\07.07.2026\\Снимок экрана 2026-07-09 222235.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o yp0BHe 950.49$ ,947.75$ $ Ha tamΦpeiMe 5m"
+    ],
+    "_ocr_numbers": [
+      950.49,
+      947.75
+    ]
+  },
+  {
+    "symbol": "OPGUSDT",
+    "timeframe": "5m",
+    "side": "support",
+    "zone_low": 0.1215,
+    "zone_high": 0.1221,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-07T20:33:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\07.07.2026\\Снимок экрана 2026-07-09 222239.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o ypoBHe 0.1215$ ,0.1221$ $ Ha TamΦpeMe 5m"
+    ],
+    "_ocr_numbers": [
+      0.1215,
+      0.1221
+    ]
+  },
+  {
+    "symbol": "YFIUSDT",
+    "timeframe": "1m",
+    "side": "resistance",
+    "zone_low": 2402.0,
+    "zone_high": 2414.0,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-07T20:09:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\07.07.2026\\Снимок экрана 2026-07-09 222245.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o ypoBHe 2414$ ,2402$ $ Ha TamΦpeMMe 1m"
+    ],
+    "_ocr_numbers": [
+      2414.0,
+      2402.0
+    ]
+  },
+  {
+    "symbol": "MSTRUSDT",
+    "timeframe": "1m",
+    "side": "resistance",
+    "zone_low": 102.32,
+    "zone_high": 102.62,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-07T19:28:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\07.07.2026\\Снимок экрана 2026-07-09 222250.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o yp0BHe 102.62$ ,102.32$ $ Ha TamΦpeme 1m"
+    ],
+    "_ocr_numbers": [
+      102.62,
+      102.32
+    ]
+  },
+  {
+    "symbol": "REUSDT",
+    "timeframe": "3m",
+    "side": "support",
+    "zone_low": 0.6958,
+    "zone_high": 0.697,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-07T18:43:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\07.07.2026\\Снимок экрана 2026-07-09 222256.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o yp0BHe 0.6958$ ,0.697$ $ Ha TamΦpeMe 1m"
+    ],
+    "_ocr_numbers": [
+      0.6958,
+      0.697
+    ]
+  },
+  {
+    "symbol": "SPCXUSDT",
+    "timeframe": "1h",
+    "side": "support",
+    "zone_low": 146.87,
+    "zone_high": 148.17,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-07T17:15:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\07.07.2026\\Снимок экрана 2026-07-09 222300.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o ypoBHe 146.87$ ,148.17$ $ Ha tamΦpeme 1h"
+    ],
+    "_ocr_numbers": [
+      146.87,
+      148.17
+    ]
+  },
+  {
+    "symbol": "KORUUSDT",
+    "timeframe": "1m",
+    "side": "resistance",
+    "zone_low": 565.77,
+    "zone_high": 568.47,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-07T15:31:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\07.07.2026\\Снимок экрана 2026-07-09 222305.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "lpo6o yp0BHe 568.47$,565.77$ $ Ha tamΦpeme 1m"
+    ],
+    "_ocr_numbers": [
+      568.47,
+      565.77
+    ]
+  },
+  {
+    "symbol": "TLMUSDT",
+    "timeframe": "1m",
+    "side": "support",
+    "zone_low": 0.00332,
+    "zone_high": 0.003328,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-07T13:17:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\07.07.2026\\Снимок экрана 2026-07-09 222309.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o yp0BHe 0.00332$ ,0.003328$ $ Ha tamΦpeme 1m"
+    ],
+    "_ocr_numbers": [
+      0.00332,
+      0.003328
+    ]
+  },
+  {
+    "symbol": "ALLOUSDT",
+    "timeframe": "5m",
+    "side": "resistance",
+    "zone_low": null,
+    "zone_high": null,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-07T13:09:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\07.07.2026\\Снимок экрана 2026-07-09 222314.png",
+    "_parse_ok": false,
+    "_level_lines": [],
+    "_ocr_numbers": []
+  },
+  {
+    "symbol": "LITUSDT",
+    "timeframe": "5m",
+    "side": "support",
+    "zone_low": 2.5083,
+    "zone_high": 2.5244,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-07T11:24:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\07.07.2026\\Снимок экрана 2026-07-09 222318.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o yp0BHe 2.5083$,2.5244$ $ Ha TamΦpeme 5m"
+    ],
+    "_ocr_numbers": [
+      2.5083,
+      2.5244
+    ]
+  },
+  {
+    "symbol": "LABUSDT",
+    "timeframe": "1m",
+    "side": "support",
+    "zone_low": 13.5,
+    "zone_high": 13.555,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-07T09:51:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\07.07.2026\\Снимок экрана 2026-07-09 222322.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o yp0BHe 13.5$,13.555$ $ Ha TamΦpeMme 1m"
+    ],
+    "_ocr_numbers": [
+      13.5,
+      13.555
+    ]
+  },
+  {
+    "symbol": "ALLOUSDT",
+    "timeframe": "1m",
+    "side": "resistance",
+    "zone_low": 0.42874,
+    "zone_high": 0.4293,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-07T07:26:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\07.07.2026\\Снимок экрана 2026-07-09 222328.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o yp0BHe 0.4293$,0.42874$，0.42729$,0.42472$ $"
+    ],
+    "_ocr_numbers": [
+      0.4293,
+      0.42874,
+      0.42729,
+      0.42472
+    ]
+  },
+  {
+    "symbol": "LITUSDT",
+    "timeframe": "1m",
+    "side": "resistance",
+    "zone_low": 2.6254,
+    "zone_high": 2.6401,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-07T05:16:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\07.07.2026\\Снимок экрана 2026-07-09 222333.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "lpo6o yp0BHe 2.6401$ ,2.6254$ $ Ha taMmΦpeMMe 1m"
+    ],
+    "_ocr_numbers": [
+      2.6401,
+      2.6254
+    ]
+  },
+  {
+    "symbol": "1000BONKUSDT",
+    "timeframe": "1m",
+    "side": "resistance",
+    "zone_low": 0.004487,
+    "zone_high": 0.004508,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-07T04:33:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\07.07.2026\\Снимок экрана 2026-07-09 222337.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6oyp0BHe 0.004508$,0.004487$ $ Ha Ta0mΦpeMe 1m"
+    ],
+    "_ocr_numbers": [
+      0.004508,
+      0.004487
+    ]
+  },
+  {
+    "symbol": "SNDRUSDT",
+    "timeframe": "5m",
+    "side": "resistance",
+    "zone_low": 1707.62,
+    "zone_high": 1714.99,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-08T22:51:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\08.07.2026\\Снимок экрана 2026-07-09 221454.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o yp0BHe 1714.99$,1707.62$ $ Ha TaMmΦpeMe 5m"
+    ],
+    "_ocr_numbers": [
+      1714.99,
+      1707.62
+    ]
+  },
+  {
+    "symbol": "ZECUSDT",
+    "timeframe": "1m",
+    "side": "resistance",
+    "zone_low": 468.0,
+    "zone_high": 468.58,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-08T21:44:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\08.07.2026\\Снимок экрана 2026-07-09 221459.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o ypoBHe 468.58$ ,468$ $ Ha tamΦpeMme 1m"
+    ],
+    "_ocr_numbers": [
+      468.58,
+      468.0
+    ]
+  },
+  {
+    "symbol": "BLURUSDT",
+    "timeframe": "5m",
+    "side": "resistance",
+    "zone_low": 0.01927,
+    "zone_high": 0.01935,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-08T19:31:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\08.07.2026\\Снимок экрана 2026-07-09 221503.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o yp0BHe 0.01935$,0.01927$ $ Ha ta0mΦpeme 1m"
+    ],
+    "_ocr_numbers": [
+      0.01935,
+      0.01927
+    ]
+  },
+  {
+    "symbol": "SPCXUSDT",
+    "timeframe": "1m",
+    "side": "support",
+    "zone_low": 148.39,
+    "zone_high": 148.5,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-08T17:58:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\08.07.2026\\Снимок экрана 2026-07-09 221510.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o ypoBHe 148.39$ ,148.5$ $ Ha tamΦpeme 1m"
+    ],
+    "_ocr_numbers": [
+      148.39,
+      148.5
+    ]
+  },
+  {
+    "symbol": "HYPEUSDT",
+    "timeframe": "5m",
+    "side": "support",
+    "zone_low": 67.152,
+    "zone_high": 67.365,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-08T17:34:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\08.07.2026\\Снимок экрана 2026-07-09 221513.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6on ypoBHen 67.152$ ,67.365$ $ Ha tamΦpeme 5m"
+    ],
+    "_ocr_numbers": [
+      67.152,
+      67.365
+    ]
+  },
+  {
+    "symbol": "HYPEUSDT",
+    "timeframe": "5m",
+    "side": "support",
+    "zone_low": 67.365,
+    "zone_high": 67.375,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-08T17:34:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\08.07.2026\\Снимок экрана 2026-07-09 221517.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "lpo6o yp0BHen 67.365$ ,67.375$ $ Ha TamΦpeme 1m"
+    ],
+    "_ocr_numbers": [
+      67.365,
+      67.375
+    ]
+  },
+  {
+    "symbol": "SPCXUSDT",
+    "timeframe": "1h",
+    "side": "support",
+    "zone_low": 146.87,
+    "zone_high": 148.17,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-08T17:15:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\08.07.2026\\Снимок экрана 2026-07-09 221522.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o ypoBHe 146.87$ ,148.17$ $ Ha tamΦpeme 1h"
+    ],
+    "_ocr_numbers": [
+      146.87,
+      148.17
+    ]
+  },
+  {
+    "symbol": "UNIUSDT",
+    "timeframe": "1m",
+    "side": "resistance",
+    "zone_low": 3.333,
+    "zone_high": 3.342,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-08T15:56:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\08.07.2026\\Снимок экрана 2026-07-09 221526.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o yp0BHe 3.342$ ,3.333$ $ Ha tamΦpeMme 1m"
+    ],
+    "_ocr_numbers": [
+      3.342,
+      3.333
+    ]
+  },
+  {
+    "symbol": "TACUSDT",
+    "timeframe": "5m",
+    "side": "support",
+    "zone_low": 0.003201,
+    "zone_high": 0.003342,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-08T12:36:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\08.07.2026\\Снимок экрана 2026-07-09 221530.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o yp0BHe 0.003201$ ,0.003342$ $ Ha TaMmΦpeMMe 1d"
+    ],
+    "_ocr_numbers": [
+      0.003201,
+      0.003342
+    ]
+  },
+  {
+    "symbol": "CLOUSDT",
+    "timeframe": "1m",
+    "side": "resistance",
+    "zone_low": 0.2185,
+    "zone_high": 0.21977,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-08T11:49:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\08.07.2026\\Снимок экрана 2026-07-09 221537.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o yp0BHen 0.21977$ ,0.2185$ $ Ha tamΦpeme 1m"
+    ],
+    "_ocr_numbers": [
+      0.21977,
+      0.2185
+    ]
+  },
+  {
+    "symbol": "UNIUSDT",
+    "timeframe": "5m",
+    "side": "support",
+    "zone_low": 3.125,
+    "zone_high": 3.14,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-08T11:31:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\08.07.2026\\Снимок экрана 2026-07-09 221543.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o ypoBHe 3.125$ ,3.14$ $ Ha tamΦpeme 5m"
+    ],
+    "_ocr_numbers": [
+      3.125,
+      3.14
+    ]
+  },
+  {
+    "symbol": "OUSDT",
+    "timeframe": "15m",
+    "side": "support",
+    "zone_low": 0.5266,
+    "zone_high": 0.5315,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-08T09:55:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\08.07.2026\\Снимок экрана 2026-07-09 221547.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o yp0BHe 0.5266$ ,0.5315$ $ Ha ta0mΦpeMe 15m"
+    ],
+    "_ocr_numbers": [
+      0.5266,
+      0.5315
+    ]
+  },
+  {
+    "symbol": "KORUUSDT",
+    "timeframe": "5m",
+    "side": "support",
+    "zone_low": 498.07,
+    "zone_high": 502.65,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-08T07:32:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\08.07.2026\\Снимок экрана 2026-07-09 221551.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o yp0BHe 498.07$ ,502.65$ $ Ha tamΦpeiMe 5m"
+    ],
+    "_ocr_numbers": [
+      498.07,
+      502.65
+    ]
+  },
+  {
+    "symbol": "LITUSDT",
+    "timeframe": "3m",
+    "side": "resistance",
+    "zone_low": 2.4962,
+    "zone_high": 2.502,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-08T06:13:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\08.07.2026\\Снимок экрана 2026-07-09 221555.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o ypoBHe 2.502$ ,2.4962$ $ Ha tamΦpeme 1m"
+    ],
+    "_ocr_numbers": [
+      2.502,
+      2.4962
+    ]
+  },
+  {
+    "symbol": "SAMSUNGUSDT",
+    "timeframe": "1m",
+    "side": "resistance",
+    "zone_low": 196.95,
+    "zone_high": 197.33,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-08T03:24:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\08.07.2026\\Снимок экрана 2026-07-09 221559.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o ypoBHe 197.33$ ,196.95$ $ Ha tamΦpeme 1m"
+    ],
+    "_ocr_numbers": [
+      197.33,
+      196.95
+    ]
+  },
+  {
+    "symbol": "EWYUSDT",
+    "timeframe": "5m",
+    "side": "resistance",
+    "zone_low": 184.08,
+    "zone_high": 184.19,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-08T03:24:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\08.07.2026\\Снимок экрана 2026-07-09 221603.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o ypoBHe 184.19$ ,184.08$ $ Ha tamΦpeme 5m"
+    ],
+    "_ocr_numbers": [
+      184.19,
+      184.08
+    ]
+  },
+  {
+    "symbol": "OPGUSDT",
+    "timeframe": "3m",
+    "side": "resistance",
+    "zone_low": 0.1292,
+    "zone_high": 0.1294,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-08T02:52:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\08.07.2026\\Снимок экрана 2026-07-09 221607.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o yp0BHe 0.1294$ ,0.1292$ $ Ha TamΦpeme 1m"
+    ],
+    "_ocr_numbers": [
+      0.1294,
+      0.1292
+    ]
+  },
+  {
+    "symbol": "VANRYUSDT",
+    "timeframe": "3m",
+    "side": "support",
+    "zone_low": 0.006276,
+    "zone_high": 0.0063,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-08T01:47:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\08.07.2026\\Снимок экрана 2026-07-09 221613.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o yp0BHe 0.006276$ ,0.0063$ $ Ha taMmΦpeiMe 1m"
+    ],
+    "_ocr_numbers": [
+      0.006276,
+      0.0063
+    ]
+  },
+  {
+    "symbol": "ARBUSDT",
+    "timeframe": "1m",
+    "side": "resistance",
+    "zone_low": 0.08732,
+    "zone_high": 0.08768,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-09T20:22:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\09.07.2026\\Снимок экрана 2026-07-09 221342.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o yp0BHe 0.08768$ ,0.08732$ $ Ha tamΦpeme 1m"
+    ],
+    "_ocr_numbers": [
+      0.08768,
+      0.08732
+    ]
+  },
+  {
+    "symbol": "EDGEUSDT",
+    "timeframe": "1m",
+    "side": "resistance",
+    "zone_low": 0.4361,
+    "zone_high": 0.4371,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-09T08:51:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\09.07.2026\\Снимок экрана 2026-07-09 221352.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o yp0BHen 0.4371$ ,0.4361$ $ Ha TamΦpeme 1m"
+    ],
+    "_ocr_numbers": [
+      0.4371,
+      0.4361
+    ]
+  },
+  {
+    "symbol": "SYNUSDT",
+    "timeframe": "1m",
+    "side": "support",
+    "zone_low": 0.34119,
+    "zone_high": 0.342,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-09T06:22:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\09.07.2026\\Снимок экрана 2026-07-09 221357.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o yp0BHen 0.34119$ ,0.342$ $ Ha TamΦpeme 1m"
+    ],
+    "_ocr_numbers": [
+      0.34119,
+      0.342
+    ]
+  },
+  {
+    "symbol": "LDOUSDT",
+    "timeframe": "1m",
+    "side": "support",
+    "zone_low": 0.3188,
+    "zone_high": 0.3194,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-09T06:04:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\09.07.2026\\Снимок экрана 2026-07-09 221401.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o ypoBHe 0.3188$ ,0.3194$ $ Ha tamΦpeme 1m"
+    ],
+    "_ocr_numbers": [
+      0.3188,
+      0.3194
+    ]
+  },
+  {
+    "symbol": "SOXLUSDT",
+    "timeframe": "1m",
+    "side": "support",
+    "zone_low": 173.61,
+    "zone_high": 173.68,
+    "signal_type": "breakout",
+    "timestamp": "2026-07-09T04:56:00+03:00",
+    "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\09.07.2026\\Снимок экрана 2026-07-09 221407.png",
+    "_parse_ok": true,
+    "_level_lines": [
+      "po6o yp0BHe 173.61$ ,173.68$ $ Ha tamΦpeime 1m"
+    ],
+    "_ocr_numbers": [
+      173.61,
+      173.68
+    ]
+  }
+]

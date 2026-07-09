@@ -1,0 +1,1334 @@
+{
+  "detector_misses_total": 28,
+  "detector_miss_reasons": {
+    "symbol_no_detector_candidates_in_window_dataset": 18,
+    "same_side_candidates_exist_but_outside_time_window": 3,
+    "same_side_time_match_but_zone_not_close": 7
+  },
+  "detector_miss_by_symbol": {
+    "BIRBUSDT": 1,
+    "ZKPUSDT": 1,
+    "BREVUSDT": 1,
+    "AERGOUSDT": 1,
+    "ARPAUSDT": 1,
+    "THEUSDT": 1,
+    "SLXUSDT": 2,
+    "XPLUSDT": 1,
+    "LABUSDT": 1,
+    "EPICUSDT": 2,
+    "OGNUSDT": 1,
+    "KORUUSDT": 2,
+    "SYNUSDT": 2,
+    "HOTUSDT": 1,
+    "ARXUSDT": 1,
+    "BTWUSDT": 1,
+    "1000BONKUSDT": 1,
+    "SNDRUSDT": 1,
+    "BLURUSDT": 1,
+    "SPCXUSDT": 1,
+    "CLOUSDT": 1,
+    "OUSDT": 1,
+    "OPGUSDT": 1,
+    "LDOUSDT": 1
+  },
+  "detector_miss_by_timeframe": {
+    "1m": 20,
+    "3m": 2,
+    "1h": 1,
+    "4h": 1,
+    "5m": 3,
+    "15m": 1
+  },
+  "published_losses_after_detector_match_total": 11,
+  "published_loss_reasons": {
+    "allowed_filter": 8,
+    "batch_limit": 3
+  },
+  "published_loss_by_symbol": {
+    "ALLOUSDT": 1,
+    "SNDKUSDT": 1,
+    "OUSDT": 1,
+    "REUSDT": 1,
+    "MUUSDT": 1,
+    "MRVLUSDT": 2,
+    "EPICUSDT": 1,
+    "OPGUSDT": 1,
+    "SPCXUSDT": 1,
+    "UNIUSDT": 1
+  },
+  "published_loss_by_timeframe": {
+    "1m": 6,
+    "1h": 2,
+    "5m": 2,
+    "3m": 1
+  },
+  "policy_status_counts_all_candidates": {
+    "allowed_filter": 275141,
+    "published": 80450,
+    "signal_key_pause": 48850,
+    "batch_limit": 18067
+  },
+  "detector_misses": [
+    {
+      "digash": {
+        "symbol": "BIRBUSDT",
+        "timeframe": "1m",
+        "side": "support",
+        "zone_low": 0.07429,
+        "zone_high": 0.07481,
+        "signal_type": "breakout",
+        "timestamp": "2026-07-03T16:19:00+03:00",
+        "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\03.07.2026\\Снимок экрана 2026-07-09 223550.png"
+      },
+      "reason": "symbol_no_detector_candidates_in_window_dataset",
+      "nearest_any_symbol": null,
+      "nearest_same_side": null,
+      "nearest_same_side_in_window": null,
+      "nearest_any_side_in_window": null
+    },
+    {
+      "digash": {
+        "symbol": "ZKPUSDT",
+        "timeframe": "1m",
+        "side": "support",
+        "zone_low": 0.058,
+        "zone_high": 0.05825,
+        "signal_type": "breakout",
+        "timestamp": "2026-07-03T15:33:00+03:00",
+        "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\03.07.2026\\Снимок экрана 2026-07-09 223554.png"
+      },
+      "reason": "symbol_no_detector_candidates_in_window_dataset",
+      "nearest_any_symbol": null,
+      "nearest_same_side": null,
+      "nearest_same_side_in_window": null,
+      "nearest_any_side_in_window": null
+    },
+    {
+      "digash": {
+        "symbol": "BREVUSDT",
+        "timeframe": "3m",
+        "side": "resistance",
+        "zone_low": 0.08371,
+        "zone_high": 0.08399,
+        "signal_type": "breakout",
+        "timestamp": "2026-07-03T13:08:00+03:00",
+        "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\03.07.2026\\Снимок экрана 2026-07-09 223558.png"
+      },
+      "reason": "symbol_no_detector_candidates_in_window_dataset",
+      "nearest_any_symbol": null,
+      "nearest_same_side": null,
+      "nearest_same_side_in_window": null,
+      "nearest_any_side_in_window": null
+    },
+    {
+      "digash": {
+        "symbol": "AERGOUSDT",
+        "timeframe": "1m",
+        "side": "support",
+        "zone_low": 0.02887,
+        "zone_high": 0.02893,
+        "signal_type": "breakout",
+        "timestamp": "2026-07-03T02:36:00+03:00",
+        "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\03.07.2026\\Снимок экрана 2026-07-09 223619.png"
+      },
+      "reason": "symbol_no_detector_candidates_in_window_dataset",
+      "nearest_any_symbol": null,
+      "nearest_same_side": null,
+      "nearest_same_side_in_window": null,
+      "nearest_any_side_in_window": null
+    },
+    {
+      "digash": {
+        "symbol": "ARPAUSDT",
+        "timeframe": "1m",
+        "side": "support",
+        "zone_low": 0.01037,
+        "zone_high": 0.01039,
+        "signal_type": "breakout",
+        "timestamp": "2026-07-04T18:16:00+03:00",
+        "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\04.07.2026\\Снимок экрана 2026-07-09 223416.png"
+      },
+      "reason": "symbol_no_detector_candidates_in_window_dataset",
+      "nearest_any_symbol": null,
+      "nearest_same_side": null,
+      "nearest_same_side_in_window": null,
+      "nearest_any_side_in_window": null
+    },
+    {
+      "digash": {
+        "symbol": "THEUSDT",
+        "timeframe": "1m",
+        "side": "support",
+        "zone_low": 0.06271,
+        "zone_high": 0.06276,
+        "signal_type": "breakout",
+        "timestamp": "2026-07-04T17:58:00+03:00",
+        "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\04.07.2026\\Снимок экрана 2026-07-09 223437.png"
+      },
+      "reason": "same_side_candidates_exist_but_outside_time_window",
+      "nearest_any_symbol": {
+        "symbol": "THEUSDT",
+        "timeframe": "1m",
+        "side": "resistance",
+        "type": "test",
+        "zone_low": 0.05318,
+        "zone_high": 0.05318,
+        "close_utc": "2026-07-08T01:13:59.999000+00:00",
+        "time_diff_min": 4936.0,
+        "zone_gap_pct": 16.4431,
+        "score": 53.07,
+        "confidence": "low_confidence",
+        "status": "allowed_filter"
+      },
+      "nearest_same_side": {
+        "symbol": "THEUSDT",
+        "timeframe": "1m",
+        "side": "support",
+        "type": "test",
+        "zone_low": 0.05303,
+        "zone_high": 0.05303,
+        "close_utc": "2026-07-08T01:13:59.999000+00:00",
+        "time_diff_min": 4936.0,
+        "zone_gap_pct": 16.7235,
+        "score": 60.32,
+        "confidence": "low_confidence",
+        "status": "allowed_filter"
+      },
+      "nearest_same_side_in_window": null,
+      "nearest_any_side_in_window": null
+    },
+    {
+      "digash": {
+        "symbol": "SLXUSDT",
+        "timeframe": "1m",
+        "side": "support",
+        "zone_low": 0.35214,
+        "zone_high": 0.35431,
+        "signal_type": "breakout",
+        "timestamp": "2026-07-04T16:18:00+03:00",
+        "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\04.07.2026\\Снимок экрана 2026-07-09 223445.png"
+      },
+      "reason": "symbol_no_detector_candidates_in_window_dataset",
+      "nearest_any_symbol": null,
+      "nearest_same_side": null,
+      "nearest_same_side_in_window": null,
+      "nearest_any_side_in_window": null
+    },
+    {
+      "digash": {
+        "symbol": "XPLUSDT",
+        "timeframe": "1m",
+        "side": "resistance",
+        "zone_low": 0.10787,
+        "zone_high": 0.10838,
+        "signal_type": "breakout",
+        "timestamp": "2026-07-04T05:03:00+03:00",
+        "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\04.07.2026\\Снимок экрана 2026-07-09 223449.png"
+      },
+      "reason": "symbol_no_detector_candidates_in_window_dataset",
+      "nearest_any_symbol": null,
+      "nearest_same_side": null,
+      "nearest_same_side_in_window": null,
+      "nearest_any_side_in_window": null
+    },
+    {
+      "digash": {
+        "symbol": "LABUSDT",
+        "timeframe": "1m",
+        "side": "support",
+        "zone_low": 16.38,
+        "zone_high": 16.5,
+        "signal_type": "breakout",
+        "timestamp": "2026-07-05T20:32:00+03:00",
+        "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\05.07.2026\\Снимок экрана 2026-07-09 223224.png"
+      },
+      "reason": "same_side_time_match_but_zone_not_close",
+      "nearest_any_symbol": {
+        "symbol": "LABUSDT",
+        "timeframe": "15m",
+        "side": "resistance",
+        "type": "test",
+        "zone_low": 15.78,
+        "zone_high": 15.78,
+        "close_utc": "2026-07-05T17:29:59.999000+00:00",
+        "time_diff_min": 2.0,
+        "zone_gap_pct": 3.7244,
+        "score": 57.71,
+        "confidence": "low_confidence",
+        "status": "allowed_filter"
+      },
+      "nearest_same_side": {
+        "symbol": "LABUSDT",
+        "timeframe": "5m",
+        "side": "support",
+        "type": "breakout",
+        "zone_low": 16.192,
+        "zone_high": 16.258,
+        "close_utc": "2026-07-05T17:34:59.999000+00:00",
+        "time_diff_min": 3.0,
+        "zone_gap_pct": 0.747,
+        "score": 78.16,
+        "confidence": "confirmed",
+        "status": "published"
+      },
+      "nearest_same_side_in_window": {
+        "symbol": "LABUSDT",
+        "timeframe": "5m",
+        "side": "support",
+        "type": "breakout",
+        "zone_low": 16.192,
+        "zone_high": 16.258,
+        "close_utc": "2026-07-05T17:34:59.999000+00:00",
+        "time_diff_min": 3.0,
+        "zone_gap_pct": 0.747,
+        "score": 78.16,
+        "confidence": "confirmed",
+        "status": "published"
+      },
+      "nearest_any_side_in_window": {
+        "symbol": "LABUSDT",
+        "timeframe": "15m",
+        "side": "resistance",
+        "type": "test",
+        "zone_low": 15.78,
+        "zone_high": 15.78,
+        "close_utc": "2026-07-05T17:29:59.999000+00:00",
+        "time_diff_min": 2.0,
+        "zone_gap_pct": 3.7244,
+        "score": 57.71,
+        "confidence": "low_confidence",
+        "status": "allowed_filter"
+      }
+    },
+    {
+      "digash": {
+        "symbol": "EPICUSDT",
+        "timeframe": "1h",
+        "side": "support",
+        "zone_low": 0.3665,
+        "zone_high": 0.3946,
+        "signal_type": "breakout",
+        "timestamp": "2026-07-05T12:46:00+03:00",
+        "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\05.07.2026\\Снимок экрана 2026-07-09 223230.png"
+      },
+      "reason": "same_side_time_match_but_zone_not_close",
+      "nearest_any_symbol": {
+        "symbol": "EPICUSDT",
+        "timeframe": "1m",
+        "side": "support",
+        "type": "test",
+        "zone_low": 0.42,
+        "zone_high": 0.42,
+        "close_utc": "2026-07-05T09:44:59.999000+00:00",
+        "time_diff_min": 1.0,
+        "zone_gap_pct": 6.3456,
+        "score": 61.23,
+        "confidence": "low_confidence",
+        "status": "signal_key_pause"
+      },
+      "nearest_same_side": {
+        "symbol": "EPICUSDT",
+        "timeframe": "1m",
+        "side": "support",
+        "type": "test",
+        "zone_low": 0.42,
+        "zone_high": 0.42,
+        "close_utc": "2026-07-05T09:44:59.999000+00:00",
+        "time_diff_min": 1.0,
+        "zone_gap_pct": 6.3456,
+        "score": 61.23,
+        "confidence": "low_confidence",
+        "status": "signal_key_pause"
+      },
+      "nearest_same_side_in_window": {
+        "symbol": "EPICUSDT",
+        "timeframe": "1m",
+        "side": "support",
+        "type": "test",
+        "zone_low": 0.42,
+        "zone_high": 0.42,
+        "close_utc": "2026-07-05T09:44:59.999000+00:00",
+        "time_diff_min": 1.0,
+        "zone_gap_pct": 6.3456,
+        "score": 61.23,
+        "confidence": "low_confidence",
+        "status": "signal_key_pause"
+      },
+      "nearest_any_side_in_window": {
+        "symbol": "EPICUSDT",
+        "timeframe": "1m",
+        "side": "support",
+        "type": "test",
+        "zone_low": 0.42,
+        "zone_high": 0.42,
+        "close_utc": "2026-07-05T09:44:59.999000+00:00",
+        "time_diff_min": 1.0,
+        "zone_gap_pct": 6.3456,
+        "score": 61.23,
+        "confidence": "low_confidence",
+        "status": "signal_key_pause"
+      }
+    },
+    {
+      "digash": {
+        "symbol": "OGNUSDT",
+        "timeframe": "1m",
+        "side": "support",
+        "zone_low": 0.01795,
+        "zone_high": 0.01796,
+        "signal_type": "breakout",
+        "timestamp": "2026-07-05T09:25:00+03:00",
+        "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\05.07.2026\\Снимок экрана 2026-07-09 223239.png"
+      },
+      "reason": "symbol_no_detector_candidates_in_window_dataset",
+      "nearest_any_symbol": null,
+      "nearest_same_side": null,
+      "nearest_same_side_in_window": null,
+      "nearest_any_side_in_window": null
+    },
+    {
+      "digash": {
+        "symbol": "EPICUSDT",
+        "timeframe": "4h",
+        "side": "resistance",
+        "zone_low": 0.768,
+        "zone_high": 0.8262,
+        "signal_type": "breakout",
+        "timestamp": "2026-07-05T03:18:00+03:00",
+        "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\05.07.2026\\Снимок экрана 2026-07-09 223247.png"
+      },
+      "reason": "same_side_time_match_but_zone_not_close",
+      "nearest_any_symbol": {
+        "symbol": "EPICUSDT",
+        "timeframe": "1m",
+        "side": "resistance",
+        "type": "test",
+        "zone_low": 0.7495,
+        "zone_high": 0.7495,
+        "close_utc": "2026-07-05T00:17:59.999000+00:00",
+        "time_diff_min": 0.0,
+        "zone_gap_pct": 2.3923,
+        "score": 61.25,
+        "confidence": "low_confidence",
+        "status": "published"
+      },
+      "nearest_same_side": {
+        "symbol": "EPICUSDT",
+        "timeframe": "1m",
+        "side": "resistance",
+        "type": "test",
+        "zone_low": 0.7495,
+        "zone_high": 0.7495,
+        "close_utc": "2026-07-05T00:17:59.999000+00:00",
+        "time_diff_min": 0.0,
+        "zone_gap_pct": 2.3923,
+        "score": 61.25,
+        "confidence": "low_confidence",
+        "status": "published"
+      },
+      "nearest_same_side_in_window": {
+        "symbol": "EPICUSDT",
+        "timeframe": "1m",
+        "side": "resistance",
+        "type": "test",
+        "zone_low": 0.7495,
+        "zone_high": 0.7495,
+        "close_utc": "2026-07-05T00:17:59.999000+00:00",
+        "time_diff_min": 0.0,
+        "zone_gap_pct": 2.3923,
+        "score": 61.25,
+        "confidence": "low_confidence",
+        "status": "published"
+      },
+      "nearest_any_side_in_window": {
+        "symbol": "EPICUSDT",
+        "timeframe": "1m",
+        "side": "resistance",
+        "type": "test",
+        "zone_low": 0.7495,
+        "zone_high": 0.7495,
+        "close_utc": "2026-07-05T00:17:59.999000+00:00",
+        "time_diff_min": 0.0,
+        "zone_gap_pct": 2.3923,
+        "score": 61.25,
+        "confidence": "low_confidence",
+        "status": "published"
+      }
+    },
+    {
+      "digash": {
+        "symbol": "KORUUSDT",
+        "timeframe": "1m",
+        "side": "support",
+        "zone_low": 621.3,
+        "zone_high": 622.12,
+        "signal_type": "breakout",
+        "timestamp": "2026-07-06T15:30:00+03:00",
+        "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\06.07.2026\\Снимок экрана 2026-07-09 223021.png"
+      },
+      "reason": "same_side_time_match_but_zone_not_close",
+      "nearest_any_symbol": {
+        "symbol": "KORUUSDT",
+        "timeframe": "15m",
+        "side": "resistance",
+        "type": "breakout",
+        "zone_low": 615.27,
+        "zone_high": 621.82,
+        "close_utc": "2026-07-06T12:29:59.999000+00:00",
+        "time_diff_min": 0.0,
+        "zone_gap_pct": 0.0,
+        "score": 72.75,
+        "confidence": "confirmed",
+        "status": "batch_limit"
+      },
+      "nearest_same_side": {
+        "symbol": "KORUUSDT",
+        "timeframe": "5m",
+        "side": "support",
+        "type": "test",
+        "zone_low": 628.11,
+        "zone_high": 628.11,
+        "close_utc": "2026-07-06T12:29:59.999000+00:00",
+        "time_diff_min": 0.0,
+        "zone_gap_pct": 0.9585,
+        "score": 60.01,
+        "confidence": "low_confidence",
+        "status": "allowed_filter"
+      },
+      "nearest_same_side_in_window": {
+        "symbol": "KORUUSDT",
+        "timeframe": "5m",
+        "side": "support",
+        "type": "test",
+        "zone_low": 628.11,
+        "zone_high": 628.11,
+        "close_utc": "2026-07-06T12:29:59.999000+00:00",
+        "time_diff_min": 0.0,
+        "zone_gap_pct": 0.9585,
+        "score": 60.01,
+        "confidence": "low_confidence",
+        "status": "allowed_filter"
+      },
+      "nearest_any_side_in_window": {
+        "symbol": "KORUUSDT",
+        "timeframe": "15m",
+        "side": "resistance",
+        "type": "breakout",
+        "zone_low": 615.27,
+        "zone_high": 621.82,
+        "close_utc": "2026-07-06T12:29:59.999000+00:00",
+        "time_diff_min": 0.0,
+        "zone_gap_pct": 0.0,
+        "score": 72.75,
+        "confidence": "confirmed",
+        "status": "batch_limit"
+      }
+    },
+    {
+      "digash": {
+        "symbol": "SYNUSDT",
+        "timeframe": "1m",
+        "side": "support",
+        "zone_low": 0.36839,
+        "zone_high": 0.3691,
+        "signal_type": "breakout",
+        "timestamp": "2026-07-06T13:00:00+03:00",
+        "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\06.07.2026\\Снимок экрана 2026-07-09 223026.png"
+      },
+      "reason": "symbol_no_detector_candidates_in_window_dataset",
+      "nearest_any_symbol": null,
+      "nearest_same_side": null,
+      "nearest_same_side_in_window": null,
+      "nearest_any_side_in_window": null
+    },
+    {
+      "digash": {
+        "symbol": "SLXUSDT",
+        "timeframe": "1m",
+        "side": "support",
+        "zone_low": 0.20881,
+        "zone_high": 0.20916,
+        "signal_type": "breakout",
+        "timestamp": "2026-07-06T12:04:00+03:00",
+        "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\06.07.2026\\Снимок экрана 2026-07-09 223031.png"
+      },
+      "reason": "symbol_no_detector_candidates_in_window_dataset",
+      "nearest_any_symbol": null,
+      "nearest_same_side": null,
+      "nearest_same_side_in_window": null,
+      "nearest_any_side_in_window": null
+    },
+    {
+      "digash": {
+        "symbol": "HOTUSDT",
+        "timeframe": "1m",
+        "side": "resistance",
+        "zone_low": 0.0003685,
+        "zone_high": 0.0003698,
+        "signal_type": "breakout",
+        "timestamp": "2026-07-06T07:41:00+03:00",
+        "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\06.07.2026\\Снимок экрана 2026-07-09 223036.png"
+      },
+      "reason": "symbol_no_detector_candidates_in_window_dataset",
+      "nearest_any_symbol": null,
+      "nearest_same_side": null,
+      "nearest_same_side_in_window": null,
+      "nearest_any_side_in_window": null
+    },
+    {
+      "digash": {
+        "symbol": "ARXUSDT",
+        "timeframe": "1m",
+        "side": "support",
+        "zone_low": 0.2321,
+        "zone_high": 0.233,
+        "signal_type": "breakout",
+        "timestamp": "2026-07-06T05:30:00+03:00",
+        "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\06.07.2026\\Снимок экрана 2026-07-09 223045.png"
+      },
+      "reason": "symbol_no_detector_candidates_in_window_dataset",
+      "nearest_any_symbol": null,
+      "nearest_same_side": null,
+      "nearest_same_side_in_window": null,
+      "nearest_any_side_in_window": null
+    },
+    {
+      "digash": {
+        "symbol": "KORUUSDT",
+        "timeframe": "5m",
+        "side": "support",
+        "zone_low": 615.0,
+        "zone_high": 616.95,
+        "signal_type": "breakout",
+        "timestamp": "2026-07-06T02:50:00+03:00",
+        "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\06.07.2026\\Снимок экрана 2026-07-09 223111.png"
+      },
+      "reason": "same_side_time_match_but_zone_not_close",
+      "nearest_any_symbol": {
+        "symbol": "KORUUSDT",
+        "timeframe": "1m",
+        "side": "resistance",
+        "type": "test",
+        "zone_low": 650.08,
+        "zone_high": 650.08,
+        "close_utc": "2026-07-06T00:06:59.999000+00:00",
+        "time_diff_min": 17.0,
+        "zone_gap_pct": 5.2336,
+        "score": 61.25,
+        "confidence": "low_confidence",
+        "status": "published"
+      },
+      "nearest_same_side": {
+        "symbol": "KORUUSDT",
+        "timeframe": "1m",
+        "side": "support",
+        "type": "test",
+        "zone_low": 633.07,
+        "zone_high": 633.07,
+        "close_utc": "2026-07-05T23:21:59.999000+00:00",
+        "time_diff_min": 28.0,
+        "zone_gap_pct": 2.5812,
+        "score": 61.23,
+        "confidence": "low_confidence",
+        "status": "signal_key_pause"
+      },
+      "nearest_same_side_in_window": {
+        "symbol": "KORUUSDT",
+        "timeframe": "1m",
+        "side": "support",
+        "type": "test",
+        "zone_low": 633.07,
+        "zone_high": 633.07,
+        "close_utc": "2026-07-05T23:21:59.999000+00:00",
+        "time_diff_min": 28.0,
+        "zone_gap_pct": 2.5812,
+        "score": 61.23,
+        "confidence": "low_confidence",
+        "status": "signal_key_pause"
+      },
+      "nearest_any_side_in_window": {
+        "symbol": "KORUUSDT",
+        "timeframe": "1m",
+        "side": "resistance",
+        "type": "test",
+        "zone_low": 650.08,
+        "zone_high": 650.08,
+        "close_utc": "2026-07-06T00:06:59.999000+00:00",
+        "time_diff_min": 17.0,
+        "zone_gap_pct": 5.2336,
+        "score": 61.25,
+        "confidence": "low_confidence",
+        "status": "published"
+      }
+    },
+    {
+      "digash": {
+        "symbol": "BTWUSDT",
+        "timeframe": "1m",
+        "side": "resistance",
+        "zone_low": 0.07642,
+        "zone_high": 0.07694,
+        "signal_type": "breakout",
+        "timestamp": "2026-07-06T02:28:00+03:00",
+        "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\06.07.2026\\Снимок экрана 2026-07-09 223116.png"
+      },
+      "reason": "symbol_no_detector_candidates_in_window_dataset",
+      "nearest_any_symbol": null,
+      "nearest_same_side": null,
+      "nearest_same_side_in_window": null,
+      "nearest_any_side_in_window": null
+    },
+    {
+      "digash": {
+        "symbol": "1000BONKUSDT",
+        "timeframe": "1m",
+        "side": "resistance",
+        "zone_low": 0.004487,
+        "zone_high": 0.004508,
+        "signal_type": "breakout",
+        "timestamp": "2026-07-07T04:33:00+03:00",
+        "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\07.07.2026\\Снимок экрана 2026-07-09 222337.png"
+      },
+      "reason": "symbol_no_detector_candidates_in_window_dataset",
+      "nearest_any_symbol": null,
+      "nearest_same_side": null,
+      "nearest_same_side_in_window": null,
+      "nearest_any_side_in_window": null
+    },
+    {
+      "digash": {
+        "symbol": "SNDRUSDT",
+        "timeframe": "5m",
+        "side": "resistance",
+        "zone_low": 1707.62,
+        "zone_high": 1714.99,
+        "signal_type": "breakout",
+        "timestamp": "2026-07-08T22:51:00+03:00",
+        "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\08.07.2026\\Снимок экрана 2026-07-09 221454.png"
+      },
+      "reason": "symbol_no_detector_candidates_in_window_dataset",
+      "nearest_any_symbol": null,
+      "nearest_same_side": null,
+      "nearest_same_side_in_window": null,
+      "nearest_any_side_in_window": null
+    },
+    {
+      "digash": {
+        "symbol": "BLURUSDT",
+        "timeframe": "5m",
+        "side": "resistance",
+        "zone_low": 0.01927,
+        "zone_high": 0.01935,
+        "signal_type": "breakout",
+        "timestamp": "2026-07-08T19:31:00+03:00",
+        "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\08.07.2026\\Снимок экрана 2026-07-09 221503.png"
+      },
+      "reason": "same_side_candidates_exist_but_outside_time_window",
+      "nearest_any_symbol": {
+        "symbol": "BLURUSDT",
+        "timeframe": "1m",
+        "side": "support",
+        "type": "test",
+        "zone_low": 0.01941,
+        "zone_high": 0.01941,
+        "close_utc": "2026-07-08T01:12:59.999000+00:00",
+        "time_diff_min": 918.0,
+        "zone_gap_pct": 0.3099,
+        "score": 58.12,
+        "confidence": "low_confidence",
+        "status": "allowed_filter"
+      },
+      "nearest_same_side": {
+        "symbol": "BLURUSDT",
+        "timeframe": "1m",
+        "side": "resistance",
+        "type": "test",
+        "zone_low": 0.0197,
+        "zone_high": 0.0197,
+        "close_utc": "2026-07-08T01:06:59.999000+00:00",
+        "time_diff_min": 924.0,
+        "zone_gap_pct": 1.7944,
+        "score": 50.87,
+        "confidence": "low_confidence",
+        "status": "allowed_filter"
+      },
+      "nearest_same_side_in_window": null,
+      "nearest_any_side_in_window": null
+    },
+    {
+      "digash": {
+        "symbol": "SPCXUSDT",
+        "timeframe": "1m",
+        "side": "support",
+        "zone_low": 148.39,
+        "zone_high": 148.5,
+        "signal_type": "breakout",
+        "timestamp": "2026-07-08T17:58:00+03:00",
+        "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\08.07.2026\\Снимок экрана 2026-07-09 221510.png"
+      },
+      "reason": "same_side_time_match_but_zone_not_close",
+      "nearest_any_symbol": {
+        "symbol": "SPCXUSDT",
+        "timeframe": "1h",
+        "side": "support",
+        "type": "breakout",
+        "zone_low": 152.01,
+        "zone_high": 155.7,
+        "close_utc": "2026-07-08T14:59:59.999000+00:00",
+        "time_diff_min": 2.0,
+        "zone_gap_pct": 2.3222,
+        "score": 78.9,
+        "confidence": "confirmed",
+        "status": "published"
+      },
+      "nearest_same_side": {
+        "symbol": "SPCXUSDT",
+        "timeframe": "1h",
+        "side": "support",
+        "type": "breakout",
+        "zone_low": 152.01,
+        "zone_high": 155.7,
+        "close_utc": "2026-07-08T14:59:59.999000+00:00",
+        "time_diff_min": 2.0,
+        "zone_gap_pct": 2.3222,
+        "score": 78.9,
+        "confidence": "confirmed",
+        "status": "published"
+      },
+      "nearest_same_side_in_window": {
+        "symbol": "SPCXUSDT",
+        "timeframe": "1h",
+        "side": "support",
+        "type": "breakout",
+        "zone_low": 152.01,
+        "zone_high": 155.7,
+        "close_utc": "2026-07-08T14:59:59.999000+00:00",
+        "time_diff_min": 2.0,
+        "zone_gap_pct": 2.3222,
+        "score": 78.9,
+        "confidence": "confirmed",
+        "status": "published"
+      },
+      "nearest_any_side_in_window": {
+        "symbol": "SPCXUSDT",
+        "timeframe": "1h",
+        "side": "support",
+        "type": "breakout",
+        "zone_low": 152.01,
+        "zone_high": 155.7,
+        "close_utc": "2026-07-08T14:59:59.999000+00:00",
+        "time_diff_min": 2.0,
+        "zone_gap_pct": 2.3222,
+        "score": 78.9,
+        "confidence": "confirmed",
+        "status": "published"
+      }
+    },
+    {
+      "digash": {
+        "symbol": "CLOUSDT",
+        "timeframe": "1m",
+        "side": "resistance",
+        "zone_low": 0.2185,
+        "zone_high": 0.21977,
+        "signal_type": "breakout",
+        "timestamp": "2026-07-08T11:49:00+03:00",
+        "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\08.07.2026\\Снимок экрана 2026-07-09 221537.png"
+      },
+      "reason": "symbol_no_detector_candidates_in_window_dataset",
+      "nearest_any_symbol": null,
+      "nearest_same_side": null,
+      "nearest_same_side_in_window": null,
+      "nearest_any_side_in_window": null
+    },
+    {
+      "digash": {
+        "symbol": "OUSDT",
+        "timeframe": "15m",
+        "side": "support",
+        "zone_low": 0.5266,
+        "zone_high": 0.5315,
+        "signal_type": "breakout",
+        "timestamp": "2026-07-08T09:55:00+03:00",
+        "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\08.07.2026\\Снимок экрана 2026-07-09 221547.png"
+      },
+      "reason": "same_side_candidates_exist_but_outside_time_window",
+      "nearest_any_symbol": {
+        "symbol": "OUSDT",
+        "timeframe": "5m",
+        "side": "resistance",
+        "type": "breakout",
+        "zone_low": 0.5508,
+        "zone_high": 0.5531,
+        "close_utc": "2026-07-08T01:09:59.999000+00:00",
+        "time_diff_min": 345.0,
+        "zone_gap_pct": 3.5708,
+        "score": 67.72,
+        "confidence": "confirmed",
+        "status": "published"
+      },
+      "nearest_same_side": {
+        "symbol": "OUSDT",
+        "timeframe": "1m",
+        "side": "support",
+        "type": "breakout",
+        "zone_low": 0.5553,
+        "zone_high": 0.5576,
+        "close_utc": "2026-07-08T01:08:59.999000+00:00",
+        "time_diff_min": 346.0,
+        "zone_gap_pct": 4.3851,
+        "score": 78.95,
+        "confidence": "confirmed",
+        "status": "published"
+      },
+      "nearest_same_side_in_window": null,
+      "nearest_any_side_in_window": null
+    },
+    {
+      "digash": {
+        "symbol": "OPGUSDT",
+        "timeframe": "3m",
+        "side": "resistance",
+        "zone_low": 0.1292,
+        "zone_high": 0.1294,
+        "signal_type": "breakout",
+        "timestamp": "2026-07-08T02:52:00+03:00",
+        "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\08.07.2026\\Снимок экрана 2026-07-09 221607.png"
+      },
+      "reason": "same_side_time_match_but_zone_not_close",
+      "nearest_any_symbol": {
+        "symbol": "OPGUSDT",
+        "timeframe": "1m",
+        "side": "resistance",
+        "type": "test",
+        "zone_low": 0.1283,
+        "zone_high": 0.1283,
+        "close_utc": "2026-07-07T23:51:59.999000+00:00",
+        "time_diff_min": 0.0,
+        "zone_gap_pct": 0.6988,
+        "score": 53.79,
+        "confidence": "low_confidence",
+        "status": "allowed_filter"
+      },
+      "nearest_same_side": {
+        "symbol": "OPGUSDT",
+        "timeframe": "1m",
+        "side": "resistance",
+        "type": "test",
+        "zone_low": 0.1283,
+        "zone_high": 0.1283,
+        "close_utc": "2026-07-07T23:51:59.999000+00:00",
+        "time_diff_min": 0.0,
+        "zone_gap_pct": 0.6988,
+        "score": 53.79,
+        "confidence": "low_confidence",
+        "status": "allowed_filter"
+      },
+      "nearest_same_side_in_window": {
+        "symbol": "OPGUSDT",
+        "timeframe": "1m",
+        "side": "resistance",
+        "type": "test",
+        "zone_low": 0.1283,
+        "zone_high": 0.1283,
+        "close_utc": "2026-07-07T23:51:59.999000+00:00",
+        "time_diff_min": 0.0,
+        "zone_gap_pct": 0.6988,
+        "score": 53.79,
+        "confidence": "low_confidence",
+        "status": "allowed_filter"
+      },
+      "nearest_any_side_in_window": {
+        "symbol": "OPGUSDT",
+        "timeframe": "1m",
+        "side": "resistance",
+        "type": "test",
+        "zone_low": 0.1283,
+        "zone_high": 0.1283,
+        "close_utc": "2026-07-07T23:51:59.999000+00:00",
+        "time_diff_min": 0.0,
+        "zone_gap_pct": 0.6988,
+        "score": 53.79,
+        "confidence": "low_confidence",
+        "status": "allowed_filter"
+      }
+    },
+    {
+      "digash": {
+        "symbol": "SYNUSDT",
+        "timeframe": "1m",
+        "side": "support",
+        "zone_low": 0.34119,
+        "zone_high": 0.342,
+        "signal_type": "breakout",
+        "timestamp": "2026-07-09T06:22:00+03:00",
+        "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\09.07.2026\\Снимок экрана 2026-07-09 221357.png"
+      },
+      "reason": "symbol_no_detector_candidates_in_window_dataset",
+      "nearest_any_symbol": null,
+      "nearest_same_side": null,
+      "nearest_same_side_in_window": null,
+      "nearest_any_side_in_window": null
+    },
+    {
+      "digash": {
+        "symbol": "LDOUSDT",
+        "timeframe": "1m",
+        "side": "support",
+        "zone_low": 0.3188,
+        "zone_high": 0.3194,
+        "signal_type": "breakout",
+        "timestamp": "2026-07-09T06:04:00+03:00",
+        "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\09.07.2026\\Снимок экрана 2026-07-09 221401.png"
+      },
+      "reason": "symbol_no_detector_candidates_in_window_dataset",
+      "nearest_any_symbol": null,
+      "nearest_same_side": null,
+      "nearest_same_side_in_window": null,
+      "nearest_any_side_in_window": null
+    }
+  ],
+  "published_losses": [
+    {
+      "digash": {
+        "symbol": "ALLOUSDT",
+        "timeframe": "1m",
+        "side": "resistance",
+        "zone_low": 0.35012,
+        "zone_high": 0.35201,
+        "signal_type": "breakout",
+        "timestamp": "2026-07-03T06:27:00+03:00",
+        "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\03.07.2026\\Снимок экрана 2026-07-09 223602.png"
+      },
+      "reason": "allowed_filter",
+      "detector_match": {
+        "symbol": "ALLOUSDT",
+        "timeframe": "1m",
+        "side": "resistance",
+        "zone_low": 0.35201,
+        "zone_high": 0.35201,
+        "type": "test",
+        "confidence": "low_confidence",
+        "score": 51.82593780353973,
+        "touches": 1,
+        "level_kind": "early_single_touch",
+        "key": "ALLOUSDT:1m:resistance:0.35201-0.35201:test:low_confidence",
+        "source": "old_14d",
+        "close_ms": 1783050059999,
+        "close_utc": "2026-07-03T03:40:59.999000+00:00",
+        "time_diff_min": 14.0,
+        "zone_gap_pct": 0.0
+      }
+    },
+    {
+      "digash": {
+        "symbol": "SNDKUSDT",
+        "timeframe": "1m",
+        "side": "support",
+        "zone_low": 1779.4,
+        "zone_high": 1782.41,
+        "signal_type": "breakout",
+        "timestamp": "2026-07-03T04:06:00+03:00",
+        "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\03.07.2026\\Снимок экрана 2026-07-09 223609.png"
+      },
+      "reason": "allowed_filter",
+      "detector_match": {
+        "symbol": "SNDKUSDT",
+        "timeframe": "5m",
+        "side": "support",
+        "zone_low": 1783.09,
+        "zone_high": 1783.09,
+        "type": "test",
+        "confidence": "low_confidence",
+        "score": 58.51999999999999,
+        "touches": 1,
+        "level_kind": "early_single_touch",
+        "key": "SNDKUSDT:5m:support:1783.09-1783.09:test:low_confidence",
+        "source": "old_14d",
+        "close_ms": 1783040699999,
+        "close_utc": "2026-07-03T01:04:59.999000+00:00",
+        "time_diff_min": 1.0,
+        "zone_gap_pct": 0.03816
+      }
+    },
+    {
+      "digash": {
+        "symbol": "OUSDT",
+        "timeframe": "1h",
+        "side": "support",
+        "zone_low": 0.6131,
+        "zone_high": 0.6235,
+        "signal_type": "breakout",
+        "timestamp": "2026-07-04T23:31:00+03:00",
+        "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\04.07.2026\\Снимок экрана 2026-07-09 223356.png"
+      },
+      "reason": "allowed_filter",
+      "detector_match": {
+        "symbol": "OUSDT",
+        "timeframe": "1m",
+        "side": "support",
+        "zone_low": 0.6261,
+        "zone_high": 0.6261,
+        "type": "test",
+        "confidence": "low_confidence",
+        "score": 58.09226819640279,
+        "touches": 1,
+        "level_kind": "live_edge",
+        "key": "OUSDT:1m:support:0.6261-0.6261:test:low_confidence",
+        "source": "old_14d",
+        "close_ms": 1783201259999,
+        "close_utc": "2026-07-04T21:40:59.999000+00:00",
+        "time_diff_min": 70.0,
+        "zone_gap_pct": 0.41787
+      }
+    },
+    {
+      "digash": {
+        "symbol": "REUSDT",
+        "timeframe": "1m",
+        "side": "support",
+        "zone_low": 0.628,
+        "zone_high": 0.6306,
+        "signal_type": "breakout",
+        "timestamp": "2026-07-04T03:12:00+03:00",
+        "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\04.07.2026\\Снимок экрана 2026-07-09 223459.png"
+      },
+      "reason": "allowed_filter",
+      "detector_match": {
+        "symbol": "REUSDT",
+        "timeframe": "1h",
+        "side": "support",
+        "zone_low": 0.6251,
+        "zone_high": 0.6251,
+        "type": "test",
+        "confidence": "low_confidence",
+        "score": 56.07,
+        "touches": 1,
+        "level_kind": "early_single_touch",
+        "key": "REUSDT:1h:support:0.6251-0.6251:test:low_confidence",
+        "source": "old_14d",
+        "close_ms": 1783123199999,
+        "close_utc": "2026-07-03T23:59:59.999000+00:00",
+        "time_diff_min": 12.0,
+        "zone_gap_pct": 0.46237
+      }
+    },
+    {
+      "digash": {
+        "symbol": "MUUSDT",
+        "timeframe": "1m",
+        "side": "resistance",
+        "zone_low": 1013.85,
+        "zone_high": 1015.02,
+        "signal_type": "breakout",
+        "timestamp": "2026-07-06T17:11:00+03:00",
+        "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\06.07.2026\\Снимок экрана 2026-07-09 222954.png"
+      },
+      "reason": "allowed_filter",
+      "detector_match": {
+        "symbol": "MUUSDT",
+        "timeframe": "1m",
+        "side": "resistance",
+        "zone_low": 1018.39,
+        "zone_high": 1018.39,
+        "type": "test",
+        "confidence": "low_confidence",
+        "score": 57.56745258484912,
+        "touches": 1,
+        "level_kind": "live_edge",
+        "key": "MUUSDT:1m:resistance:1018.39-1018.39:test:low_confidence",
+        "source": "old_14d",
+        "close_ms": 1783347359999,
+        "close_utc": "2026-07-06T14:15:59.999000+00:00",
+        "time_diff_min": 5.0,
+        "zone_gap_pct": 0.33156
+      }
+    },
+    {
+      "digash": {
+        "symbol": "MRVLUSDT",
+        "timeframe": "5m",
+        "side": "resistance",
+        "zone_low": 258.14,
+        "zone_high": 258.84,
+        "signal_type": "breakout",
+        "timestamp": "2026-07-06T16:54:00+03:00",
+        "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\06.07.2026\\Снимок экрана 2026-07-09 223000.png"
+      },
+      "reason": "allowed_filter",
+      "detector_match": {
+        "symbol": "MRVLUSDT",
+        "timeframe": "1m",
+        "side": "resistance",
+        "zone_low": 258.43,
+        "zone_high": 258.43,
+        "type": "test",
+        "confidence": "low_confidence",
+        "score": 59.68594809092805,
+        "touches": 1,
+        "level_kind": "live_edge",
+        "key": "MRVLUSDT:1m:resistance:258.43-258.43:test:low_confidence",
+        "source": "old_14d",
+        "close_ms": 1783346939999,
+        "close_utc": "2026-07-06T14:08:59.999000+00:00",
+        "time_diff_min": 15.0,
+        "zone_gap_pct": 0.0
+      }
+    },
+    {
+      "digash": {
+        "symbol": "MRVLUSDT",
+        "timeframe": "3m",
+        "side": "resistance",
+        "zone_low": 258.84,
+        "zone_high": 259.59,
+        "signal_type": "breakout",
+        "timestamp": "2026-07-06T16:53:00+03:00",
+        "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\06.07.2026\\Снимок экрана 2026-07-09 223006.png"
+      },
+      "reason": "allowed_filter",
+      "detector_match": {
+        "symbol": "MRVLUSDT",
+        "timeframe": "1m",
+        "side": "resistance",
+        "zone_low": 259.3,
+        "zone_high": 259.3,
+        "type": "test",
+        "confidence": "low_confidence",
+        "score": 55.76333159276723,
+        "touches": 1,
+        "level_kind": "live_edge",
+        "key": "MRVLUSDT:1m:resistance:259.3-259.3:test:low_confidence",
+        "source": "old_14d",
+        "close_ms": 1783347179999,
+        "close_utc": "2026-07-06T14:12:59.999000+00:00",
+        "time_diff_min": 20.0,
+        "zone_gap_pct": 0.0
+      }
+    },
+    {
+      "digash": {
+        "symbol": "EPICUSDT",
+        "timeframe": "1m",
+        "side": "support",
+        "zone_low": 0.4095,
+        "zone_high": 0.4103,
+        "signal_type": "breakout",
+        "timestamp": "2026-07-06T06:18:00+03:00",
+        "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\06.07.2026\\Снимок экрана 2026-07-09 223041.png"
+      },
+      "reason": "batch_limit",
+      "detector_match": {
+        "symbol": "EPICUSDT",
+        "timeframe": "1h",
+        "side": "support",
+        "zone_low": 0.3946,
+        "zone_high": 0.4575,
+        "type": "test",
+        "confidence": "confirmed",
+        "score": 64.05108180759275,
+        "touches": 17,
+        "level_kind": "standard",
+        "key": "EPICUSDT:1h:support:0.3946-0.4575:test:confirmed",
+        "source": "old_14d",
+        "close_ms": 1783310399999,
+        "close_utc": "2026-07-06T03:59:59.999000+00:00",
+        "time_diff_min": 42.0,
+        "zone_gap_pct": 0.0
+      }
+    },
+    {
+      "digash": {
+        "symbol": "OPGUSDT",
+        "timeframe": "5m",
+        "side": "support",
+        "zone_low": 0.1215,
+        "zone_high": 0.1221,
+        "signal_type": "breakout",
+        "timestamp": "2026-07-07T20:33:00+03:00",
+        "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\07.07.2026\\Снимок экрана 2026-07-09 222239.png"
+      },
+      "reason": "batch_limit",
+      "detector_match": {
+        "symbol": "OPGUSDT",
+        "timeframe": "15m",
+        "side": "support",
+        "zone_low": 0.1215,
+        "zone_high": 0.1228,
+        "type": "test",
+        "confidence": "confirmed",
+        "score": 65.6849292198442,
+        "touches": 3,
+        "level_kind": "standard",
+        "key": "OPGUSDT:15m:support:0.1215-0.1228:test:confirmed",
+        "source": "old_14d",
+        "close_ms": 1783445399999,
+        "close_utc": "2026-07-07T17:29:59.999000+00:00",
+        "time_diff_min": 3.0,
+        "zone_gap_pct": 0.0
+      }
+    },
+    {
+      "digash": {
+        "symbol": "SPCXUSDT",
+        "timeframe": "1h",
+        "side": "support",
+        "zone_low": 146.87,
+        "zone_high": 148.17,
+        "signal_type": "breakout",
+        "timestamp": "2026-07-07T17:15:00+03:00",
+        "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\07.07.2026\\Снимок экрана 2026-07-09 222300.png"
+      },
+      "reason": "batch_limit",
+      "detector_match": {
+        "symbol": "SPCXUSDT",
+        "timeframe": "1h",
+        "side": "support",
+        "zone_low": 147.25,
+        "zone_high": 148.46,
+        "type": "test",
+        "confidence": "confirmed",
+        "score": 71.13333333333333,
+        "touches": 3,
+        "level_kind": "standard",
+        "key": "SPCXUSDT:1h:support:147.25-148.46:test:confirmed",
+        "source": "old_14d",
+        "close_ms": 1783439999999,
+        "close_utc": "2026-07-07T15:59:59.999000+00:00",
+        "time_diff_min": 105.0,
+        "zone_gap_pct": 0.0
+      }
+    },
+    {
+      "digash": {
+        "symbol": "UNIUSDT",
+        "timeframe": "1m",
+        "side": "resistance",
+        "zone_low": 3.333,
+        "zone_high": 3.342,
+        "signal_type": "breakout",
+        "timestamp": "2026-07-08T15:56:00+03:00",
+        "source_file": "C:\\Users\\goooo\\OneDrive\\Desktop\\Сигналы конкурениа\\08.07.2026\\Снимок экрана 2026-07-09 221526.png"
+      },
+      "reason": "allowed_filter",
+      "detector_match": {
+        "symbol": "UNIUSDT",
+        "timeframe": "5m",
+        "side": "resistance",
+        "zone_low": 3.342,
+        "zone_high": 3.342,
+        "type": "test",
+        "confidence": "low_confidence",
+        "score": 56.34538460683681,
+        "touches": 1,
+        "level_kind": "early_single_touch",
+        "key": "UNIUSDT:5m:resistance:3.342-3.342:test:low_confidence",
+        "source": "supplement",
+        "close_ms": 1783515299999,
+        "close_utc": "2026-07-08T12:54:59.999000+00:00",
+        "time_diff_min": 1.0,
+        "zone_gap_pct": 0.0
+      }
+    }
+  ]
+}

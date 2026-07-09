@@ -1,0 +1,218 @@
+{
+  "window": {
+    "start_local": "2026-07-03T00:00:00+03:00",
+    "end_local": "2026-07-09T23:59:59.999+03:00",
+    "start_utc": "2026-07-02T21:00:00+00:00",
+    "end_utc": "2026-07-09T20:59:59.999000+00:00"
+  },
+  "match_rule": {
+    "same_symbol": true,
+    "same_side": true,
+    "time_window": "min(180m, max(45m, 2*competitor_timeframe))",
+    "zone": "overlap or relative gap <= 0.5%",
+    "timeframe": "not required",
+    "signal_type": "loose recall allows any type; strict metric also computed"
+  },
+  "counts": {
+    "digash_total": 81,
+    "detector_raw_total": 422508,
+    "published_total_after_current_policy": 80450,
+    "detector_raw_by_day_local": {
+      "2026-07-03": 59459,
+      "2026-07-04": 50561,
+      "2026-07-05": 46419,
+      "2026-07-06": 62850,
+      "2026-07-07": 72652,
+      "2026-07-08": 70093,
+      "2026-07-09": 60474
+    },
+    "published_by_day_local": {
+      "2026-07-03": 10891,
+      "2026-07-04": 10023,
+      "2026-07-05": 9894,
+      "2026-07-06": 12323,
+      "2026-07-07": 13224,
+      "2026-07-08": 12321,
+      "2026-07-09": 11774
+    },
+    "published_by_type": {
+      "test": 58450,
+      "breakout": 22000
+    },
+    "detector_raw_by_type": {
+      "test": 388246,
+      "breakout": 34262
+    }
+  },
+  "policy_summary": {
+    "allowed_count": 147367,
+    "drop_counts": {
+      "allowed_filter": 275141,
+      "signal_key_pause": 48850,
+      "batch_limit": 18067
+    }
+  },
+  "recall": {
+    "detector_loose": {
+      "matched": 53,
+      "total": 81,
+      "recall_pct": 65.43
+    },
+    "detector_strict_type": {
+      "matched": 23,
+      "total": 81,
+      "recall_pct": 28.4
+    },
+    "published_loose": {
+      "matched": 42,
+      "total": 81,
+      "recall_pct": 51.85
+    },
+    "published_strict_type": {
+      "matched": 21,
+      "total": 81,
+      "recall_pct": 25.93
+    },
+    "detector_by_day": {
+      "2026-07-03": {
+        "matched": 6,
+        "total": 10,
+        "recall_pct": 60.0
+      },
+      "2026-07-04": {
+        "matched": 4,
+        "total": 8,
+        "recall_pct": 50.0
+      },
+      "2026-07-05": {
+        "matched": 2,
+        "total": 6,
+        "recall_pct": 33.33
+      },
+      "2026-07-06": {
+        "matched": 13,
+        "total": 20,
+        "recall_pct": 65.0
+      },
+      "2026-07-07": {
+        "matched": 13,
+        "total": 14,
+        "recall_pct": 92.86
+      },
+      "2026-07-08": {
+        "matched": 12,
+        "total": 18,
+        "recall_pct": 66.67
+      },
+      "2026-07-09": {
+        "matched": 3,
+        "total": 5,
+        "recall_pct": 60.0
+      }
+    },
+    "published_by_day": {
+      "2026-07-03": {
+        "matched": 4,
+        "total": 10,
+        "recall_pct": 40.0
+      },
+      "2026-07-04": {
+        "matched": 2,
+        "total": 8,
+        "recall_pct": 25.0
+      },
+      "2026-07-05": {
+        "matched": 2,
+        "total": 6,
+        "recall_pct": 33.33
+      },
+      "2026-07-06": {
+        "matched": 9,
+        "total": 20,
+        "recall_pct": 45.0
+      },
+      "2026-07-07": {
+        "matched": 11,
+        "total": 14,
+        "recall_pct": 78.57
+      },
+      "2026-07-08": {
+        "matched": 11,
+        "total": 18,
+        "recall_pct": 61.11
+      },
+      "2026-07-09": {
+        "matched": 3,
+        "total": 5,
+        "recall_pct": 60.0
+      }
+    }
+  },
+  "misses": {
+    "detector_count": 28,
+    "published_count": 39,
+    "detector_symbols": {
+      "BIRBUSDT": 1,
+      "ZKPUSDT": 1,
+      "BREVUSDT": 1,
+      "AERGOUSDT": 1,
+      "ARPAUSDT": 1,
+      "THEUSDT": 1,
+      "SLXUSDT": 2,
+      "XPLUSDT": 1,
+      "LABUSDT": 1,
+      "EPICUSDT": 2,
+      "OGNUSDT": 1,
+      "KORUUSDT": 2,
+      "SYNUSDT": 2,
+      "HOTUSDT": 1,
+      "ARXUSDT": 1,
+      "BTWUSDT": 1,
+      "1000BONKUSDT": 1,
+      "SNDRUSDT": 1,
+      "BLURUSDT": 1,
+      "SPCXUSDT": 1,
+      "CLOUSDT": 1,
+      "OUSDT": 1,
+      "OPGUSDT": 1,
+      "LDOUSDT": 1
+    },
+    "published_symbols": {
+      "BIRBUSDT": 1,
+      "ZKPUSDT": 1,
+      "BREVUSDT": 1,
+      "ALLOUSDT": 1,
+      "SNDKUSDT": 1,
+      "AERGOUSDT": 1,
+      "OUSDT": 2,
+      "ARPAUSDT": 1,
+      "THEUSDT": 1,
+      "SLXUSDT": 2,
+      "XPLUSDT": 1,
+      "REUSDT": 1,
+      "LABUSDT": 1,
+      "EPICUSDT": 3,
+      "OGNUSDT": 1,
+      "MUUSDT": 1,
+      "MRVLUSDT": 2,
+      "KORUUSDT": 2,
+      "SYNUSDT": 2,
+      "HOTUSDT": 1,
+      "ARXUSDT": 1,
+      "BTWUSDT": 1,
+      "OPGUSDT": 2,
+      "SPCXUSDT": 2,
+      "1000BONKUSDT": 1,
+      "SNDRUSDT": 1,
+      "BLURUSDT": 1,
+      "UNIUSDT": 1,
+      "CLOUSDT": 1,
+      "LDOUSDT": 1
+    }
+  },
+  "artifacts": {
+    "matches": "D:\\Кейсы тг боты\\Скринер\\apps\\bot\\calibration_artifacts\\digash-week-20260703-20260709\\baseline\\digash_baseline_matches.jsonl",
+    "published": "D:\\Кейсы тг боты\\Скринер\\apps\\bot\\calibration_artifacts\\digash-week-20260703-20260709\\baseline\\baseline_published_signals.jsonl",
+    "raw_window": "D:\\Кейсы тг боты\\Скринер\\apps\\bot\\calibration_artifacts\\digash-week-20260703-20260709\\baseline\\baseline_detector_candidates_window.jsonl"
+  }
+}

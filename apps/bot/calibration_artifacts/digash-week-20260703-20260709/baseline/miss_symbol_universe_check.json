@@ -1,0 +1,242 @@
+[
+  {
+    "symbol": "1000BONKUSDT",
+    "exists": true,
+    "status": "TRADING",
+    "contractType": "PERPETUAL",
+    "quoteAsset": "USDT",
+    "quoteVolume": 14168462.38944,
+    "passes_min_quote_volume_24h": false,
+    "min_quote_volume_24h": 60000000.0
+  },
+  {
+    "symbol": "AERGOUSDT",
+    "exists": true,
+    "status": "TRADING",
+    "contractType": "PERPETUAL",
+    "quoteAsset": "USDT",
+    "quoteVolume": 1626276.15186,
+    "passes_min_quote_volume_24h": false,
+    "min_quote_volume_24h": 60000000.0
+  },
+  {
+    "symbol": "ARPAUSDT",
+    "exists": true,
+    "status": "TRADING",
+    "contractType": "PERPETUAL",
+    "quoteAsset": "USDT",
+    "quoteVolume": 3262745.7264,
+    "passes_min_quote_volume_24h": false,
+    "min_quote_volume_24h": 60000000.0
+  },
+  {
+    "symbol": "ARXUSDT",
+    "exists": true,
+    "status": "TRADING",
+    "contractType": "PERPETUAL",
+    "quoteAsset": "USDT",
+    "quoteVolume": 44102316.8034,
+    "passes_min_quote_volume_24h": false,
+    "min_quote_volume_24h": 60000000.0
+  },
+  {
+    "symbol": "BIRBUSDT",
+    "exists": true,
+    "status": "TRADING",
+    "contractType": "PERPETUAL",
+    "quoteAsset": "USDT",
+    "quoteVolume": 8983618.42439,
+    "passes_min_quote_volume_24h": false,
+    "min_quote_volume_24h": 60000000.0
+  },
+  {
+    "symbol": "BLURUSDT",
+    "exists": true,
+    "status": "TRADING",
+    "contractType": "PERPETUAL",
+    "quoteAsset": "USDT",
+    "quoteVolume": 18370660.81026,
+    "passes_min_quote_volume_24h": false,
+    "min_quote_volume_24h": 60000000.0
+  },
+  {
+    "symbol": "BREVUSDT",
+    "exists": true,
+    "status": "TRADING",
+    "contractType": "PERPETUAL",
+    "quoteAsset": "USDT",
+    "quoteVolume": 3333188.02954,
+    "passes_min_quote_volume_24h": false,
+    "min_quote_volume_24h": 60000000.0
+  },
+  {
+    "symbol": "BTWUSDT",
+    "exists": true,
+    "status": "TRADING",
+    "contractType": "PERPETUAL",
+    "quoteAsset": "USDT",
+    "quoteVolume": 7925261.900774,
+    "passes_min_quote_volume_24h": false,
+    "min_quote_volume_24h": 60000000.0
+  },
+  {
+    "symbol": "CLOUSDT",
+    "exists": true,
+    "status": "TRADING",
+    "contractType": "PERPETUAL",
+    "quoteAsset": "USDT",
+    "quoteVolume": 16329148.11215,
+    "passes_min_quote_volume_24h": false,
+    "min_quote_volume_24h": 60000000.0
+  },
+  {
+    "symbol": "EPICUSDT",
+    "exists": true,
+    "status": "TRADING",
+    "contractType": "PERPETUAL",
+    "quoteAsset": "USDT",
+    "quoteVolume": 26493854.36877,
+    "passes_min_quote_volume_24h": false,
+    "min_quote_volume_24h": 60000000.0
+  },
+  {
+    "symbol": "HOTUSDT",
+    "exists": true,
+    "status": "TRADING",
+    "contractType": "PERPETUAL",
+    "quoteAsset": "USDT",
+    "quoteVolume": 1939192.859706,
+    "passes_min_quote_volume_24h": false,
+    "min_quote_volume_24h": 60000000.0
+  },
+  {
+    "symbol": "KORUUSDT",
+    "exists": true,
+    "status": "TRADING",
+    "contractType": "TRADIFI_PERPETUAL",
+    "quoteAsset": "USDT",
+    "quoteVolume": 1204885248.6934,
+    "passes_min_quote_volume_24h": true,
+    "min_quote_volume_24h": 60000000.0
+  },
+  {
+    "symbol": "LABUSDT",
+    "exists": true,
+    "status": "TRADING",
+    "contractType": "PERPETUAL",
+    "quoteAsset": "USDT",
+    "quoteVolume": 808997240.7072,
+    "passes_min_quote_volume_24h": true,
+    "min_quote_volume_24h": 60000000.0
+  },
+  {
+    "symbol": "LDOUSDT",
+    "exists": true,
+    "status": "TRADING",
+    "contractType": "PERPETUAL",
+    "quoteAsset": "USDT",
+    "quoteVolume": 41470052.2882,
+    "passes_min_quote_volume_24h": false,
+    "min_quote_volume_24h": 60000000.0
+  },
+  {
+    "symbol": "OGNUSDT",
+    "exists": true,
+    "status": "TRADING",
+    "contractType": "PERPETUAL",
+    "quoteAsset": "USDT",
+    "quoteVolume": 40568403.88185,
+    "passes_min_quote_volume_24h": false,
+    "min_quote_volume_24h": 60000000.0
+  },
+  {
+    "symbol": "OPGUSDT",
+    "exists": true,
+    "status": "TRADING",
+    "contractType": "PERPETUAL",
+    "quoteAsset": "USDT",
+    "quoteVolume": 9780515.2804,
+    "passes_min_quote_volume_24h": false,
+    "min_quote_volume_24h": 60000000.0
+  },
+  {
+    "symbol": "OUSDT",
+    "exists": true,
+    "status": "TRADING",
+    "contractType": "PERPETUAL",
+    "quoteAsset": "USDT",
+    "quoteVolume": 55706804.3584,
+    "passes_min_quote_volume_24h": false,
+    "min_quote_volume_24h": 60000000.0
+  },
+  {
+    "symbol": "SLXUSDT",
+    "exists": true,
+    "status": "TRADING",
+    "contractType": "PERPETUAL",
+    "quoteAsset": "USDT",
+    "quoteVolume": 56587594.65691,
+    "passes_min_quote_volume_24h": false,
+    "min_quote_volume_24h": 60000000.0
+  },
+  {
+    "symbol": "SNDRUSDT",
+    "exists": false,
+    "status": null,
+    "contractType": null,
+    "quoteAsset": null,
+    "quoteVolume": 0.0,
+    "passes_min_quote_volume_24h": false,
+    "min_quote_volume_24h": 60000000.0
+  },
+  {
+    "symbol": "SPCXUSDT",
+    "exists": true,
+    "status": "TRADING",
+    "contractType": "TRADIFI_PERPETUAL",
+    "quoteAsset": "USDT",
+    "quoteVolume": 868321058.9197,
+    "passes_min_quote_volume_24h": true,
+    "min_quote_volume_24h": 60000000.0
+  },
+  {
+    "symbol": "SYNUSDT",
+    "exists": true,
+    "status": "TRADING",
+    "contractType": "PERPETUAL",
+    "quoteAsset": "USDT",
+    "quoteVolume": 33653839.92721,
+    "passes_min_quote_volume_24h": false,
+    "min_quote_volume_24h": 60000000.0
+  },
+  {
+    "symbol": "THEUSDT",
+    "exists": true,
+    "status": "TRADING",
+    "contractType": "PERPETUAL",
+    "quoteAsset": "USDT",
+    "quoteVolume": 74576433.225216,
+    "passes_min_quote_volume_24h": true,
+    "min_quote_volume_24h": 60000000.0
+  },
+  {
+    "symbol": "XPLUSDT",
+    "exists": true,
+    "status": "TRADING",
+    "contractType": "PERPETUAL",
+    "quoteAsset": "USDT",
+    "quoteVolume": 29423086.70534,
+    "passes_min_quote_volume_24h": false,
+    "min_quote_volume_24h": 60000000.0
+  },
+  {
+    "symbol": "ZKPUSDT",
+    "exists": true,
+    "status": "TRADING",
+    "contractType": "PERPETUAL",
+    "quoteAsset": "USDT",
+    "quoteVolume": 2445322.27472,
+    "passes_min_quote_volume_24h": false,
+    "min_quote_volume_24h": 60000000.0
+  }
+]
