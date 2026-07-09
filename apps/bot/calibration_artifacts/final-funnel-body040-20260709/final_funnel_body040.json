@@ -1,0 +1,270 @@
+{
+  "detector_after_distance_and_score": {
+    "total": 862470,
+    "by_type": {
+      "test": 790892,
+      "breakout": 71578
+    },
+    "by_confidence": {
+      "confirmed": 243515,
+      "low_confidence": 618955
+    }
+  },
+  "old_policy": {
+    "sort_mode": "legacy",
+    "pause_scope": "symbol",
+    "allowed_count": 59403,
+    "published_count": 58937,
+    "published_by_type": {
+      "breakout": 42718,
+      "test": 16219
+    },
+    "allowed_by_type": {
+      "breakout": 71578,
+      "test": 34163
+    },
+    "drop_counts": {
+      "allowed_filter": 590609,
+      "symbol_pause": 212458,
+      "batch_limit": 466,
+      "cooldown": 0
+    },
+    "pause_drop_unique_signal_keys": 52415,
+    "pause_drop_unique_symbols": 57
+  },
+  "new_policy_legacy_sort_symbol_pause": {
+    "sort_mode": "legacy",
+    "pause_scope": "symbol",
+    "allowed_count": 119389,
+    "published_count": 101870,
+    "published_by_type": {
+      "breakout": 36769,
+      "test": 65101
+    },
+    "allowed_by_type": {
+      "test": 171937,
+      "breakout": 71578
+    },
+    "drop_counts": {
+      "allowed_filter": 433887,
+      "symbol_pause": 309194,
+      "batch_limit": 17519,
+      "cooldown": 0
+    },
+    "pause_drop_unique_signal_keys": 64981,
+    "pause_drop_unique_symbols": 57
+  },
+  "new_policy_score_sort_symbol_pause": {
+    "sort_mode": "score",
+    "pause_scope": "symbol",
+    "allowed_count": 119241,
+    "published_count": 101666,
+    "published_by_type": {
+      "test": 69730,
+      "breakout": 31936
+    },
+    "allowed_by_type": {
+      "test": 171937,
+      "breakout": 71578
+    },
+    "drop_counts": {
+      "allowed_filter": 438579,
+      "symbol_pause": 304650,
+      "batch_limit": 17575,
+      "cooldown": 0
+    },
+    "pause_drop_unique_signal_keys": 63964,
+    "pause_drop_unique_symbols": 57
+  },
+  "new_policy_score_sort_signal_key_pause": {
+    "sort_mode": "score",
+    "pause_scope": "signal_key",
+    "allowed_count": 156970,
+    "published_count": 132787,
+    "published_by_type": {
+      "test": 87511,
+      "breakout": 45276
+    },
+    "allowed_by_type": {
+      "test": 171937,
+      "breakout": 71578
+    },
+    "drop_counts": {
+      "allowed_filter": 618955,
+      "signal_key_pause": 86545,
+      "batch_limit": 24183,
+      "cooldown": 0
+    },
+    "pause_drop_unique_signal_keys": 19603,
+    "pause_drop_unique_symbols": 57
+  },
+  "target_symbols": {
+    "old_policy": {
+      "KORUUSDT": {
+        "detector_candidates": 21098,
+        "by_type": {
+          "test": 19559,
+          "breakout": 1539
+        },
+        "status_counts": {
+          "allowed_filter": 14574,
+          "symbol_pause": 5270,
+          "published": 1248,
+          "batch_limit": 6
+        }
+      },
+      "MUUSDT": {
+        "detector_candidates": 15881,
+        "by_type": {
+          "test": 14655,
+          "breakout": 1226
+        },
+        "status_counts": {
+          "allowed_filter": 11285,
+          "symbol_pause": 3506,
+          "published": 1080,
+          "batch_limit": 10
+        }
+      },
+      "OPGUSDT": {
+        "detector_candidates": 32117,
+        "by_type": {
+          "test": 29619,
+          "breakout": 2498
+        },
+        "status_counts": {
+          "allowed_filter": 18704,
+          "symbol_pause": 11438,
+          "published": 1968,
+          "batch_limit": 7
+        }
+      }
+    },
+    "new_policy_legacy_sort_symbol_pause": {
+      "KORUUSDT": {
+        "detector_candidates": 21098,
+        "by_type": {
+          "test": 19559,
+          "breakout": 1539
+        },
+        "status_counts": {
+          "published": 2243,
+          "allowed_filter": 10510,
+          "symbol_pause": 8140,
+          "batch_limit": 205
+        }
+      },
+      "MUUSDT": {
+        "detector_candidates": 15881,
+        "by_type": {
+          "test": 14655,
+          "breakout": 1226
+        },
+        "status_counts": {
+          "allowed_filter": 8050,
+          "symbol_pause": 5591,
+          "published": 1902,
+          "batch_limit": 338
+        }
+      },
+      "OPGUSDT": {
+        "detector_candidates": 32117,
+        "by_type": {
+          "test": 29619,
+          "breakout": 2498
+        },
+        "status_counts": {
+          "allowed_filter": 12292,
+          "symbol_pause": 16150,
+          "published": 3422,
+          "batch_limit": 253
+        }
+      }
+    },
+    "new_policy_score_sort_symbol_pause": {
+      "KORUUSDT": {
+        "detector_candidates": 21098,
+        "by_type": {
+          "test": 19559,
+          "breakout": 1539
+        },
+        "status_counts": {
+          "published": 2095,
+          "allowed_filter": 10733,
+          "symbol_pause": 7933,
+          "batch_limit": 337
+        }
+      },
+      "MUUSDT": {
+        "detector_candidates": 15881,
+        "by_type": {
+          "test": 14655,
+          "breakout": 1226
+        },
+        "status_counts": {
+          "allowed_filter": 8195,
+          "symbol_pause": 5443,
+          "batch_limit": 387,
+          "published": 1856
+        }
+      },
+      "OPGUSDT": {
+        "detector_candidates": 32117,
+        "by_type": {
+          "test": 29619,
+          "breakout": 2498
+        },
+        "status_counts": {
+          "allowed_filter": 12576,
+          "symbol_pause": 15880,
+          "batch_limit": 349,
+          "published": 3312
+        }
+      }
+    },
+    "new_policy_score_sort_signal_key_pause": {
+      "KORUUSDT": {
+        "detector_candidates": 21098,
+        "by_type": {
+          "test": 19559,
+          "breakout": 1539
+        },
+        "status_counts": {
+          "published": 2922,
+          "allowed_filter": 15671,
+          "batch_limit": 507,
+          "signal_key_pause": 1998
+        }
+      },
+      "MUUSDT": {
+        "detector_candidates": 15881,
+        "by_type": {
+          "test": 14655,
+          "breakout": 1226
+        },
+        "status_counts": {
+          "allowed_filter": 11676,
+          "batch_limit": 537,
+          "published": 2282,
+          "signal_key_pause": 1386
+        }
+      },
+      "OPGUSDT": {
+        "detector_candidates": 32117,
+        "by_type": {
+          "test": 29619,
+          "breakout": 2498
+        },
+        "status_counts": {
+          "allowed_filter": 22834,
+          "batch_limit": 553,
+          "published": 4774,
+          "signal_key_pause": 3956
+        }
+      }
+    }
+  },
+  "live_sorting_key": [
+    "score"
+  ]
+}
