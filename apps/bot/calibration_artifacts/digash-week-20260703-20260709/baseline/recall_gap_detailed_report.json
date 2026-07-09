@@ -1,0 +1,1194 @@
+{
+  "summary": {
+    "detector_recall_gap": {
+      "missed": 28,
+      "found": 53,
+      "total": 81,
+      "recall_pct": 65.43
+    },
+    "publication_recall_gap": {
+      "lost_after_detector_match": 11,
+      "published_found": 42,
+      "detector_found": 53
+    },
+    "production_scan_config_observed": {
+      "SCAN_TIMEFRAMES": [
+        "1m",
+        "5m",
+        "15m",
+        "1h"
+      ],
+      "MIN_QUOTE_VOLUME_24H": 60000000.0,
+      "SIGNAL_SYMBOL_ALLOWLIST": "empty",
+      "saved_old_baseline_universe_pairs_count": 57
+    },
+    "detector_primary_reason_counts": {
+      "universe/liquidity_below_60m": 17,
+      "time_alignment/no_candidate_in_match_window": 3,
+      "zone_matching/clustering_gap": 6,
+      "timeframe_coverage/4h_not_scanned_plus_zone_mismatch": 1,
+      "universe/not_on_exchangeinfo": 1
+    },
+    "detector_contributing_flag_counts": {
+      "below_MIN_QUOTE_VOLUME_24H_60M_at_check": 22,
+      "not_in_saved_57_symbol_baseline_universe": 18,
+      "timeframe_not_scanned": 3,
+      "same_side_candidates_exist_only_outside_match_window": 3,
+      "same_side_candidate_in_time_window_but_zone_gap_gt_0.5pct": 7,
+      "symbol_not_on_binance_futures_exchangeinfo": 1
+    },
+    "publication_drop_step_counts": {
+      "allowed_filter": 8,
+      "batch_limit": 3
+    },
+    "universe_detector_misses_count": 18,
+    "universe_detector_misses_symbols": [
+      "1000BONKUSDT",
+      "AERGOUSDT",
+      "ARPAUSDT",
+      "ARXUSDT",
+      "BIRBUSDT",
+      "BREVUSDT",
+      "BTWUSDT",
+      "CLOUSDT",
+      "HOTUSDT",
+      "LDOUSDT",
+      "OGNUSDT",
+      "SLXUSDT",
+      "SNDRUSDT",
+      "SYNUSDT",
+      "XPLUSDT",
+      "ZKPUSDT"
+    ]
+  },
+  "detector_misses": [
+    {
+      "timestamp": "2026-07-03T16:19:00+03:00",
+      "symbol": "BIRBUSDT",
+      "digash_timeframe": "1m",
+      "side": "support",
+      "digash_zone_low": 0.07429,
+      "digash_zone_high": 0.07481,
+      "primary_reason": "universe/liquidity_below_60m",
+      "reason_note": "???? ????????????? ? ??????????? baseline scan universe ? ??????? 24h quoteVolume ???? MIN_QUOTE_VOLUME_24H=60M.",
+      "raw_gap_reason": "symbol_no_detector_candidates_in_window_dataset",
+      "flags": [
+        "below_MIN_QUOTE_VOLUME_24H_60M_at_check",
+        "not_in_saved_57_symbol_baseline_universe"
+      ],
+      "binance_exists": true,
+      "current_quote_volume_24h": 8983618.42439,
+      "passes_MIN_QUOTE_VOLUME_24H_60M_at_check": false,
+      "in_saved_57_symbol_baseline_universe": false,
+      "production_timeframes": [
+        "1h",
+        "1m",
+        "5m",
+        "15m"
+      ],
+      "nearest_candidate_evidence": null
+    },
+    {
+      "timestamp": "2026-07-03T15:33:00+03:00",
+      "symbol": "ZKPUSDT",
+      "digash_timeframe": "1m",
+      "side": "support",
+      "digash_zone_low": 0.058,
+      "digash_zone_high": 0.05825,
+      "primary_reason": "universe/liquidity_below_60m",
+      "reason_note": "???? ????????????? ? ??????????? baseline scan universe ? ??????? 24h quoteVolume ???? MIN_QUOTE_VOLUME_24H=60M.",
+      "raw_gap_reason": "symbol_no_detector_candidates_in_window_dataset",
+      "flags": [
+        "below_MIN_QUOTE_VOLUME_24H_60M_at_check",
+        "not_in_saved_57_symbol_baseline_universe"
+      ],
+      "binance_exists": true,
+      "current_quote_volume_24h": 2445322.27472,
+      "passes_MIN_QUOTE_VOLUME_24H_60M_at_check": false,
+      "in_saved_57_symbol_baseline_universe": false,
+      "production_timeframes": [
+        "1h",
+        "1m",
+        "5m",
+        "15m"
+      ],
+      "nearest_candidate_evidence": null
+    },
+    {
+      "timestamp": "2026-07-03T13:08:00+03:00",
+      "symbol": "BREVUSDT",
+      "digash_timeframe": "3m",
+      "side": "resistance",
+      "digash_zone_low": 0.08371,
+      "digash_zone_high": 0.08399,
+      "primary_reason": "universe/liquidity_below_60m",
+      "reason_note": "???? ????????????? ? ??????????? baseline scan universe ? ??????? 24h quoteVolume ???? MIN_QUOTE_VOLUME_24H=60M.",
+      "raw_gap_reason": "symbol_no_detector_candidates_in_window_dataset",
+      "flags": [
+        "timeframe_not_scanned",
+        "below_MIN_QUOTE_VOLUME_24H_60M_at_check",
+        "not_in_saved_57_symbol_baseline_universe"
+      ],
+      "binance_exists": true,
+      "current_quote_volume_24h": 3333188.02954,
+      "passes_MIN_QUOTE_VOLUME_24H_60M_at_check": false,
+      "in_saved_57_symbol_baseline_universe": false,
+      "production_timeframes": [
+        "1h",
+        "1m",
+        "5m",
+        "15m"
+      ],
+      "nearest_candidate_evidence": null
+    },
+    {
+      "timestamp": "2026-07-03T02:36:00+03:00",
+      "symbol": "AERGOUSDT",
+      "digash_timeframe": "1m",
+      "side": "support",
+      "digash_zone_low": 0.02887,
+      "digash_zone_high": 0.02893,
+      "primary_reason": "universe/liquidity_below_60m",
+      "reason_note": "???? ????????????? ? ??????????? baseline scan universe ? ??????? 24h quoteVolume ???? MIN_QUOTE_VOLUME_24H=60M.",
+      "raw_gap_reason": "symbol_no_detector_candidates_in_window_dataset",
+      "flags": [
+        "below_MIN_QUOTE_VOLUME_24H_60M_at_check",
+        "not_in_saved_57_symbol_baseline_universe"
+      ],
+      "binance_exists": true,
+      "current_quote_volume_24h": 1626276.15186,
+      "passes_MIN_QUOTE_VOLUME_24H_60M_at_check": false,
+      "in_saved_57_symbol_baseline_universe": false,
+      "production_timeframes": [
+        "1h",
+        "1m",
+        "5m",
+        "15m"
+      ],
+      "nearest_candidate_evidence": null
+    },
+    {
+      "timestamp": "2026-07-04T18:16:00+03:00",
+      "symbol": "ARPAUSDT",
+      "digash_timeframe": "1m",
+      "side": "support",
+      "digash_zone_low": 0.01037,
+      "digash_zone_high": 0.01039,
+      "primary_reason": "universe/liquidity_below_60m",
+      "reason_note": "???? ????????????? ? ??????????? baseline scan universe ? ??????? 24h quoteVolume ???? MIN_QUOTE_VOLUME_24H=60M.",
+      "raw_gap_reason": "symbol_no_detector_candidates_in_window_dataset",
+      "flags": [
+        "below_MIN_QUOTE_VOLUME_24H_60M_at_check",
+        "not_in_saved_57_symbol_baseline_universe"
+      ],
+      "binance_exists": true,
+      "current_quote_volume_24h": 3262745.7264,
+      "passes_MIN_QUOTE_VOLUME_24H_60M_at_check": false,
+      "in_saved_57_symbol_baseline_universe": false,
+      "production_timeframes": [
+        "1h",
+        "1m",
+        "5m",
+        "15m"
+      ],
+      "nearest_candidate_evidence": null
+    },
+    {
+      "timestamp": "2026-07-04T17:58:00+03:00",
+      "symbol": "THEUSDT",
+      "digash_timeframe": "1m",
+      "side": "support",
+      "digash_zone_low": 0.06271,
+      "digash_zone_high": 0.06276,
+      "primary_reason": "time_alignment/no_candidate_in_match_window",
+      "reason_note": "Same-side ????????? ?? ???? ????, ?? ????????? ??? ??????????? ????; ? ?????? ?????? detector ?? ??? ??????? ????????.",
+      "raw_gap_reason": "same_side_candidates_exist_but_outside_time_window",
+      "flags": [
+        "same_side_candidates_exist_only_outside_match_window"
+      ],
+      "binance_exists": true,
+      "current_quote_volume_24h": 74576433.225216,
+      "passes_MIN_QUOTE_VOLUME_24H_60M_at_check": true,
+      "in_saved_57_symbol_baseline_universe": false,
+      "production_timeframes": [
+        "1h",
+        "1m",
+        "5m",
+        "15m"
+      ],
+      "nearest_candidate_evidence": {
+        "symbol": "THEUSDT",
+        "timeframe": "1m",
+        "side": "support",
+        "type": "test",
+        "zone_low": 0.05303,
+        "zone_high": 0.05303,
+        "close_utc": "2026-07-08T01:13:59.999000+00:00",
+        "time_diff_min": 4936.0,
+        "zone_gap_pct": 16.7235,
+        "score": 60.32,
+        "confidence": "low_confidence",
+        "status": "allowed_filter"
+      }
+    },
+    {
+      "timestamp": "2026-07-04T16:18:00+03:00",
+      "symbol": "SLXUSDT",
+      "digash_timeframe": "1m",
+      "side": "support",
+      "digash_zone_low": 0.35214,
+      "digash_zone_high": 0.35431,
+      "primary_reason": "universe/liquidity_below_60m",
+      "reason_note": "???? ????????????? ? ??????????? baseline scan universe ? ??????? 24h quoteVolume ???? MIN_QUOTE_VOLUME_24H=60M.",
+      "raw_gap_reason": "symbol_no_detector_candidates_in_window_dataset",
+      "flags": [
+        "below_MIN_QUOTE_VOLUME_24H_60M_at_check",
+        "not_in_saved_57_symbol_baseline_universe"
+      ],
+      "binance_exists": true,
+      "current_quote_volume_24h": 56587594.65691,
+      "passes_MIN_QUOTE_VOLUME_24H_60M_at_check": false,
+      "in_saved_57_symbol_baseline_universe": false,
+      "production_timeframes": [
+        "1h",
+        "1m",
+        "5m",
+        "15m"
+      ],
+      "nearest_candidate_evidence": null
+    },
+    {
+      "timestamp": "2026-07-04T05:03:00+03:00",
+      "symbol": "XPLUSDT",
+      "digash_timeframe": "1m",
+      "side": "resistance",
+      "digash_zone_low": 0.10787,
+      "digash_zone_high": 0.10838,
+      "primary_reason": "universe/liquidity_below_60m",
+      "reason_note": "???? ????????????? ? ??????????? baseline scan universe ? ??????? 24h quoteVolume ???? MIN_QUOTE_VOLUME_24H=60M.",
+      "raw_gap_reason": "symbol_no_detector_candidates_in_window_dataset",
+      "flags": [
+        "below_MIN_QUOTE_VOLUME_24H_60M_at_check",
+        "not_in_saved_57_symbol_baseline_universe"
+      ],
+      "binance_exists": true,
+      "current_quote_volume_24h": 29423086.70534,
+      "passes_MIN_QUOTE_VOLUME_24H_60M_at_check": false,
+      "in_saved_57_symbol_baseline_universe": false,
+      "production_timeframes": [
+        "1h",
+        "1m",
+        "5m",
+        "15m"
+      ],
+      "nearest_candidate_evidence": null
+    },
+    {
+      "timestamp": "2026-07-05T20:32:00+03:00",
+      "symbol": "LABUSDT",
+      "digash_timeframe": "1m",
+      "side": "support",
+      "digash_zone_low": 16.38,
+      "digash_zone_high": 16.5,
+      "primary_reason": "zone_matching/clustering_gap",
+      "reason_note": "??? detector ????? ?? ?? ????/??????? ? ?????????? ????????? ????, ?? ????????? ???? ?? ??????????? ? gap > 0.5%.",
+      "raw_gap_reason": "same_side_time_match_but_zone_not_close",
+      "flags": [
+        "same_side_candidate_in_time_window_but_zone_gap_gt_0.5pct"
+      ],
+      "binance_exists": true,
+      "current_quote_volume_24h": 808997240.7072,
+      "passes_MIN_QUOTE_VOLUME_24H_60M_at_check": true,
+      "in_saved_57_symbol_baseline_universe": true,
+      "production_timeframes": [
+        "1h",
+        "1m",
+        "5m",
+        "15m"
+      ],
+      "nearest_candidate_evidence": {
+        "symbol": "LABUSDT",
+        "timeframe": "5m",
+        "side": "support",
+        "type": "breakout",
+        "zone_low": 16.192,
+        "zone_high": 16.258,
+        "close_utc": "2026-07-05T17:34:59.999000+00:00",
+        "time_diff_min": 3.0,
+        "zone_gap_pct": 0.747,
+        "score": 78.16,
+        "confidence": "confirmed",
+        "status": "published"
+      }
+    },
+    {
+      "timestamp": "2026-07-05T12:46:00+03:00",
+      "symbol": "EPICUSDT",
+      "digash_timeframe": "1h",
+      "side": "support",
+      "digash_zone_low": 0.3665,
+      "digash_zone_high": 0.3946,
+      "primary_reason": "zone_matching/clustering_gap",
+      "reason_note": "??? detector ????? ?? ?? ????/??????? ? ?????????? ????????? ????, ?? ????????? ???? ?? ??????????? ? gap > 0.5%.",
+      "raw_gap_reason": "same_side_time_match_but_zone_not_close",
+      "flags": [
+        "below_MIN_QUOTE_VOLUME_24H_60M_at_check",
+        "same_side_candidate_in_time_window_but_zone_gap_gt_0.5pct"
+      ],
+      "binance_exists": true,
+      "current_quote_volume_24h": 26493854.36877,
+      "passes_MIN_QUOTE_VOLUME_24H_60M_at_check": false,
+      "in_saved_57_symbol_baseline_universe": true,
+      "production_timeframes": [
+        "1h",
+        "1m",
+        "5m",
+        "15m"
+      ],
+      "nearest_candidate_evidence": {
+        "symbol": "EPICUSDT",
+        "timeframe": "1m",
+        "side": "support",
+        "type": "test",
+        "zone_low": 0.42,
+        "zone_high": 0.42,
+        "close_utc": "2026-07-05T09:44:59.999000+00:00",
+        "time_diff_min": 1.0,
+        "zone_gap_pct": 6.3456,
+        "score": 61.23,
+        "confidence": "low_confidence",
+        "status": "signal_key_pause"
+      }
+    },
+    {
+      "timestamp": "2026-07-05T09:25:00+03:00",
+      "symbol": "OGNUSDT",
+      "digash_timeframe": "1m",
+      "side": "support",
+      "digash_zone_low": 0.01795,
+      "digash_zone_high": 0.01796,
+      "primary_reason": "universe/liquidity_below_60m",
+      "reason_note": "???? ????????????? ? ??????????? baseline scan universe ? ??????? 24h quoteVolume ???? MIN_QUOTE_VOLUME_24H=60M.",
+      "raw_gap_reason": "symbol_no_detector_candidates_in_window_dataset",
+      "flags": [
+        "below_MIN_QUOTE_VOLUME_24H_60M_at_check",
+        "not_in_saved_57_symbol_baseline_universe"
+      ],
+      "binance_exists": true,
+      "current_quote_volume_24h": 40568403.88185,
+      "passes_MIN_QUOTE_VOLUME_24H_60M_at_check": false,
+      "in_saved_57_symbol_baseline_universe": false,
+      "production_timeframes": [
+        "1h",
+        "1m",
+        "5m",
+        "15m"
+      ],
+      "nearest_candidate_evidence": null
+    },
+    {
+      "timestamp": "2026-07-05T03:18:00+03:00",
+      "symbol": "EPICUSDT",
+      "digash_timeframe": "4h",
+      "side": "resistance",
+      "digash_zone_low": 0.768,
+      "digash_zone_high": 0.8262,
+      "primary_reason": "timeframe_coverage/4h_not_scanned_plus_zone_mismatch",
+      "reason_note": "Digash ?????? ?? 4h; production ?? ????????? 4h. ????????? ???? lower-TF ???? ? ???? ???? ?????? 0.5%.",
+      "raw_gap_reason": "same_side_time_match_but_zone_not_close",
+      "flags": [
+        "timeframe_not_scanned",
+        "below_MIN_QUOTE_VOLUME_24H_60M_at_check",
+        "same_side_candidate_in_time_window_but_zone_gap_gt_0.5pct"
+      ],
+      "binance_exists": true,
+      "current_quote_volume_24h": 26493854.36877,
+      "passes_MIN_QUOTE_VOLUME_24H_60M_at_check": false,
+      "in_saved_57_symbol_baseline_universe": true,
+      "production_timeframes": [
+        "1h",
+        "1m",
+        "5m",
+        "15m"
+      ],
+      "nearest_candidate_evidence": {
+        "symbol": "EPICUSDT",
+        "timeframe": "1m",
+        "side": "resistance",
+        "type": "test",
+        "zone_low": 0.7495,
+        "zone_high": 0.7495,
+        "close_utc": "2026-07-05T00:17:59.999000+00:00",
+        "time_diff_min": 0.0,
+        "zone_gap_pct": 2.3923,
+        "score": 61.25,
+        "confidence": "low_confidence",
+        "status": "published"
+      }
+    },
+    {
+      "timestamp": "2026-07-06T15:30:00+03:00",
+      "symbol": "KORUUSDT",
+      "digash_timeframe": "1m",
+      "side": "support",
+      "digash_zone_low": 621.3,
+      "digash_zone_high": 622.12,
+      "primary_reason": "zone_matching/clustering_gap",
+      "reason_note": "??? detector ????? ?? ?? ????/??????? ? ?????????? ????????? ????, ?? ????????? ???? ?? ??????????? ? gap > 0.5%.",
+      "raw_gap_reason": "same_side_time_match_but_zone_not_close",
+      "flags": [
+        "same_side_candidate_in_time_window_but_zone_gap_gt_0.5pct"
+      ],
+      "binance_exists": true,
+      "current_quote_volume_24h": 1204885248.6934,
+      "passes_MIN_QUOTE_VOLUME_24H_60M_at_check": true,
+      "in_saved_57_symbol_baseline_universe": true,
+      "production_timeframes": [
+        "1h",
+        "1m",
+        "5m",
+        "15m"
+      ],
+      "nearest_candidate_evidence": {
+        "symbol": "KORUUSDT",
+        "timeframe": "5m",
+        "side": "support",
+        "type": "test",
+        "zone_low": 628.11,
+        "zone_high": 628.11,
+        "close_utc": "2026-07-06T12:29:59.999000+00:00",
+        "time_diff_min": 0.0,
+        "zone_gap_pct": 0.9585,
+        "score": 60.01,
+        "confidence": "low_confidence",
+        "status": "allowed_filter"
+      }
+    },
+    {
+      "timestamp": "2026-07-06T13:00:00+03:00",
+      "symbol": "SYNUSDT",
+      "digash_timeframe": "1m",
+      "side": "support",
+      "digash_zone_low": 0.36839,
+      "digash_zone_high": 0.3691,
+      "primary_reason": "universe/liquidity_below_60m",
+      "reason_note": "???? ????????????? ? ??????????? baseline scan universe ? ??????? 24h quoteVolume ???? MIN_QUOTE_VOLUME_24H=60M.",
+      "raw_gap_reason": "symbol_no_detector_candidates_in_window_dataset",
+      "flags": [
+        "below_MIN_QUOTE_VOLUME_24H_60M_at_check",
+        "not_in_saved_57_symbol_baseline_universe"
+      ],
+      "binance_exists": true,
+      "current_quote_volume_24h": 33653839.92721,
+      "passes_MIN_QUOTE_VOLUME_24H_60M_at_check": false,
+      "in_saved_57_symbol_baseline_universe": false,
+      "production_timeframes": [
+        "1h",
+        "1m",
+        "5m",
+        "15m"
+      ],
+      "nearest_candidate_evidence": null
+    },
+    {
+      "timestamp": "2026-07-06T12:04:00+03:00",
+      "symbol": "SLXUSDT",
+      "digash_timeframe": "1m",
+      "side": "support",
+      "digash_zone_low": 0.20881,
+      "digash_zone_high": 0.20916,
+      "primary_reason": "universe/liquidity_below_60m",
+      "reason_note": "???? ????????????? ? ??????????? baseline scan universe ? ??????? 24h quoteVolume ???? MIN_QUOTE_VOLUME_24H=60M.",
+      "raw_gap_reason": "symbol_no_detector_candidates_in_window_dataset",
+      "flags": [
+        "below_MIN_QUOTE_VOLUME_24H_60M_at_check",
+        "not_in_saved_57_symbol_baseline_universe"
+      ],
+      "binance_exists": true,
+      "current_quote_volume_24h": 56587594.65691,
+      "passes_MIN_QUOTE_VOLUME_24H_60M_at_check": false,
+      "in_saved_57_symbol_baseline_universe": false,
+      "production_timeframes": [
+        "1h",
+        "1m",
+        "5m",
+        "15m"
+      ],
+      "nearest_candidate_evidence": null
+    },
+    {
+      "timestamp": "2026-07-06T07:41:00+03:00",
+      "symbol": "HOTUSDT",
+      "digash_timeframe": "1m",
+      "side": "resistance",
+      "digash_zone_low": 0.0003685,
+      "digash_zone_high": 0.0003698,
+      "primary_reason": "universe/liquidity_below_60m",
+      "reason_note": "???? ????????????? ? ??????????? baseline scan universe ? ??????? 24h quoteVolume ???? MIN_QUOTE_VOLUME_24H=60M.",
+      "raw_gap_reason": "symbol_no_detector_candidates_in_window_dataset",
+      "flags": [
+        "below_MIN_QUOTE_VOLUME_24H_60M_at_check",
+        "not_in_saved_57_symbol_baseline_universe"
+      ],
+      "binance_exists": true,
+      "current_quote_volume_24h": 1939192.859706,
+      "passes_MIN_QUOTE_VOLUME_24H_60M_at_check": false,
+      "in_saved_57_symbol_baseline_universe": false,
+      "production_timeframes": [
+        "1h",
+        "1m",
+        "5m",
+        "15m"
+      ],
+      "nearest_candidate_evidence": null
+    },
+    {
+      "timestamp": "2026-07-06T05:30:00+03:00",
+      "symbol": "ARXUSDT",
+      "digash_timeframe": "1m",
+      "side": "support",
+      "digash_zone_low": 0.2321,
+      "digash_zone_high": 0.233,
+      "primary_reason": "universe/liquidity_below_60m",
+      "reason_note": "???? ????????????? ? ??????????? baseline scan universe ? ??????? 24h quoteVolume ???? MIN_QUOTE_VOLUME_24H=60M.",
+      "raw_gap_reason": "symbol_no_detector_candidates_in_window_dataset",
+      "flags": [
+        "below_MIN_QUOTE_VOLUME_24H_60M_at_check",
+        "not_in_saved_57_symbol_baseline_universe"
+      ],
+      "binance_exists": true,
+      "current_quote_volume_24h": 44102316.8034,
+      "passes_MIN_QUOTE_VOLUME_24H_60M_at_check": false,
+      "in_saved_57_symbol_baseline_universe": false,
+      "production_timeframes": [
+        "1h",
+        "1m",
+        "5m",
+        "15m"
+      ],
+      "nearest_candidate_evidence": null
+    },
+    {
+      "timestamp": "2026-07-06T02:50:00+03:00",
+      "symbol": "KORUUSDT",
+      "digash_timeframe": "5m",
+      "side": "support",
+      "digash_zone_low": 615.0,
+      "digash_zone_high": 616.95,
+      "primary_reason": "zone_matching/clustering_gap",
+      "reason_note": "??? detector ????? ?? ?? ????/??????? ? ?????????? ????????? ????, ?? ????????? ???? ?? ??????????? ? gap > 0.5%.",
+      "raw_gap_reason": "same_side_time_match_but_zone_not_close",
+      "flags": [
+        "same_side_candidate_in_time_window_but_zone_gap_gt_0.5pct"
+      ],
+      "binance_exists": true,
+      "current_quote_volume_24h": 1204885248.6934,
+      "passes_MIN_QUOTE_VOLUME_24H_60M_at_check": true,
+      "in_saved_57_symbol_baseline_universe": true,
+      "production_timeframes": [
+        "1h",
+        "1m",
+        "5m",
+        "15m"
+      ],
+      "nearest_candidate_evidence": {
+        "symbol": "KORUUSDT",
+        "timeframe": "1m",
+        "side": "support",
+        "type": "test",
+        "zone_low": 633.07,
+        "zone_high": 633.07,
+        "close_utc": "2026-07-05T23:21:59.999000+00:00",
+        "time_diff_min": 28.0,
+        "zone_gap_pct": 2.5812,
+        "score": 61.23,
+        "confidence": "low_confidence",
+        "status": "signal_key_pause"
+      }
+    },
+    {
+      "timestamp": "2026-07-06T02:28:00+03:00",
+      "symbol": "BTWUSDT",
+      "digash_timeframe": "1m",
+      "side": "resistance",
+      "digash_zone_low": 0.07642,
+      "digash_zone_high": 0.07694,
+      "primary_reason": "universe/liquidity_below_60m",
+      "reason_note": "???? ????????????? ? ??????????? baseline scan universe ? ??????? 24h quoteVolume ???? MIN_QUOTE_VOLUME_24H=60M.",
+      "raw_gap_reason": "symbol_no_detector_candidates_in_window_dataset",
+      "flags": [
+        "below_MIN_QUOTE_VOLUME_24H_60M_at_check",
+        "not_in_saved_57_symbol_baseline_universe"
+      ],
+      "binance_exists": true,
+      "current_quote_volume_24h": 7925261.900774,
+      "passes_MIN_QUOTE_VOLUME_24H_60M_at_check": false,
+      "in_saved_57_symbol_baseline_universe": false,
+      "production_timeframes": [
+        "1h",
+        "1m",
+        "5m",
+        "15m"
+      ],
+      "nearest_candidate_evidence": null
+    },
+    {
+      "timestamp": "2026-07-07T04:33:00+03:00",
+      "symbol": "1000BONKUSDT",
+      "digash_timeframe": "1m",
+      "side": "resistance",
+      "digash_zone_low": 0.004487,
+      "digash_zone_high": 0.004508,
+      "primary_reason": "universe/liquidity_below_60m",
+      "reason_note": "???? ????????????? ? ??????????? baseline scan universe ? ??????? 24h quoteVolume ???? MIN_QUOTE_VOLUME_24H=60M.",
+      "raw_gap_reason": "symbol_no_detector_candidates_in_window_dataset",
+      "flags": [
+        "below_MIN_QUOTE_VOLUME_24H_60M_at_check",
+        "not_in_saved_57_symbol_baseline_universe"
+      ],
+      "binance_exists": true,
+      "current_quote_volume_24h": 14168462.38944,
+      "passes_MIN_QUOTE_VOLUME_24H_60M_at_check": false,
+      "in_saved_57_symbol_baseline_universe": false,
+      "production_timeframes": [
+        "1h",
+        "1m",
+        "5m",
+        "15m"
+      ],
+      "nearest_candidate_evidence": null
+    },
+    {
+      "timestamp": "2026-07-08T22:51:00+03:00",
+      "symbol": "SNDRUSDT",
+      "digash_timeframe": "5m",
+      "side": "resistance",
+      "digash_zone_low": 1707.62,
+      "digash_zone_high": 1714.99,
+      "primary_reason": "universe/not_on_exchangeinfo",
+      "reason_note": "?????? ?? ?????? ? ??????? Binance Futures exchangeInfo; production scanner ?? ?????? ??? ?????????? ??? ??????? USDT perpetual.",
+      "raw_gap_reason": "symbol_no_detector_candidates_in_window_dataset",
+      "flags": [
+        "symbol_not_on_binance_futures_exchangeinfo",
+        "not_in_saved_57_symbol_baseline_universe"
+      ],
+      "binance_exists": false,
+      "current_quote_volume_24h": 0.0,
+      "passes_MIN_QUOTE_VOLUME_24H_60M_at_check": false,
+      "in_saved_57_symbol_baseline_universe": false,
+      "production_timeframes": [
+        "1h",
+        "1m",
+        "5m",
+        "15m"
+      ],
+      "nearest_candidate_evidence": null
+    },
+    {
+      "timestamp": "2026-07-08T19:31:00+03:00",
+      "symbol": "BLURUSDT",
+      "digash_timeframe": "5m",
+      "side": "resistance",
+      "digash_zone_low": 0.01927,
+      "digash_zone_high": 0.01935,
+      "primary_reason": "time_alignment/no_candidate_in_match_window",
+      "reason_note": "Same-side ????????? ?? ???? ????, ?? ????????? ??? ??????????? ????; ? ?????? ?????? detector ?? ??? ??????? ????????.",
+      "raw_gap_reason": "same_side_candidates_exist_but_outside_time_window",
+      "flags": [
+        "below_MIN_QUOTE_VOLUME_24H_60M_at_check",
+        "same_side_candidates_exist_only_outside_match_window"
+      ],
+      "binance_exists": true,
+      "current_quote_volume_24h": 18370660.81026,
+      "passes_MIN_QUOTE_VOLUME_24H_60M_at_check": false,
+      "in_saved_57_symbol_baseline_universe": true,
+      "production_timeframes": [
+        "1h",
+        "1m",
+        "5m",
+        "15m"
+      ],
+      "nearest_candidate_evidence": {
+        "symbol": "BLURUSDT",
+        "timeframe": "1m",
+        "side": "resistance",
+        "type": "test",
+        "zone_low": 0.0197,
+        "zone_high": 0.0197,
+        "close_utc": "2026-07-08T01:06:59.999000+00:00",
+        "time_diff_min": 924.0,
+        "zone_gap_pct": 1.7944,
+        "score": 50.87,
+        "confidence": "low_confidence",
+        "status": "allowed_filter"
+      }
+    },
+    {
+      "timestamp": "2026-07-08T17:58:00+03:00",
+      "symbol": "SPCXUSDT",
+      "digash_timeframe": "1m",
+      "side": "support",
+      "digash_zone_low": 148.39,
+      "digash_zone_high": 148.5,
+      "primary_reason": "zone_matching/clustering_gap",
+      "reason_note": "??? detector ????? ?? ?? ????/??????? ? ?????????? ????????? ????, ?? ????????? ???? ?? ??????????? ? gap > 0.5%.",
+      "raw_gap_reason": "same_side_time_match_but_zone_not_close",
+      "flags": [
+        "same_side_candidate_in_time_window_but_zone_gap_gt_0.5pct"
+      ],
+      "binance_exists": true,
+      "current_quote_volume_24h": 868321058.9197,
+      "passes_MIN_QUOTE_VOLUME_24H_60M_at_check": true,
+      "in_saved_57_symbol_baseline_universe": true,
+      "production_timeframes": [
+        "1h",
+        "1m",
+        "5m",
+        "15m"
+      ],
+      "nearest_candidate_evidence": {
+        "symbol": "SPCXUSDT",
+        "timeframe": "1h",
+        "side": "support",
+        "type": "breakout",
+        "zone_low": 152.01,
+        "zone_high": 155.7,
+        "close_utc": "2026-07-08T14:59:59.999000+00:00",
+        "time_diff_min": 2.0,
+        "zone_gap_pct": 2.3222,
+        "score": 78.9,
+        "confidence": "confirmed",
+        "status": "published"
+      }
+    },
+    {
+      "timestamp": "2026-07-08T11:49:00+03:00",
+      "symbol": "CLOUSDT",
+      "digash_timeframe": "1m",
+      "side": "resistance",
+      "digash_zone_low": 0.2185,
+      "digash_zone_high": 0.21977,
+      "primary_reason": "universe/liquidity_below_60m",
+      "reason_note": "???? ????????????? ? ??????????? baseline scan universe ? ??????? 24h quoteVolume ???? MIN_QUOTE_VOLUME_24H=60M.",
+      "raw_gap_reason": "symbol_no_detector_candidates_in_window_dataset",
+      "flags": [
+        "below_MIN_QUOTE_VOLUME_24H_60M_at_check",
+        "not_in_saved_57_symbol_baseline_universe"
+      ],
+      "binance_exists": true,
+      "current_quote_volume_24h": 16329148.11215,
+      "passes_MIN_QUOTE_VOLUME_24H_60M_at_check": false,
+      "in_saved_57_symbol_baseline_universe": false,
+      "production_timeframes": [
+        "1h",
+        "1m",
+        "5m",
+        "15m"
+      ],
+      "nearest_candidate_evidence": null
+    },
+    {
+      "timestamp": "2026-07-08T09:55:00+03:00",
+      "symbol": "OUSDT",
+      "digash_timeframe": "15m",
+      "side": "support",
+      "digash_zone_low": 0.5266,
+      "digash_zone_high": 0.5315,
+      "primary_reason": "time_alignment/no_candidate_in_match_window",
+      "reason_note": "Same-side ????????? ?? ???? ????, ?? ????????? ??? ??????????? ????; ? ?????? ?????? detector ?? ??? ??????? ????????.",
+      "raw_gap_reason": "same_side_candidates_exist_but_outside_time_window",
+      "flags": [
+        "below_MIN_QUOTE_VOLUME_24H_60M_at_check",
+        "same_side_candidates_exist_only_outside_match_window"
+      ],
+      "binance_exists": true,
+      "current_quote_volume_24h": 55706804.3584,
+      "passes_MIN_QUOTE_VOLUME_24H_60M_at_check": false,
+      "in_saved_57_symbol_baseline_universe": true,
+      "production_timeframes": [
+        "1h",
+        "1m",
+        "5m",
+        "15m"
+      ],
+      "nearest_candidate_evidence": {
+        "symbol": "OUSDT",
+        "timeframe": "1m",
+        "side": "support",
+        "type": "breakout",
+        "zone_low": 0.5553,
+        "zone_high": 0.5576,
+        "close_utc": "2026-07-08T01:08:59.999000+00:00",
+        "time_diff_min": 346.0,
+        "zone_gap_pct": 4.3851,
+        "score": 78.95,
+        "confidence": "confirmed",
+        "status": "published"
+      }
+    },
+    {
+      "timestamp": "2026-07-08T02:52:00+03:00",
+      "symbol": "OPGUSDT",
+      "digash_timeframe": "3m",
+      "side": "resistance",
+      "digash_zone_low": 0.1292,
+      "digash_zone_high": 0.1294,
+      "primary_reason": "zone_matching/clustering_gap",
+      "reason_note": "??? detector ????? ?? ?? ????/??????? ? ?????????? ????????? ????, ?? ????????? ???? ?? ??????????? ? gap > 0.5%.",
+      "raw_gap_reason": "same_side_time_match_but_zone_not_close",
+      "flags": [
+        "timeframe_not_scanned",
+        "below_MIN_QUOTE_VOLUME_24H_60M_at_check",
+        "same_side_candidate_in_time_window_but_zone_gap_gt_0.5pct"
+      ],
+      "binance_exists": true,
+      "current_quote_volume_24h": 9780515.2804,
+      "passes_MIN_QUOTE_VOLUME_24H_60M_at_check": false,
+      "in_saved_57_symbol_baseline_universe": true,
+      "production_timeframes": [
+        "1h",
+        "1m",
+        "5m",
+        "15m"
+      ],
+      "nearest_candidate_evidence": {
+        "symbol": "OPGUSDT",
+        "timeframe": "1m",
+        "side": "resistance",
+        "type": "test",
+        "zone_low": 0.1283,
+        "zone_high": 0.1283,
+        "close_utc": "2026-07-07T23:51:59.999000+00:00",
+        "time_diff_min": 0.0,
+        "zone_gap_pct": 0.6988,
+        "score": 53.79,
+        "confidence": "low_confidence",
+        "status": "allowed_filter"
+      }
+    },
+    {
+      "timestamp": "2026-07-09T06:22:00+03:00",
+      "symbol": "SYNUSDT",
+      "digash_timeframe": "1m",
+      "side": "support",
+      "digash_zone_low": 0.34119,
+      "digash_zone_high": 0.342,
+      "primary_reason": "universe/liquidity_below_60m",
+      "reason_note": "???? ????????????? ? ??????????? baseline scan universe ? ??????? 24h quoteVolume ???? MIN_QUOTE_VOLUME_24H=60M.",
+      "raw_gap_reason": "symbol_no_detector_candidates_in_window_dataset",
+      "flags": [
+        "below_MIN_QUOTE_VOLUME_24H_60M_at_check",
+        "not_in_saved_57_symbol_baseline_universe"
+      ],
+      "binance_exists": true,
+      "current_quote_volume_24h": 33653839.92721,
+      "passes_MIN_QUOTE_VOLUME_24H_60M_at_check": false,
+      "in_saved_57_symbol_baseline_universe": false,
+      "production_timeframes": [
+        "1h",
+        "1m",
+        "5m",
+        "15m"
+      ],
+      "nearest_candidate_evidence": null
+    },
+    {
+      "timestamp": "2026-07-09T06:04:00+03:00",
+      "symbol": "LDOUSDT",
+      "digash_timeframe": "1m",
+      "side": "support",
+      "digash_zone_low": 0.3188,
+      "digash_zone_high": 0.3194,
+      "primary_reason": "universe/liquidity_below_60m",
+      "reason_note": "???? ????????????? ? ??????????? baseline scan universe ? ??????? 24h quoteVolume ???? MIN_QUOTE_VOLUME_24H=60M.",
+      "raw_gap_reason": "symbol_no_detector_candidates_in_window_dataset",
+      "flags": [
+        "below_MIN_QUOTE_VOLUME_24H_60M_at_check",
+        "not_in_saved_57_symbol_baseline_universe"
+      ],
+      "binance_exists": true,
+      "current_quote_volume_24h": 41470052.2882,
+      "passes_MIN_QUOTE_VOLUME_24H_60M_at_check": false,
+      "in_saved_57_symbol_baseline_universe": false,
+      "production_timeframes": [
+        "1h",
+        "1m",
+        "5m",
+        "15m"
+      ],
+      "nearest_candidate_evidence": null
+    }
+  ],
+  "publication_losses": [
+    {
+      "timestamp": "2026-07-03T06:27:00+03:00",
+      "symbol": "ALLOUSDT",
+      "digash_timeframe": "1m",
+      "side": "resistance",
+      "digash_zone_low": 0.35012,
+      "digash_zone_high": 0.35201,
+      "publication_drop_step": "allowed_filter",
+      "drop_note": "????????? detector-match ??? low_confidence ? ?? ?????? ??????? allowed filter: score/touches ???? ???????? ??? unconfirmed signals.",
+      "detector_match": {
+        "timeframe": "1m",
+        "type": "test",
+        "confidence": "low_confidence",
+        "score": 51.82593780353973,
+        "touches": 1,
+        "level_kind": "early_single_touch",
+        "time_diff_min": 14.0,
+        "zone_gap_pct": 0.0,
+        "zone_low": 0.35201,
+        "zone_high": 0.35201,
+        "key": "ALLOUSDT:1m:resistance:0.35201-0.35201:test:low_confidence",
+        "close_utc": "2026-07-03T03:40:59.999000+00:00"
+      }
+    },
+    {
+      "timestamp": "2026-07-03T04:06:00+03:00",
+      "symbol": "SNDKUSDT",
+      "digash_timeframe": "1m",
+      "side": "support",
+      "digash_zone_low": 1779.4,
+      "digash_zone_high": 1782.41,
+      "publication_drop_step": "allowed_filter",
+      "drop_note": "????????? detector-match ??? low_confidence ? ?? ?????? ??????? allowed filter: score/touches ???? ???????? ??? unconfirmed signals.",
+      "detector_match": {
+        "timeframe": "5m",
+        "type": "test",
+        "confidence": "low_confidence",
+        "score": 58.51999999999999,
+        "touches": 1,
+        "level_kind": "early_single_touch",
+        "time_diff_min": 1.0,
+        "zone_gap_pct": 0.03816,
+        "zone_low": 1783.09,
+        "zone_high": 1783.09,
+        "key": "SNDKUSDT:5m:support:1783.09-1783.09:test:low_confidence",
+        "close_utc": "2026-07-03T01:04:59.999000+00:00"
+      }
+    },
+    {
+      "timestamp": "2026-07-04T23:31:00+03:00",
+      "symbol": "OUSDT",
+      "digash_timeframe": "1h",
+      "side": "support",
+      "digash_zone_low": 0.6131,
+      "digash_zone_high": 0.6235,
+      "publication_drop_step": "allowed_filter",
+      "drop_note": "????????? detector-match ??? low_confidence ? ?? ?????? ??????? allowed filter: score/touches ???? ???????? ??? unconfirmed signals.",
+      "detector_match": {
+        "timeframe": "1m",
+        "type": "test",
+        "confidence": "low_confidence",
+        "score": 58.09226819640279,
+        "touches": 1,
+        "level_kind": "live_edge",
+        "time_diff_min": 70.0,
+        "zone_gap_pct": 0.41787,
+        "zone_low": 0.6261,
+        "zone_high": 0.6261,
+        "key": "OUSDT:1m:support:0.6261-0.6261:test:low_confidence",
+        "close_utc": "2026-07-04T21:40:59.999000+00:00"
+      }
+    },
+    {
+      "timestamp": "2026-07-04T03:12:00+03:00",
+      "symbol": "REUSDT",
+      "digash_timeframe": "1m",
+      "side": "support",
+      "digash_zone_low": 0.628,
+      "digash_zone_high": 0.6306,
+      "publication_drop_step": "allowed_filter",
+      "drop_note": "????????? detector-match ??? low_confidence ? ?? ?????? ??????? allowed filter: score/touches ???? ???????? ??? unconfirmed signals.",
+      "detector_match": {
+        "timeframe": "1h",
+        "type": "test",
+        "confidence": "low_confidence",
+        "score": 56.07,
+        "touches": 1,
+        "level_kind": "early_single_touch",
+        "time_diff_min": 12.0,
+        "zone_gap_pct": 0.46237,
+        "zone_low": 0.6251,
+        "zone_high": 0.6251,
+        "key": "REUSDT:1h:support:0.6251-0.6251:test:low_confidence",
+        "close_utc": "2026-07-03T23:59:59.999000+00:00"
+      }
+    },
+    {
+      "timestamp": "2026-07-06T17:11:00+03:00",
+      "symbol": "MUUSDT",
+      "digash_timeframe": "1m",
+      "side": "resistance",
+      "digash_zone_low": 1013.85,
+      "digash_zone_high": 1015.02,
+      "publication_drop_step": "allowed_filter",
+      "drop_note": "????????? detector-match ??? low_confidence ? ?? ?????? ??????? allowed filter: score/touches ???? ???????? ??? unconfirmed signals.",
+      "detector_match": {
+        "timeframe": "1m",
+        "type": "test",
+        "confidence": "low_confidence",
+        "score": 57.56745258484912,
+        "touches": 1,
+        "level_kind": "live_edge",
+        "time_diff_min": 5.0,
+        "zone_gap_pct": 0.33156,
+        "zone_low": 1018.39,
+        "zone_high": 1018.39,
+        "key": "MUUSDT:1m:resistance:1018.39-1018.39:test:low_confidence",
+        "close_utc": "2026-07-06T14:15:59.999000+00:00"
+      }
+    },
+    {
+      "timestamp": "2026-07-06T16:54:00+03:00",
+      "symbol": "MRVLUSDT",
+      "digash_timeframe": "5m",
+      "side": "resistance",
+      "digash_zone_low": 258.14,
+      "digash_zone_high": 258.84,
+      "publication_drop_step": "allowed_filter",
+      "drop_note": "????????? detector-match ??? low_confidence ? ?? ?????? ??????? allowed filter: score/touches ???? ???????? ??? unconfirmed signals.",
+      "detector_match": {
+        "timeframe": "1m",
+        "type": "test",
+        "confidence": "low_confidence",
+        "score": 59.68594809092805,
+        "touches": 1,
+        "level_kind": "live_edge",
+        "time_diff_min": 15.0,
+        "zone_gap_pct": 0.0,
+        "zone_low": 258.43,
+        "zone_high": 258.43,
+        "key": "MRVLUSDT:1m:resistance:258.43-258.43:test:low_confidence",
+        "close_utc": "2026-07-06T14:08:59.999000+00:00"
+      }
+    },
+    {
+      "timestamp": "2026-07-06T16:53:00+03:00",
+      "symbol": "MRVLUSDT",
+      "digash_timeframe": "3m",
+      "side": "resistance",
+      "digash_zone_low": 258.84,
+      "digash_zone_high": 259.59,
+      "publication_drop_step": "allowed_filter",
+      "drop_note": "????????? detector-match ??? low_confidence ? ?? ?????? ??????? allowed filter: score/touches ???? ???????? ??? unconfirmed signals.",
+      "detector_match": {
+        "timeframe": "1m",
+        "type": "test",
+        "confidence": "low_confidence",
+        "score": 55.76333159276723,
+        "touches": 1,
+        "level_kind": "live_edge",
+        "time_diff_min": 20.0,
+        "zone_gap_pct": 0.0,
+        "zone_low": 259.3,
+        "zone_high": 259.3,
+        "key": "MRVLUSDT:1m:resistance:259.3-259.3:test:low_confidence",
+        "close_utc": "2026-07-06T14:12:59.999000+00:00"
+      }
+    },
+    {
+      "timestamp": "2026-07-06T06:18:00+03:00",
+      "symbol": "EPICUSDT",
+      "digash_timeframe": "1m",
+      "side": "support",
+      "digash_zone_low": 0.4095,
+      "digash_zone_high": 0.4103,
+      "publication_drop_step": "batch_limit",
+      "drop_note": "Detector-match ??? allowed, ?? ? ???? scan ?? ????? ? top MAX_SIGNALS_PER_SCAN=20 ????? score-sort.",
+      "detector_match": {
+        "timeframe": "1h",
+        "type": "test",
+        "confidence": "confirmed",
+        "score": 64.05108180759275,
+        "touches": 17,
+        "level_kind": "standard",
+        "time_diff_min": 42.0,
+        "zone_gap_pct": 0.0,
+        "zone_low": 0.3946,
+        "zone_high": 0.4575,
+        "key": "EPICUSDT:1h:support:0.3946-0.4575:test:confirmed",
+        "close_utc": "2026-07-06T03:59:59.999000+00:00"
+      }
+    },
+    {
+      "timestamp": "2026-07-07T20:33:00+03:00",
+      "symbol": "OPGUSDT",
+      "digash_timeframe": "5m",
+      "side": "support",
+      "digash_zone_low": 0.1215,
+      "digash_zone_high": 0.1221,
+      "publication_drop_step": "batch_limit",
+      "drop_note": "Detector-match ??? allowed, ?? ? ???? scan ?? ????? ? top MAX_SIGNALS_PER_SCAN=20 ????? score-sort.",
+      "detector_match": {
+        "timeframe": "15m",
+        "type": "test",
+        "confidence": "confirmed",
+        "score": 65.6849292198442,
+        "touches": 3,
+        "level_kind": "standard",
+        "time_diff_min": 3.0,
+        "zone_gap_pct": 0.0,
+        "zone_low": 0.1215,
+        "zone_high": 0.1228,
+        "key": "OPGUSDT:15m:support:0.1215-0.1228:test:confirmed",
+        "close_utc": "2026-07-07T17:29:59.999000+00:00"
+      }
+    },
+    {
+      "timestamp": "2026-07-07T17:15:00+03:00",
+      "symbol": "SPCXUSDT",
+      "digash_timeframe": "1h",
+      "side": "support",
+      "digash_zone_low": 146.87,
+      "digash_zone_high": 148.17,
+      "publication_drop_step": "batch_limit",
+      "drop_note": "Detector-match ??? allowed, ?? ? ???? scan ?? ????? ? top MAX_SIGNALS_PER_SCAN=20 ????? score-sort.",
+      "detector_match": {
+        "timeframe": "1h",
+        "type": "test",
+        "confidence": "confirmed",
+        "score": 71.13333333333333,
+        "touches": 3,
+        "level_kind": "standard",
+        "time_diff_min": 105.0,
+        "zone_gap_pct": 0.0,
+        "zone_low": 147.25,
+        "zone_high": 148.46,
+        "key": "SPCXUSDT:1h:support:147.25-148.46:test:confirmed",
+        "close_utc": "2026-07-07T15:59:59.999000+00:00"
+      }
+    },
+    {
+      "timestamp": "2026-07-08T15:56:00+03:00",
+      "symbol": "UNIUSDT",
+      "digash_timeframe": "1m",
+      "side": "resistance",
+      "digash_zone_low": 3.333,
+      "digash_zone_high": 3.342,
+      "publication_drop_step": "allowed_filter",
+      "drop_note": "????????? detector-match ??? low_confidence ? ?? ?????? ??????? allowed filter: score/touches ???? ???????? ??? unconfirmed signals.",
+      "detector_match": {
+        "timeframe": "5m",
+        "type": "test",
+        "confidence": "low_confidence",
+        "score": 56.34538460683681,
+        "touches": 1,
+        "level_kind": "early_single_touch",
+        "time_diff_min": 1.0,
+        "zone_gap_pct": 0.0,
+        "zone_low": 3.342,
+        "zone_high": 3.342,
+        "key": "UNIUSDT:5m:resistance:3.342-3.342:test:low_confidence",
+        "close_utc": "2026-07-08T12:54:59.999000+00:00"
+      }
+    }
+  ],
+  "raw_sources": {
+    "baseline_match_summary": "baseline_match_summary.json",
+    "gap_analysis": "gap_analysis.json",
+    "miss_symbol_universe_check": "miss_symbol_universe_check.json",
+    "old_baseline_summary_with_saved_57_pairs": "apps/bot/data/backtests/recent-14d-20260708-023232/summary.json"
+  }
+}
