@@ -100,6 +100,33 @@ def _score_weights_env() -> dict[str, float]:
     return result
 
 
+def _unconfirmed_touches_by_level_kind_env() -> dict[str, int]:
+    defaults = {
+        "early_single_touch": 1,
+        "live_edge": 1,
+        "global_extreme": 2,
+        "compression": 3,
+        "impulse_approach": 2,
+    }
+    raw = os.getenv("UNCONFIRMED_TOUCHES_BY_LEVEL_KIND", "")
+    if not raw.strip():
+        return defaults
+    result = dict(defaults)
+    for item in raw.split(","):
+        if not item.strip():
+            continue
+        if ":" not in item:
+            raise ValueError("UNCONFIRMED_TOUCHES_BY_LEVEL_KIND items must use level_kind:touches format")
+        level_kind, value = (part.strip() for part in item.split(":", 1))
+        if not level_kind:
+            raise ValueError("UNCONFIRMED_TOUCHES_BY_LEVEL_KIND contains an empty level kind")
+        try:
+            result[level_kind] = max(1, int(value))
+        except ValueError as exc:
+            raise ValueError(f"UNCONFIRMED_TOUCHES_BY_LEVEL_KIND value for {level_kind} must be an integer") from exc
+    return result
+
+
 @dataclass(frozen=True)
 class Settings:
     telegram_bot_token: str
@@ -114,7 +141,7 @@ class Settings:
     kline_limit: int
     max_concurrent_kline_requests: int
     level_lookback_candles: int
-    min_level_touches: int
+    zone_confirmation_touches: int
     level_tolerance_pct: float
     cluster_tolerance_natr_k: float
     zone_atr_multiplier: float
@@ -133,7 +160,6 @@ class Settings:
     max_pre_breakout_range_pct: float
     level_approach_distance_pct: float
     level_approach_max_width_pct: float
-    level_approach_min_touches: int
     min_level_approach_gap_atr_multiplier: float
     level_min_spacing_candles: int
     min_level_span_candles: int
@@ -141,7 +167,8 @@ class Settings:
     min_natr_pct: float
     natr_period: int
     min_unconfirmed_signal_score: float
-    min_unconfirmed_signal_touches: int
+    unconfirmed_default_touches: int
+    unconfirmed_touches_by_level_kind: dict[str, int]
     max_signals_per_scan: int
     max_signal_age_minutes: int
     symbol_analysis_pause_minutes: int
@@ -161,6 +188,9 @@ class Settings:
     min_score_to_publish: float = 50.0
     max_publish_distance_natr: float = 1.5
     score_weights: dict[str, float] = field(default_factory=_score_weights_env)
+
+    def required_unconfirmed_touches(self, level_kind: str) -> int:
+        return self.unconfirmed_touches_by_level_kind.get(level_kind, self.unconfirmed_default_touches)
 
 
 def load_settings() -> Settings:
@@ -188,7 +218,7 @@ def load_settings() -> Settings:
         kline_limit=max(80, _int_env("KLINE_LIMIT", 520)),
         max_concurrent_kline_requests=max(1, _int_env("MAX_CONCURRENT_KLINE_REQUESTS", 4)),
         level_lookback_candles=max(40, _int_env("LEVEL_LOOKBACK_CANDLES", _int_env("LOOKBACK_CANDLES", 300))),
-        min_level_touches=max(1, _int_env("MIN_LEVEL_TOUCHES", 2)),
+        zone_confirmation_touches=max(1, _int_env("ZONE_CONFIRMATION_TOUCHES", 2)),
         level_tolerance_pct=max(0.01, _float_env("LEVEL_TOLERANCE_PCT", 0.18)),
         cluster_tolerance_natr_k=max(0.0, _float_env("CLUSTER_TOLERANCE_NATR_K", 0.75)),
         zone_atr_multiplier=max(0.0, _float_env("ZONE_ATR_MULTIPLIER", 0.20)),
@@ -207,7 +237,6 @@ def load_settings() -> Settings:
         max_pre_breakout_range_pct=max(0.0, _float_env("MAX_PRE_BREAKOUT_RANGE_PCT", 1.2)),
         level_approach_distance_pct=max(0.0, _float_env("LEVEL_APPROACH_DISTANCE_PCT", 2.0)),
         level_approach_max_width_pct=max(0.05, _float_env("LEVEL_APPROACH_MAX_WIDTH_PCT", 0.85)),
-        level_approach_min_touches=max(1, _int_env("LEVEL_APPROACH_MIN_TOUCHES", 1)),
         min_level_approach_gap_atr_multiplier=max(0.0, _float_env("MIN_LEVEL_APPROACH_GAP_ATR_MULTIPLIER", 0.5)),
         level_min_spacing_candles=max(1, _int_env("LEVEL_MIN_SPACING_CANDLES", 10)),
         min_level_span_candles=max(0, _int_env("MIN_LEVEL_SPAN_CANDLES", 30)),
@@ -215,7 +244,8 @@ def load_settings() -> Settings:
         min_natr_pct=max(0.0, _float_env("MIN_NATR_PCT", 0.0)),
         natr_period=max(1, _int_env("NATR_PERIOD", 14)),
         min_unconfirmed_signal_score=max(0.0, _float_env("MIN_UNCONFIRMED_SIGNAL_SCORE", 60.0)),
-        min_unconfirmed_signal_touches=max(1, _int_env("MIN_UNCONFIRMED_SIGNAL_TOUCHES", 4)),
+        unconfirmed_default_touches=max(1, _int_env("UNCONFIRMED_DEFAULT_TOUCHES", 2)),
+        unconfirmed_touches_by_level_kind=_unconfirmed_touches_by_level_kind_env(),
         max_signals_per_scan=max(0, _int_env("MAX_SIGNALS_PER_SCAN", 20)),
         max_signal_age_minutes=max(1, _int_env("MAX_SIGNAL_AGE_MINUTES", 5)),
         symbol_analysis_pause_minutes=max(0, _int_env("SYMBOL_ANALYSIS_PAUSE_MINUTES", 5)),

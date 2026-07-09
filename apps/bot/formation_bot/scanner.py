@@ -95,19 +95,9 @@ class FormationScanner:
                 for alert in results
                 if alert.signal.confidence == "confirmed"
                 or (
-                    (alert.signal.signal_type or ("breakout" if alert.signal.is_breakout_type else "test")) == "test"
-                    and alert.signal.confidence == "low_confidence"
-                    and alert.signal.score >= self.settings.min_unconfirmed_signal_score
-                )
-                or (
                     alert.signal.confidence == "low_confidence"
                     and alert.signal.score >= self.settings.min_unconfirmed_signal_score
-                    and (
-                        alert.signal.touches >= self.settings.min_unconfirmed_signal_touches
-                        or (alert.signal.level_kind == "global_extreme" and alert.signal.touches >= 2)
-                        or (alert.signal.level_kind == "compression" and alert.signal.touches >= 3)
-                        or (alert.signal.level_kind == "impulse_approach" and alert.signal.touches >= 2)
-                    )
+                    and alert.signal.touches >= self.settings.required_unconfirmed_touches(alert.signal.level_kind)
                 )
             ]
             skipped = len(results) - len(filtered)
@@ -279,7 +269,7 @@ class FormationScanner:
             timeframe=timeframe,
             candles=candles,
             lookback=self.settings.level_lookback_candles,
-            min_touches=self.settings.min_level_touches,
+            min_touches=self.settings.zone_confirmation_touches,
             tolerance_pct=self.settings.level_tolerance_pct,
             zone_atr_multiplier=self.settings.zone_atr_multiplier,
             cluster_tolerance_natr_k=self.settings.cluster_tolerance_natr_k,
@@ -294,7 +284,6 @@ class FormationScanner:
             max_pre_breakout_range_pct=self.settings.max_pre_breakout_range_pct,
             level_approach_distance_pct=self.settings.level_approach_distance_pct,
             level_approach_max_width_pct=self.settings.level_approach_max_width_pct,
-            level_approach_min_touches=self.settings.level_approach_min_touches,
             min_level_approach_gap_atr_multiplier=self.settings.min_level_approach_gap_atr_multiplier,
             level_min_spacing_candles=self.settings.level_min_spacing_candles,
             min_level_span_candles=self.settings.min_level_span_candles,

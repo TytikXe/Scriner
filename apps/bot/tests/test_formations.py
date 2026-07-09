@@ -175,7 +175,7 @@ def test_zero_minimum_natr_disables_volatility_filter() -> None:
     assert check["passed"] is True  # type: ignore[index]
 
 
-def test_single_touch_breakout_is_rejected_by_min_touches() -> None:
+def test_single_touch_zone_is_emitted_as_low_confidence_test() -> None:
     records: list[dict[str, object]] = []
     candles: list[Candle] = []
     for index in range(90):
@@ -200,8 +200,12 @@ def test_single_touch_breakout_is_rejected_by_min_touches() -> None:
         decision_logger=records.append,
     )
 
-    assert signal is None
-    assert any(record["rejection_reason"] == "min_touches_not_reached" for record in records)
+    assert signal is not None
+    assert signal.signal_type == "test"
+    assert signal.confidence == "low_confidence"
+    published = [record for record in records if str(record["final_decision"]).startswith("published")]
+    assert published
+    assert published[0]["checks"]["zone_confirmation_touches"]["confirmed"] is False  # type: ignore[index]
 
 
 def test_live_edge_adds_recent_touch_without_right_fractal_confirmation() -> None:
@@ -380,7 +384,7 @@ def test_debug_trace_is_emitted_for_published_candidate() -> None:
     published = [record for record in records if str(record["final_decision"]).startswith("published")]
     assert published
     assert published[0]["candidate_zone"]["touches_count"] == 3  # type: ignore[index]
-    assert published[0]["checks"]["min_touches"]["passed"] is True  # type: ignore[index]
+    assert published[0]["checks"]["zone_confirmation_touches"]["confirmed"] is True  # type: ignore[index]
 
 
 def test_max_publish_distance_rejects_far_breakout_after_classification() -> None:
@@ -532,7 +536,7 @@ def test_section_9_reference_cases_are_representable_by_zone_pipeline(
 
 
 @pytest.mark.parametrize("symbol", ("OPGUSDT", "XLMUSDT", "ADAUSDT", "TACUSDT"))
-def test_section_9_old_single_touch_cases_are_rejected_by_min_touches(symbol: str) -> None:
+def test_section_9_old_single_touch_cases_are_low_confidence_tests(symbol: str) -> None:
     records: list[dict[str, object]] = []
     candles: list[Candle] = []
     for index in range(120):
@@ -559,8 +563,13 @@ def test_section_9_old_single_touch_cases_are_rejected_by_min_touches(symbol: st
         decision_logger=records.append,
     )
 
-    assert signal is None
-    assert any(record["rejection_reason"] == "min_touches_not_reached" for record in records)
+    assert signal is not None
+    assert signal.signal_type == "test"
+    assert signal.confidence == "low_confidence"
+    assert signal.touches == 1
+    published = [record for record in records if str(record["final_decision"]).startswith("published")]
+    assert published
+    assert published[0]["checks"]["zone_confirmation_touches"]["confirmed"] is False  # type: ignore[index]
 
 
 def test_format_price_uses_tick_size() -> None:

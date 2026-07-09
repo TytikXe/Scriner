@@ -799,7 +799,6 @@ def detect_breakouts(
     min_probe_volume_multiplier: float | None = None,
     level_approach_distance_pct: float = 0.0,
     level_approach_max_width_pct: float = 0.85,
-    level_approach_min_touches: int = 2,
     min_level_approach_gap_atr_multiplier: float = 0.75,
     min_natr_pct: float = 0.0,
     natr_period: int = 14,
@@ -870,7 +869,7 @@ def detect_breakouts(
         volume_threshold = avg_volume * max(0.0, volume_multiplier)
         volume_passed = not avg_volume or latest.volume >= volume_threshold
         active = _zone_active(zone, latest_index, zone_ttl_candles)
-        min_touches_passed = zone.touches >= min_touches
+        zone_confirmation_passed = zone.touches >= min_touches
         max_publish_distance = _publish_distance_check(
             latest,
             zone,
@@ -879,7 +878,12 @@ def detect_breakouts(
             max_publish_distance_natr,
         )
         checks = {
-            "min_touches": {"passed": min_touches_passed, "required": min_touches, "actual": zone.touches},
+            "zone_confirmation_touches": {
+                "passed": True,
+                "confirmed": zone_confirmation_passed,
+                "required": min_touches,
+                "actual": zone.touches,
+            },
             "ttl": {"passed": active, "ttl_bars": zone_ttl_candles},
             "impulse_found": {
                 "passed": impulse.score > 0,
@@ -917,9 +921,7 @@ def detect_breakouts(
             },
         }
         rejection_reason = None
-        if not min_touches_passed:
-            rejection_reason = "min_touches_not_reached"
-        elif not active:
+        if not active:
             rejection_reason = "zone_ttl_expired"
         elif not liquidity_passed:
             rejection_reason = "liquidity_below_minimum"
@@ -1017,7 +1019,6 @@ def detect_breakout(
     min_probe_volume_multiplier: float | None = None,
     level_approach_distance_pct: float = 0.0,
     level_approach_max_width_pct: float = 0.85,
-    level_approach_min_touches: int = 2,
     min_level_approach_gap_atr_multiplier: float = 0.75,
     min_natr_pct: float = 0.0,
     natr_period: int = 14,
@@ -1061,7 +1062,6 @@ def detect_breakout(
         min_probe_volume_multiplier=min_probe_volume_multiplier,
         level_approach_distance_pct=level_approach_distance_pct,
         level_approach_max_width_pct=level_approach_max_width_pct,
-        level_approach_min_touches=level_approach_min_touches,
         min_level_approach_gap_atr_multiplier=min_level_approach_gap_atr_multiplier,
         min_natr_pct=min_natr_pct,
         natr_period=natr_period,

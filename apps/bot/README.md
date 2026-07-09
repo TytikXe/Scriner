@@ -48,7 +48,7 @@ The detector now builds support/resistance zones, not single swing levels. It co
 - live-edge rolling highs/lows from the last `LIVE_WINDOW` closed candles, so recent zones can be tested before a right-side fractal confirmation exists.
 
 Nearby swings of the same side are clustered with an NATR-scaled threshold:
-`CLUSTER_TOLERANCE_NATR_K * NATR`. A zone with `MIN_LEVEL_TOUCHES` or more touches is
+`CLUSTER_TOLERANCE_NATR_K * NATR`. A zone with `ZONE_CONFIRMATION_TOUCHES` or more touches is
 `confirmed`; a one-touch zone is `low_confidence`, can only produce a `test`, and is
 penalized by `LOW_CONFIDENCE_PENALTY`.
 
@@ -74,6 +74,11 @@ wick for a downward support breakout. The close must penetrate the crossed zone
 edge by at least `MIN_CLOSE_ATR_MULTIPLIER * ATR`. These three checks apply only
 to `breakout` signals. `MIN_NATR_PCT` is a minimum-volatility filter for all
 signal types; its default value of `0` disables that filter.
+
+Touch thresholds use one policy: `ZONE_CONFIRMATION_TOUCHES` confirms a
+structural zone, `UNCONFIRMED_DEFAULT_TOUCHES` controls publication of other
+low-confidence signals, and `UNCONFIRMED_TOUCHES_BY_LEVEL_KIND` contains
+per-kind overrides such as `live_edge:1` or `compression:3`.
 
 For every selected signal the bot renders a local PNG candlestick chart from the same
 Binance candles used by the detector, highlights the detected level zone,

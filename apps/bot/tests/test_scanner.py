@@ -27,7 +27,7 @@ def make_settings(symbol_pause_minutes: int) -> Settings:
         kline_limit=260,
         max_concurrent_kline_requests=4,
         level_lookback_candles=220,
-        min_level_touches=4,
+        zone_confirmation_touches=4,
         level_tolerance_pct=0.14,
         cluster_tolerance_natr_k=0.5,
         zone_atr_multiplier=0.2,
@@ -46,7 +46,6 @@ def make_settings(symbol_pause_minutes: int) -> Settings:
         max_pre_breakout_range_pct=1.2,
         level_approach_distance_pct=1.5,
         level_approach_max_width_pct=0.85,
-        level_approach_min_touches=2,
         min_level_approach_gap_atr_multiplier=0.75,
         level_min_spacing_candles=10,
         min_level_span_candles=50,
@@ -54,7 +53,14 @@ def make_settings(symbol_pause_minutes: int) -> Settings:
         min_natr_pct=0.3,
         natr_period=14,
         min_unconfirmed_signal_score=100.0,
-        min_unconfirmed_signal_touches=4,
+        unconfirmed_default_touches=4,
+        unconfirmed_touches_by_level_kind={
+            "early_single_touch": 1,
+            "live_edge": 1,
+            "global_extreme": 2,
+            "compression": 3,
+            "impulse_approach": 2,
+        },
         max_signals_per_scan=3,
         max_signal_age_minutes=5,
         symbol_analysis_pause_minutes=symbol_pause_minutes,
@@ -195,6 +201,7 @@ def test_low_confidence_tests_can_be_sent_when_enabled() -> None:
         is_breakout_type=False,
         score=62,
         touches=1,
+        level_kind="early_single_touch",
         signal_type="test",
         confidence="low_confidence",
     )
@@ -248,6 +255,38 @@ def test_impulse_approach_unconfirmed_signals_can_use_two_touches() -> None:
     )
 
     assert scanner._filter_allowed_signals([signal]) == [signal]
+
+
+def test_unconfirmed_touch_policy_rejects_below_kind_override() -> None:
+    settings = make_settings(symbol_pause_minutes=15)
+    settings = Settings(**{**settings.__dict__, "send_unconfirmed_signals": True})
+    scanner = FormationScanner(DummyClient(), settings)  # type: ignore[arg-type]
+    compression = make_alert(
+        "BBBUSDT",
+        score=100,
+        touches=2,
+        level_kind="compression",
+        confidence="low_confidence",
+    )
+
+    assert settings.required_unconfirmed_touches("compression") == 3
+    assert scanner._filter_allowed_signals([compression]) == []
+
+
+def test_unconfirmed_touch_policy_uses_default_for_unknown_kind() -> None:
+    settings = make_settings(symbol_pause_minutes=15)
+    settings = Settings(**{**settings.__dict__, "send_unconfirmed_signals": True})
+    scanner = FormationScanner(DummyClient(), settings)  # type: ignore[arg-type]
+    below_default = make_alert(
+        "BBBUSDT",
+        score=100,
+        touches=3,
+        level_kind="custom",
+        confidence="low_confidence",
+    )
+
+    assert settings.required_unconfirmed_touches("custom") == 4
+    assert scanner._filter_allowed_signals([below_default]) == []
 
 
 def test_weak_unconfirmed_signals_are_skipped_when_enabled() -> None:

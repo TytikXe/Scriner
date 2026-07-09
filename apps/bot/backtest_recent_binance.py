@@ -31,7 +31,6 @@ from formation_bot.models import BreakoutSignal, Candle, SymbolInfo
 
 BINANCE_LIMIT = 1500
 WANTED_REASONS = {
-    "min_touches_not_reached": "min_touches",
     "zone_ttl_expired": "ttl",
     "min_retreat_not_reached": "min_retreat",
     "liquidity_below_minimum": "liquidity",
@@ -204,7 +203,7 @@ class BinanceHistory:
 def detector_kwargs(settings: Any, timeframe: str, symbol: SymbolInfo, records: list[dict[str, Any]]) -> dict[str, Any]:
     return {
         "lookback": settings.level_lookback_candles,
-        "min_touches": settings.min_level_touches,
+        "min_touches": settings.zone_confirmation_touches,
         "tolerance_pct": settings.level_tolerance_pct,
         "zone_atr_multiplier": settings.zone_atr_multiplier,
         "cluster_tolerance_natr_k": settings.cluster_tolerance_natr_k,
@@ -219,7 +218,6 @@ def detector_kwargs(settings: Any, timeframe: str, symbol: SymbolInfo, records: 
         "max_pre_breakout_range_pct": settings.max_pre_breakout_range_pct,
         "level_approach_distance_pct": settings.level_approach_distance_pct,
         "level_approach_max_width_pct": settings.level_approach_max_width_pct,
-        "level_approach_min_touches": settings.level_approach_min_touches,
         "min_level_approach_gap_atr_multiplier": settings.min_level_approach_gap_atr_multiplier,
         "level_min_spacing_candles": settings.level_min_spacing_candles,
         "min_level_span_candles": settings.min_level_span_candles,
@@ -247,21 +245,8 @@ def detector_kwargs(settings: Any, timeframe: str, symbol: SymbolInfo, records: 
 def allowed_by_publish_filter(signal: BreakoutSignal, settings: Any) -> bool:
     if signal.confidence == "confirmed":
         return True
-    signal_type = signal.signal_type or ("breakout" if signal.is_breakout_type else "test")
-    if (
-        signal_type == "test"
-        and signal.confidence == "low_confidence"
-        and signal.score >= settings.min_unconfirmed_signal_score
-    ):
-        return True
-    return (
-        signal.score >= settings.min_unconfirmed_signal_score
-        and (
-            signal.touches >= settings.min_unconfirmed_signal_touches
-            or (signal.level_kind == "global_extreme" and signal.touches >= 2)
-            or (signal.level_kind == "compression" and signal.touches >= 3)
-            or (signal.level_kind == "impulse_approach" and signal.touches >= 2)
-        )
+    return signal.score >= settings.min_unconfirmed_signal_score and signal.touches >= settings.required_unconfirmed_touches(
+        signal.level_kind
     )
 
 
@@ -383,7 +368,8 @@ def summarize(
             "min_score_to_publish": settings.min_score_to_publish,
             "publication_rules": {
                 "min_unconfirmed_signal_score": settings.min_unconfirmed_signal_score,
-                "min_unconfirmed_signal_touches": settings.min_unconfirmed_signal_touches,
+                "unconfirmed_default_touches": settings.unconfirmed_default_touches,
+                "unconfirmed_touches_by_level_kind": settings.unconfirmed_touches_by_level_kind,
                 "max_signals_per_scan": settings.max_signals_per_scan,
                 "alert_cooldown_minutes": settings.alert_cooldown_minutes,
                 "symbol_analysis_pause_minutes": settings.symbol_analysis_pause_minutes,

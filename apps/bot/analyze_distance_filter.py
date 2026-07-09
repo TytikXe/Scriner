@@ -94,7 +94,7 @@ def signal_from_record(record: dict[str, Any]) -> BreakoutSignal:
 def detector_kwargs(settings: Any, timeframe: str, symbol: SymbolInfo, records: list[dict[str, Any]]) -> dict[str, Any]:
     return {
         "lookback": settings.level_lookback_candles,
-        "min_touches": settings.min_level_touches,
+        "min_touches": settings.zone_confirmation_touches,
         "tolerance_pct": settings.level_tolerance_pct,
         "zone_atr_multiplier": settings.zone_atr_multiplier,
         "cluster_tolerance_natr_k": settings.cluster_tolerance_natr_k,
@@ -109,7 +109,6 @@ def detector_kwargs(settings: Any, timeframe: str, symbol: SymbolInfo, records: 
         "max_pre_breakout_range_pct": settings.max_pre_breakout_range_pct,
         "level_approach_distance_pct": settings.level_approach_distance_pct,
         "level_approach_max_width_pct": settings.level_approach_max_width_pct,
-        "level_approach_min_touches": settings.level_approach_min_touches,
         "min_level_approach_gap_atr_multiplier": settings.min_level_approach_gap_atr_multiplier,
         "level_min_spacing_candles": settings.level_min_spacing_candles,
         "min_level_span_candles": settings.min_level_span_candles,
