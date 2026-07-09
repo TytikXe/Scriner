@@ -1,0 +1,12 @@
+name = "crypto-screener"
+main = "worker.ts"
+compatibility_date = "2026-06-11"
+workers_dev = true
+
+kv_namespaces = [
+  { binding = "SCREENER_STATE", id = "a4c4b9d9dba14dfdbec84c9c4af60b8c", preview_id = "f98c1884dcca484d8e5cb52d3b3f4de0" }
+]
+
+[assets]
+directory = "apps/web/out"
+binding = "ASSETS"
