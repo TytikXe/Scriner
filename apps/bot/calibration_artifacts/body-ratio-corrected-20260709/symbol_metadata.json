@@ -1,0 +1,401 @@
+{
+  "KORUUSDT": {
+    "symbol": "KORUUSDT",
+    "tick_size": 1e-08,
+    "quote_volume": 988125513.9995,
+    "price_change_percent": 3.434,
+    "trades_24h": 4375508
+  },
+  "DRAMUSDT": {
+    "symbol": "DRAMUSDT",
+    "tick_size": 1e-08,
+    "quote_volume": 321724214.4406,
+    "price_change_percent": 0.769,
+    "trades_24h": 573286
+  },
+  "SAMSUNGUSDT": {
+    "symbol": "SAMSUNGUSDT",
+    "tick_size": 1e-08,
+    "quote_volume": 125333777.3297,
+    "price_change_percent": 0.183,
+    "trades_24h": 522161
+  },
+  "MUUSDT": {
+    "symbol": "MUUSDT",
+    "tick_size": 1e-08,
+    "quote_volume": 1452851685.2559,
+    "price_change_percent": 0.154,
+    "trades_24h": 2934329
+  },
+  "WLDUSDT": {
+    "symbol": "WLDUSDT",
+    "tick_size": 1e-08,
+    "quote_volume": 159649170.9763,
+    "price_change_percent": -4.784,
+    "trades_24h": 612501
+  },
+  "EWYUSDT": {
+    "symbol": "EWYUSDT",
+    "tick_size": 1e-08,
+    "quote_volume": 209417776.1212,
+    "price_change_percent": 1.43,
+    "trades_24h": 515155
+  },
+  "ALLOUSDT": {
+    "symbol": "ALLOUSDT",
+    "tick_size": 1e-08,
+    "quote_volume": 68745976.63736,
+    "price_change_percent": -2.651,
+    "trades_24h": 1438269
+  },
+  "SPCXUSDT": {
+    "symbol": "SPCXUSDT",
+    "tick_size": 1e-08,
+    "quote_volume": 964934226.4134,
+    "price_change_percent": -3.648,
+    "trades_24h": 1660613
+  },
+  "LITUSDT": {
+    "symbol": "LITUSDT",
+    "tick_size": 1e-08,
+    "quote_volume": 104834662.62642,
+    "price_change_percent": -3.995,
+    "trades_24h": 1362849
+  },
+  "ZECUSDT": {
+    "symbol": "ZECUSDT",
+    "tick_size": 1e-08,
+    "quote_volume": 814614148.37,
+    "price_change_percent": 7.142,
+    "trades_24h": 2947740
+  },
+  "MSTRUSDT": {
+    "symbol": "MSTRUSDT",
+    "tick_size": 1e-08,
+    "quote_volume": 243460764.3949,
+    "price_change_percent": -4.739,
+    "trades_24h": 656864
+  },
+  "BLURUSDT": {
+    "symbol": "BLURUSDT",
+    "tick_size": 1e-08,
+    "quote_volume": 293548594.86968,
+    "price_change_percent": -4.354,
+    "trades_24h": 2477676
+  },
+  "SOXLUSDT": {
+    "symbol": "SOXLUSDT",
+    "tick_size": 1e-08,
+    "quote_volume": 1677062328.7691,
+    "price_change_percent": -7.152,
+    "trades_24h": 3394344
+  },
+  "SNDKUSDT": {
+    "symbol": "SNDKUSDT",
+    "tick_size": 1e-08,
+    "quote_volume": 1993985825.2314,
+    "price_change_percent": 1.506,
+    "trades_24h": 3866084
+  },
+  "MRVLUSDT": {
+    "symbol": "MRVLUSDT",
+    "tick_size": 1e-08,
+    "quote_volume": 156829157.3891,
+    "price_change_percent": -3.553,
+    "trades_24h": 715680
+  },
+  "REUSDT": {
+    "symbol": "REUSDT",
+    "tick_size": 1e-08,
+    "quote_volume": 103396478.397,
+    "price_change_percent": -3.235,
+    "trades_24h": 1328460
+  },
+  "SKHYNIXUSDT": {
+    "symbol": "SKHYNIXUSDT",
+    "tick_size": 1e-08,
+    "quote_volume": 1814097595.995,
+    "price_change_percent": 4.364,
+    "trades_24h": 4748850
+  },
+  "LABUSDT": {
+    "symbol": "LABUSDT",
+    "tick_size": 1e-08,
+    "quote_volume": 1834177723.7276,
+    "price_change_percent": -54.152,
+    "trades_24h": 17407830
+  },
+  "OPGUSDT": {
+    "symbol": "OPGUSDT",
+    "tick_size": 1e-08,
+    "quote_volume": 100938655.2775,
+    "price_change_percent": -1.844,
+    "trades_24h": 960848
+  },
+  "EDGEUSDT": {
+    "symbol": "EDGEUSDT",
+    "tick_size": 1e-08,
+    "quote_volume": 141108502.3293,
+    "price_change_percent": 28.009,
+    "trades_24h": 1376832
+  },
+  "HYPEUSDT": {
+    "symbol": "HYPEUSDT",
+    "tick_size": 1e-08,
+    "quote_volume": 655168704.01039,
+    "price_change_percent": -3.417,
+    "trades_24h": 1764528
+  },
+  "TRIAUSDT": {
+    "symbol": "TRIAUSDT",
+    "tick_size": 1e-08,
+    "quote_volume": 71026402.98213,
+    "price_change_percent": -36.126,
+    "trades_24h": 973584
+  },
+  "TLMUSDT": {
+    "symbol": "TLMUSDT",
+    "tick_size": 1e-08,
+    "quote_volume": 124780977.555136,
+    "price_change_percent": -15.62,
+    "trades_24h": 1766730
+  },
+  "NEARUSDT": {
+    "symbol": "NEARUSDT",
+    "tick_size": 1e-08,
+    "quote_volume": 150542087.238,
+    "price_change_percent": -3.445,
+    "trades_24h": 411279
+  },
+  "TACUSDT": {
+    "symbol": "TACUSDT",
+    "tick_size": 1e-08,
+    "quote_volume": 333182043.251634,
+    "price_change_percent": -86.139,
+    "trades_24h": 7110691
+  },
+  "TAOUSDT": {
+    "symbol": "TAOUSDT",
+    "tick_size": 1e-08,
+    "quote_volume": 95797549.56,
+    "price_change_percent": -0.896,
+    "trades_24h": 725006
+  },
+  "AVAXUSDT": {
+    "symbol": "AVAXUSDT",
+    "tick_size": 1e-08,
+    "quote_volume": 82480355.659,
+    "price_change_percent": -3.069,
+    "trades_24h": 365880
+  },
+  "CRCLUSDT": {
+    "symbol": "CRCLUSDT",
+    "tick_size": 1e-08,
+    "quote_volume": 149595915.2098,
+    "price_change_percent": -3.667,
+    "trades_24h": 465017
+  },
+  "INTCUSDT": {
+    "symbol": "INTCUSDT",
+    "tick_size": 1e-08,
+    "quote_volume": 204047468.0256,
+    "price_change_percent": -7.426,
+    "trades_24h": 615600
+  },
+  "AAVEUSDT": {
+    "symbol": "AAVEUSDT",
+    "tick_size": 1e-08,
+    "quote_volume": 114757170.887,
+    "price_change_percent": -3.697,
+    "trades_24h": 683083
+  },
+  "EPICUSDT": {
+    "symbol": "EPICUSDT",
+    "tick_size": 1e-08,
+    "quote_volume": 152341267.79377,
+    "price_change_percent": -23.255,
+    "trades_24h": 3011565
+  },
+  "ADAUSDT": {
+    "symbol": "ADAUSDT",
+    "tick_size": 1e-08,
+    "quote_volume": 170186062.8898,
+    "price_change_percent": -4.449,
+    "trades_24h": 384622
+  },
+  "1000PEPEUSDT": {
+    "symbol": "1000PEPEUSDT",
+    "tick_size": 1e-08,
+    "quote_volume": 138867332.8414787,
+    "price_change_percent": -1.553,
+    "trades_24h": 917718
+  },
+  "SOLUSDT": {
+    "symbol": "SOLUSDT",
+    "tick_size": 1e-08,
+    "quote_volume": 1436929767.8846,
+    "price_change_percent": -2.179,
+    "trades_24h": 1534052
+  },
+  "SUIUSDT": {
+    "symbol": "SUIUSDT",
+    "tick_size": 1e-08,
+    "quote_volume": 101487100.59044,
+    "price_change_percent": -1.94,
+    "trades_24h": 451513
+  },
+  "BCHUSDT": {
+    "symbol": "BCHUSDT",
+    "tick_size": 1e-08,
+    "quote_volume": 61276351.73,
+    "price_change_percent": -0.228,
+    "trades_24h": 494492
+  },
+  "SPELLUSDT": {
+    "symbol": "SPELLUSDT",
+    "tick_size": 1e-08,
+    "quote_volume": 66434891.4022203,
+    "price_change_percent": 24.126,
+    "trades_24h": 492886
+  },
+  "ETHUSDT": {
+    "symbol": "ETHUSDT",
+    "tick_size": 1e-08,
+    "quote_volume": 7552914611.84,
+    "price_change_percent": -0.883,
+    "trades_24h": 5452243
+  },
+  "ENAUSDT": {
+    "symbol": "ENAUSDT",
+    "tick_size": 1e-08,
+    "quote_volume": 77577190.49114,
+    "price_change_percent": -1.029,
+    "trades_24h": 579014
+  },
+  "EVAAUSDT": {
+    "symbol": "EVAAUSDT",
+    "tick_size": 1e-08,
+    "quote_volume": 622246984.22373,
+    "price_change_percent": 170.592,
+    "trades_24h": 8593055
+  },
+  "XLMUSDT": {
+    "symbol": "XLMUSDT",
+    "tick_size": 1e-08,
+    "quote_volume": 71090862.64429,
+    "price_change_percent": -5.064,
+    "trades_24h": 593321
+  },
+  "XAGUSDT": {
+    "symbol": "XAGUSDT",
+    "tick_size": 1e-08,
+    "quote_volume": 1023670190.4333,
+    "price_change_percent": -1.876,
+    "trades_24h": 515442
+  },
+  "YFIUSDT": {
+    "symbol": "YFIUSDT",
+    "tick_size": 1e-08,
+    "quote_volume": 129507957.4,
+    "price_change_percent": -16.176,
+    "trades_24h": 971226
+  },
+  "VANRYUSDT": {
+    "symbol": "VANRYUSDT",
+    "tick_size": 1e-08,
+    "quote_volume": 366701276.386497,
+    "price_change_percent": -15.059,
+    "trades_24h": 4851395
+  },
+  "XAUUSDT": {
+    "symbol": "XAUUSDT",
+    "tick_size": 1e-08,
+    "quote_volume": 1356426806.68,
+    "price_change_percent": -0.728,
+    "trades_24h": 845536
+  },
+  "CLUSDT": {
+    "symbol": "CLUSDT",
+    "tick_size": 1e-08,
+    "quote_volume": 550293257.4918,
+    "price_change_percent": 4.565,
+    "trades_24h": 353787
+  },
+  "DOGEUSDT": {
+    "symbol": "DOGEUSDT",
+    "tick_size": 1e-08,
+    "quote_volume": 276627519.80216,
+    "price_change_percent": -2.763,
+    "trades_24h": 862670
+  },
+  "BZUSDT": {
+    "symbol": "BZUSDT",
+    "tick_size": 1e-08,
+    "quote_volume": 182701780.406,
+    "price_change_percent": 4.721,
+    "trades_24h": 164313
+  },
+  "XRPUSDT": {
+    "symbol": "XRPUSDT",
+    "tick_size": 1e-08,
+    "quote_volume": 502351973.4245,
+    "price_change_percent": -2.519,
+    "trades_24h": 995032
+  },
+  "BNBUSDT": {
+    "symbol": "BNBUSDT",
+    "tick_size": 1e-08,
+    "quote_volume": 244067792.641,
+    "price_change_percent": -1.0,
+    "trades_24h": 876832
+  },
+  "PAXGUSDT": {
+    "symbol": "PAXGUSDT",
+    "tick_size": 1e-08,
+    "quote_volume": 63269543.3561,
+    "price_change_percent": -0.689,
+    "trades_24h": 165762
+  },
+  "NVDAUSDT": {
+    "symbol": "NVDAUSDT",
+    "tick_size": 1e-08,
+    "quote_volume": 98411190.464,
+    "price_change_percent": 1.617,
+    "trades_24h": 151108
+  },
+  "LINKUSDT": {
+    "symbol": "LINKUSDT",
+    "tick_size": 1e-08,
+    "quote_volume": 70378517.993,
+    "price_change_percent": -1.476,
+    "trades_24h": 247801
+  },
+  "BTCUSDT": {
+    "symbol": "BTCUSDT",
+    "tick_size": 1e-08,
+    "quote_volume": 11075010111.07,
+    "price_change_percent": -0.514,
+    "trades_24h": 4024564
+  },
+  "OUSDT": {
+    "symbol": "OUSDT",
+    "tick_size": 1e-08,
+    "quote_volume": 63998462.3376,
+    "price_change_percent": 0.307,
+    "trades_24h": 1896088
+  },
+  "TSLAUSDT": {
+    "symbol": "TSLAUSDT",
+    "tick_size": 1e-08,
+    "quote_volume": 62375728.6882,
+    "price_change_percent": -2.649,
+    "trades_24h": 184570
+  },
+  "QQQUSDT": {
+    "symbol": "QQQUSDT",
+    "tick_size": 1e-08,
+    "quote_volume": 105675846.6422,
+    "price_change_percent": -0.81,
+    "trades_24h": 156380
+  }
+}

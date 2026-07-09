@@ -1,0 +1,300 @@
+{
+  "methodology": {
+    "source": "fresh replay of all cached symbol/timeframe series",
+    "series_count": 228,
+    "period_start_utc": "2026-06-24T01:13:05.290000+00:00",
+    "period_end_utc": "2026-07-08T01:13:05.289000+00:00",
+    "current_pipeline": [
+      "MAX_PUBLISH_DISTANCE_NATR",
+      "confidence-based confirmed fix",
+      "score-desc sorting",
+      "signal_key pause",
+      "current per-level-kind touch policy"
+    ],
+    "calibration_only_relaxation": {
+      "min_breakout_body_ratio": 0.0,
+      "max_breakout_wick_ratio": 1.0,
+      "min_close_atr_multiplier": 0.0
+    },
+    "production_config_changed": false,
+    "production_env_sha256": "d2b470a45387f20c3761d5406744a34395432e9fd92922e34fcca25e1d6fabd4"
+  },
+  "production_thresholds_snapshot": {
+    "min_breakout_body_ratio": 0.55,
+    "max_breakout_wick_ratio": 0.25,
+    "min_close_atr_multiplier": 0.12,
+    "max_publish_distance_natr": 1.5
+  },
+  "publication_funnel": {
+    "detector_after_distance_score_and_relaxed_candle_quality": 966485,
+    "allowed_before_pause_batch_and_cooldown": 204909,
+    "published": 152411,
+    "drops": {
+      "allowed_filter": 618955,
+      "signal_key_pause": 142621,
+      "batch_limit": 52498
+    },
+    "sort": "score_desc",
+    "pause_scope": "signal_key"
+  },
+  "published_by_type": {
+    "breakout": 74064,
+    "test": 78347
+  },
+  "published_by_confidence": {
+    "confirmed": 152411
+  },
+  "distance_validation": {
+    "limit": 1.5,
+    "checked": 152411,
+    "violations": 0,
+    "all_pass": true,
+    "max_observed": 1.4999802481385236
+  },
+  "distributions_published_breakouts": {
+    "body_ratio": {
+      "count": 74064,
+      "min": 0.0,
+      "p10": 0.111111111111114,
+      "p25": 0.2972972972972397,
+      "median": 0.5277079843662641,
+      "p75": 0.7499999999999722,
+      "p90": 0.8958333333333117,
+      "p95": 1.0,
+      "max": 1.0
+    },
+    "opposite_wick_ratio": {
+      "count": 74064,
+      "min": 0.0,
+      "p10": 0.0,
+      "p25": 0.03846153846153354,
+      "median": 0.17693094937087683,
+      "p75": 0.3636363636363602,
+      "p90": 0.5499999999999792,
+      "p95": 0.6666666666666666,
+      "max": 1.0
+    },
+    "close_atr": {
+      "count": 74064,
+      "min": 0.0011503697617080758,
+      "p10": 0.1894855862700813,
+      "p25": 0.41301707596264964,
+      "median": 0.7796143481089041,
+      "p75": 1.1459170914686738,
+      "p90": 1.3622860885941352,
+      "p95": 1.4328596454348042,
+      "max": 4.1295820984415545
+    },
+    "distance_natr_all_published": {
+      "count": 152411,
+      "min": 0.0,
+      "p10": 0.14284647872836756,
+      "p25": 0.36593250411616807,
+      "median": 0.784314229450235,
+      "p75": 1.1771909692344216,
+      "p90": 1.3814514631317445,
+      "p95": 1.4420651375298341,
+      "max": 1.4999802481385236
+    }
+  },
+  "reference_tests": {
+    "body_0_40_wick_0_25_close_0_12": {
+      "published_breakouts": 74064,
+      "close_atr_gte_0.12": 69834,
+      "opposite_wick_ratio_lte_0.25": 42862,
+      "body_ratio_gte_0.40": 34778,
+      "final_pass_rate_pct": 46.956686109310866
+    },
+    "body_0_50_wick_0_25_close_0_12": {
+      "published_breakouts": 74064,
+      "close_atr_gte_0.12": 69834,
+      "opposite_wick_ratio_lte_0.25": 42862,
+      "body_ratio_gte_0.50": 31451,
+      "final_pass_rate_pct": 42.46462518902571
+    }
+  },
+  "sample_seed": 20260709,
+  "samples": [
+    {
+      "index": 1,
+      "group": "pass_040_fail_050",
+      "file": "charts/01_pass_040_fail_050_SAMSUNGUSDT_1m_1782986459999.png",
+      "symbol": "SAMSUNGUSDT",
+      "timeframe": "1m",
+      "close_utc": "2026-07-02T10:00:59.999000+00:00",
+      "body_ratio": 0.4000000000000853,
+      "opposite_wick_ratio": 0.24999999999992895,
+      "close_atr": 0.9790209790209187,
+      "distance_natr": 0.9779723837453649
+    },
+    {
+      "index": 2,
+      "group": "pass_040_fail_050",
+      "file": "charts/02_pass_040_fail_050_OUSDT_15m_1782800099999.png",
+      "symbol": "OUSDT",
+      "timeframe": "15m",
+      "close_utc": "2026-06-30T06:14:59.999000+00:00",
+      "body_ratio": 0.4375000000000065,
+      "opposite_wick_ratio": 0.23437499999999295,
+      "close_atr": 1.2713754646840159,
+      "distance_natr": 1.3126758454706735
+    },
+    {
+      "index": 3,
+      "group": "pass_040_fail_050",
+      "file": "charts/03_pass_040_fail_050_BNBUSDT_5m_1783460999999.png",
+      "symbol": "BNBUSDT",
+      "timeframe": "5m",
+      "close_utc": "2026-07-07T21:49:59.999000+00:00",
+      "body_ratio": 0.4237288135592992,
+      "opposite_wick_ratio": 0.0,
+      "close_atr": 1.356489945155462,
+      "distance_natr": 1.3540127221145535
+    },
+    {
+      "index": 4,
+      "group": "pass_040_fail_050",
+      "file": "charts/04_pass_040_fail_050_KORUUSDT_1m_1783359959999.png",
+      "symbol": "KORUUSDT",
+      "timeframe": "1m",
+      "close_utc": "2026-07-06T17:45:59.999000+00:00",
+      "body_ratio": 0.4761904761904472,
+      "opposite_wick_ratio": 0.0,
+      "close_atr": 0.759423843089174,
+      "distance_natr": 0.7572827809807848
+    },
+    {
+      "index": 5,
+      "group": "pass_040_fail_050",
+      "file": "charts/05_pass_040_fail_050_LABUSDT_1m_1783240859999.png",
+      "symbol": "LABUSDT",
+      "timeframe": "1m",
+      "close_utc": "2026-07-05T08:40:59.999000+00:00",
+      "body_ratio": 0.4825581395348728,
+      "opposite_wick_ratio": 0.0,
+      "close_atr": 0.5179256070491669,
+      "distance_natr": 0.5161663488730489
+    },
+    {
+      "index": 6,
+      "group": "pass_040_fail_050",
+      "file": "charts/06_pass_040_fail_050_VANRYUSDT_1h_1782899999999.png",
+      "symbol": "VANRYUSDT",
+      "timeframe": "1h",
+      "close_utc": "2026-07-01T09:59:59.999000+00:00",
+      "body_ratio": 0.4333333333333319,
+      "opposite_wick_ratio": 0.1666666666666739,
+      "close_atr": 0.1873804971319331,
+      "distance_natr": 0.18693646751787643
+    },
+    {
+      "index": 7,
+      "group": "pass_040_fail_050",
+      "file": "charts/07_pass_040_fail_050_SOLUSDT_1m_1783286879999.png",
+      "symbol": "SOLUSDT",
+      "timeframe": "1m",
+      "close_utc": "2026-07-05T21:27:59.999000+00:00",
+      "body_ratio": 0.49999999999964473,
+      "opposite_wick_ratio": 0.0,
+      "close_atr": 0.8990825688074433,
+      "distance_natr": 0.8998572583669772
+    },
+    {
+      "index": 8,
+      "group": "pass_040_fail_050",
+      "file": "charts/08_pass_040_fail_050_INTCUSDT_1m_1782329639999.png",
+      "symbol": "INTCUSDT",
+      "timeframe": "1m",
+      "close_utc": "2026-06-24T19:33:59.999000+00:00",
+      "body_ratio": 0.4374999999999667,
+      "opposite_wick_ratio": 0.12499999999988898,
+      "close_atr": 1.0840707964601501,
+      "distance_natr": 1.0811639951212928
+    },
+    {
+      "index": 9,
+      "group": "pass_040_fail_050",
+      "file": "charts/09_pass_040_fail_050_ALLOUSDT_1m_1782878159999.png",
+      "symbol": "ALLOUSDT",
+      "timeframe": "1m",
+      "close_utc": "2026-07-01T03:55:59.999000+00:00",
+      "body_ratio": 0.40540540540538106,
+      "opposite_wick_ratio": 0.10810810810807162,
+      "close_atr": 1.3243243243243101,
+      "distance_natr": 1.3206926271252701
+    },
+    {
+      "index": 10,
+      "group": "pass_040_fail_050",
+      "file": "charts/10_pass_040_fail_050_CRCLUSDT_5m_1782693299999.png",
+      "symbol": "CRCLUSDT",
+      "timeframe": "5m",
+      "close_utc": "2026-06-29T00:34:59.999000+00:00",
+      "body_ratio": 0.4374999999999917,
+      "opposite_wick_ratio": 0.09375000000000139,
+      "close_atr": 1.293478260869571,
+      "distance_natr": 1.2874703017343843
+    },
+    {
+      "index": 11,
+      "group": "fail_040",
+      "file": "charts/11_fail_040_REUSDT_1m_1782415859999.png",
+      "symbol": "REUSDT",
+      "timeframe": "1m",
+      "close_utc": "2026-06-25T19:30:59.999000+00:00",
+      "body_ratio": 0.11111111111109741,
+      "opposite_wick_ratio": 0.055555555555548704,
+      "close_atr": 0.4754716981132124,
+      "distance_natr": 0.47623056409707815
+    },
+    {
+      "index": 12,
+      "group": "fail_040",
+      "file": "charts/12_fail_040_SPCXUSDT_1m_1782494339999.png",
+      "symbol": "SPCXUSDT",
+      "timeframe": "1m",
+      "close_utc": "2026-06-26T17:18:59.999000+00:00",
+      "body_ratio": 0.34999999999998577,
+      "opposite_wick_ratio": 0.09999999999991474,
+      "close_atr": 1.396419437340116,
+      "distance_natr": 1.3998897972493916
+    },
+    {
+      "index": 13,
+      "group": "fail_040",
+      "file": "charts/13_fail_040_VANRYUSDT_1m_1782298679999.png",
+      "symbol": "VANRYUSDT",
+      "timeframe": "1m",
+      "close_utc": "2026-06-24T10:57:59.999000+00:00",
+      "body_ratio": 0.2500000000000271,
+      "opposite_wick_ratio": 0.0,
+      "close_atr": 0.6511627906976252,
+      "distance_natr": 0.6507526094121464
+    },
+    {
+      "index": 14,
+      "group": "fail_040",
+      "file": "charts/14_fail_040_NEARUSDT_5m_1782457799999.png",
+      "symbol": "NEARUSDT",
+      "timeframe": "5m",
+      "close_utc": "2026-06-26T07:09:59.999000+00:00",
+      "body_ratio": 0.2857142857142812,
+      "opposite_wick_ratio": 0.14285714285715645,
+      "close_atr": 0.9459459459459446,
+      "distance_natr": 0.9510869565217377
+    },
+    {
+      "index": 15,
+      "group": "fail_040",
+      "file": "charts/15_fail_040_BLURUSDT_5m_1783086899999.png",
+      "symbol": "BLURUSDT",
+      "timeframe": "5m",
+      "close_utc": "2026-07-03T13:54:59.999000+00:00",
+      "body_ratio": 0.0,
+      "opposite_wick_ratio": 0.0,
+      "close_atr": 0.27450980392155927,
+      "distance_natr": 0.2746885212418207
+    }
+  ],
+  "contact_sheet": "calibration_samples_contact_sheet.jpg"
+}
