@@ -1,0 +1,184 @@
+{
+  "window": {
+    "start_local": "2026-07-03T00:00:00+03:00",
+    "end_local": "2026-07-09T23:59:59.999+03:00"
+  },
+  "dataset": {
+    "source": "fresh_detector_candidates_20260703_20260709.jsonl",
+    "old_14d_used": false,
+    "raw_total": 400334,
+    "published_total_after_policy_replay": 77681,
+    "fresh_scan_symbols": 53,
+    "timeframes": [
+      "1m",
+      "5m",
+      "15m",
+      "1h"
+    ],
+    "min_quote_volume_24h": 60000000.0
+  },
+  "counts": {
+    "raw_by_day_local": {
+      "2026-07-03": 56006,
+      "2026-07-04": 47665,
+      "2026-07-05": 42172,
+      "2026-07-06": 57858,
+      "2026-07-07": 65207,
+      "2026-07-08": 69077,
+      "2026-07-09": 62349
+    },
+    "published_by_day_local": {
+      "2026-07-03": 10414,
+      "2026-07-04": 9719,
+      "2026-07-05": 9333,
+      "2026-07-06": 11854,
+      "2026-07-07": 12207,
+      "2026-07-08": 12118,
+      "2026-07-09": 12036
+    },
+    "raw_by_type": {
+      "test": 367672,
+      "breakout": 32662
+    },
+    "published_by_type": {
+      "test": 56509,
+      "breakout": 21172
+    },
+    "policy_status_counts_all_candidates": {
+      "allowed_filter": 259218,
+      "published": 77681,
+      "signal_key_pause": 46913,
+      "batch_limit": 16522
+    }
+  },
+  "recall": {
+    "detector_loose_zone_found": {
+      "matched": 41,
+      "total": 81,
+      "recall_pct": 50.62
+    },
+    "detector_confirmed_breakout_aligned": {
+      "matched": 19,
+      "total": 81,
+      "recall_pct": 23.46
+    },
+    "published_loose_zone_found": {
+      "matched": 35,
+      "total": 81,
+      "recall_pct": 43.21
+    },
+    "published_confirmed_breakout_aligned": {
+      "matched": 18,
+      "total": 81,
+      "recall_pct": 22.22
+    },
+    "detector_by_day": {
+      "2026-07-03": {
+        "matched": 5,
+        "total": 10,
+        "recall_pct": 50.0
+      },
+      "2026-07-04": {
+        "matched": 2,
+        "total": 8,
+        "recall_pct": 25.0
+      },
+      "2026-07-05": {
+        "matched": 1,
+        "total": 6,
+        "recall_pct": 16.67
+      },
+      "2026-07-06": {
+        "matched": 11,
+        "total": 20,
+        "recall_pct": 55.0
+      },
+      "2026-07-07": {
+        "matched": 7,
+        "total": 14,
+        "recall_pct": 50.0
+      },
+      "2026-07-08": {
+        "matched": 12,
+        "total": 18,
+        "recall_pct": 66.67
+      },
+      "2026-07-09": {
+        "matched": 3,
+        "total": 5,
+        "recall_pct": 60.0
+      }
+    },
+    "published_by_day": {
+      "2026-07-03": {
+        "matched": 4,
+        "total": 10,
+        "recall_pct": 40.0
+      },
+      "2026-07-04": {
+        "matched": 2,
+        "total": 8,
+        "recall_pct": 25.0
+      },
+      "2026-07-05": {
+        "matched": 1,
+        "total": 6,
+        "recall_pct": 16.67
+      },
+      "2026-07-06": {
+        "matched": 8,
+        "total": 20,
+        "recall_pct": 40.0
+      },
+      "2026-07-07": {
+        "matched": 6,
+        "total": 14,
+        "recall_pct": 42.86
+      },
+      "2026-07-08": {
+        "matched": 11,
+        "total": 18,
+        "recall_pct": 61.11
+      },
+      "2026-07-09": {
+        "matched": 3,
+        "total": 5,
+        "recall_pct": 60.0
+      }
+    }
+  },
+  "classification_alignment_counts": {
+    "detector": {
+      "classification_mismatch_zone_found_not_confirmed_breakout": 22,
+      "breakout_confirmed_aligned": 19,
+      "not_found": 40
+    },
+    "published": {
+      "classification_mismatch_zone_published_not_confirmed_breakout": 17,
+      "breakout_confirmed_aligned": 18,
+      "not_found": 46
+    }
+  },
+  "gap_reason_counts": {
+    "detector_vs_confirmed_breakout_target": {
+      "classification_mismatch/zone_found_not_confirmed_breakout": 22,
+      "universe/liquidity_below_60m": 35,
+      "zone_matching/clustering_gap": 4,
+      "universe/not_on_exchangeinfo": 1
+    },
+    "detector_unfound_only": {
+      "universe/liquidity_below_60m": 35,
+      "zone_matching/clustering_gap": 4,
+      "universe/not_on_exchangeinfo": 1
+    },
+    "publication_vs_confirmed_breakout_target": {
+      "classification_mismatch/published_not_confirmed_breakout": 17,
+      "allowed_filter": 5,
+      "batch_limit": 1
+    }
+  },
+  "artifacts": {
+    "matches": "D:\\Кейсы тг боты\\Скринер\\apps\\bot\\calibration_artifacts\\digash-week-20260703-20260709\\fresh_baseline\\fresh_digash_matches.jsonl",
+    "gap_report": "D:\\Кейсы тг боты\\Скринер\\apps\\bot\\calibration_artifacts\\digash-week-20260703-20260709\\fresh_baseline\\fresh_recall_gap_detailed_report.json"
+  }
+}
