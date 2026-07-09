@@ -1,11 +1,19 @@
 from __future__ import annotations
 
+from dataclasses import replace
 from datetime import datetime, timezone
 
 import pytest
 
-from formation_bot.formations import detect_breakout, find_zones, format_price, format_signal_message, normalized_average_true_range
-from formation_bot.models import BreakoutSignal, Candle
+from formation_bot.formations import (
+    _breakout_candle_checks,
+    detect_breakout,
+    find_zones,
+    format_price,
+    format_signal_message,
+    normalized_average_true_range,
+)
+from formation_bot.models import BreakoutSignal, Candle, LevelZone
 
 
 def candle(index: int, open_: float, high: float, low: float, close: float, volume: float = 1000) -> Candle:
@@ -57,6 +65,114 @@ def test_detects_confirmed_zone_breakout_with_multiple_touches() -> None:
     assert signal.confidence == "confirmed"
     assert signal.touches == 3
     assert signal.pivot_points == ((20, 100.0), (45, 100.0), (70, 100.0))
+
+
+def breakout_with_records(
+    candles: list[Candle] | None = None,
+    **overrides: float,
+) -> tuple[BreakoutSignal | None, list[dict[str, object]]]:
+    records: list[dict[str, object]] = []
+    kwargs: dict[str, object] = {
+        "symbol": "TESTUSDT",
+        "timeframe": "1m",
+        "candles": candles or resistance_breakout_fixture(),
+        "lookback": 90,
+        "min_touches": 3,
+        "tolerance_pct": 0.02,
+        "zone_atr_multiplier": 0.0,
+        "breakout_distance_pct": 0.5,
+        "min_breakout_body_ratio": 0.55,
+        "min_volume_multiplier": 1.2,
+        "level_min_spacing_candles": 8,
+        "min_retreat_atr_multiplier": 1.0,
+        "max_breakout_wick_ratio": 0.25,
+        "min_close_atr_multiplier": 0.12,
+        "live_window": 0,
+        "decision_logger": records.append,
+    }
+    kwargs.update(overrides)
+    return detect_breakout(**kwargs), records
+
+
+def test_rejects_breakout_with_small_candle_body() -> None:
+    candles = resistance_breakout_fixture()
+    candles[-1] = replace(candles[-1], open=100.20, high=100.85, low=100.15, close=100.30)
+
+    signal, records = breakout_with_records(candles)
+
+    assert signal is None
+    rejected = [record for record in records if record["rejection_reason"] == "breakout_body_ratio_below_minimum"]
+    assert rejected
+    check = rejected[0]["checks"]["min_breakout_body_ratio"]  # type: ignore[index]
+    assert check["applies"] is True  # type: ignore[index]
+    assert check["actual"] < check["required"]  # type: ignore[index]
+
+
+def test_rejects_breakout_with_large_opposite_wick() -> None:
+    candles = resistance_breakout_fixture()
+    candles[-1] = replace(candles[-1], open=99.70, high=100.40, low=99.40, close=100.30)
+
+    signal, records = breakout_with_records(candles)
+
+    assert signal is None
+    rejected = [record for record in records if record["rejection_reason"] == "breakout_opposite_wick_ratio_exceeded"]
+    assert rejected
+    check = rejected[0]["checks"]["max_breakout_wick_ratio"]  # type: ignore[index]
+    assert check["opposite_wick_name"] == "lower"  # type: ignore[index]
+    assert check["actual"] > check["required_max"]  # type: ignore[index]
+
+
+def test_support_breakout_uses_upper_wick_as_opposite_wick() -> None:
+    latest = candle(1, 100.30, 100.60, 99.60, 99.70)
+    zone = LevelZone("support", 100.0, 100.0, 2, 80.0, 1, 2)
+
+    checks = _breakout_candle_checks(latest, zone, "breakout", 1.0, 0.55, 0.25, 0.12)
+
+    wick_check = checks["max_breakout_wick_ratio"]
+    assert wick_check["opposite_wick_name"] == "upper"
+    assert wick_check["actual"] == pytest.approx(0.30)
+    assert wick_check["passed"] is False
+
+
+def test_breakout_candle_quality_checks_do_not_filter_tests() -> None:
+    latest = candle(1, 100.0, 101.0, 99.0, 100.0)
+    zone = LevelZone("resistance", 100.0, 100.0, 2, 80.0, 1, 2)
+
+    checks = _breakout_candle_checks(latest, zone, "test", 1.0, 1.0, 0.0, 999.0)
+
+    assert all(check["applies"] is False for check in checks.values())
+    assert all(check["passed"] is True for check in checks.values())
+
+
+def test_rejects_breakout_without_minimum_atr_close_penetration() -> None:
+    signal, records = breakout_with_records(min_close_atr_multiplier=10.0)
+
+    assert signal is None
+    rejected = [record for record in records if record["rejection_reason"] == "breakout_close_atr_below_minimum"]
+    assert rejected
+    check = rejected[0]["checks"]["min_close_atr_multiplier"]  # type: ignore[index]
+    assert check["actual_atr"] < check["required_atr"]  # type: ignore[index]
+
+
+def test_rejects_signal_below_minimum_natr() -> None:
+    signal, records = breakout_with_records(min_natr_pct=99.0)
+
+    assert signal is None
+    rejected = [record for record in records if record["rejection_reason"] == "natr_below_minimum"]
+    assert rejected
+    check = rejected[0]["checks"]["min_natr_pct"]  # type: ignore[index]
+    assert check["actual"] < check["required"]  # type: ignore[index]
+
+
+def test_zero_minimum_natr_disables_volatility_filter() -> None:
+    signal, records = breakout_with_records(min_natr_pct=0.0)
+
+    assert signal is not None
+    published = [record for record in records if str(record["final_decision"]).startswith("published")]
+    assert published
+    check = published[0]["checks"]["min_natr_pct"]  # type: ignore[index]
+    assert check["required"] == 0.0  # type: ignore[index]
+    assert check["passed"] is True  # type: ignore[index]
 
 
 def test_single_touch_breakout_is_rejected_by_min_touches() -> None:

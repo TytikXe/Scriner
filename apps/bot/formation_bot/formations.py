@@ -504,6 +504,73 @@ def _classify_signal(latest: Candle, zone: LevelZone, approach_distance: float) 
     return None
 
 
+def _breakout_candle_checks(
+    latest: Candle,
+    zone: LevelZone,
+    signal_type: str | None,
+    atr: float,
+    min_breakout_body_ratio: float,
+    max_breakout_wick_ratio: float,
+    min_close_atr_multiplier: float,
+) -> dict[str, dict[str, object]]:
+    """Calculate breakout-only candle quality checks.
+
+    The opposite wick is the wick against the breakout direction: the lower
+    wick for a resistance breakout upward and the upper wick for a support
+    breakout downward. Body and wick ratios use the candle's full high-low
+    range. Close penetration is measured from the crossed zone edge.
+    """
+    applies = signal_type == "breakout"
+    candle_range = max(0.0, latest.high - latest.low)
+    body = abs(latest.close - latest.open)
+    body_ratio = body / candle_range if candle_range > 0 else 0.0
+
+    if zone.side == "resistance":
+        opposite_wick = max(0.0, min(latest.open, latest.close) - latest.low)
+        opposite_wick_name = "lower"
+        close_penetration = max(0.0, latest.close - zone.upper)
+        crossed_edge = zone.upper
+    else:
+        opposite_wick = max(0.0, latest.high - max(latest.open, latest.close))
+        opposite_wick_name = "upper"
+        close_penetration = max(0.0, zone.lower - latest.close)
+        crossed_edge = zone.lower
+
+    opposite_wick_ratio = opposite_wick / candle_range if candle_range > 0 else 0.0
+    required_close_penetration = max(0.0, min_close_atr_multiplier) * max(0.0, atr)
+    close_penetration_atr = close_penetration / atr if atr > 0 else 0.0
+
+    return {
+        "min_breakout_body_ratio": {
+            "passed": not applies or body_ratio >= min_breakout_body_ratio,
+            "applies": applies,
+            "required": min_breakout_body_ratio,
+            "actual": round(body_ratio, 6),
+            "body": body,
+            "candle_range": candle_range,
+        },
+        "max_breakout_wick_ratio": {
+            "passed": not applies or opposite_wick_ratio <= max_breakout_wick_ratio,
+            "applies": applies,
+            "required_max": max_breakout_wick_ratio,
+            "actual": round(opposite_wick_ratio, 6),
+            "opposite_wick": opposite_wick,
+            "opposite_wick_name": opposite_wick_name,
+            "candle_range": candle_range,
+        },
+        "min_close_atr_multiplier": {
+            "passed": not applies or close_penetration >= required_close_penetration,
+            "applies": applies,
+            "required_atr": min_close_atr_multiplier,
+            "actual_atr": round(close_penetration_atr, 6),
+            "atr": atr,
+            "crossed_edge": crossed_edge,
+            "close_penetration": close_penetration,
+            "required_close_penetration": required_close_penetration,
+        },
+    }
+
+
 def _publish_distance_check(
     latest: Candle,
     zone: LevelZone,
@@ -777,6 +844,7 @@ def detect_breakouts(
     )
     latest_index = history_start_index + len(history) - 1
     natr_ratio = natr_pct / 100
+    natr_passed = min_natr_pct <= 0 or natr_pct >= min_natr_pct
     approach_distance = latest.close * max(
         approach_threshold_k * natr_ratio,
         max(level_probe_distance_pct, level_approach_distance_pct) / 100,
@@ -789,6 +857,15 @@ def detect_breakouts(
         impulse = _impulse_score(history, history_start_index, zone, atr, impulse_threshold_atr, impulse_lookback_candles)
         retreat = _retreat_result(history, history_start_index, zone, atr, min_retreat_atr_multiplier)
         signal_type = _classify_signal(latest, zone, approach_distance)
+        breakout_checks = _breakout_candle_checks(
+            latest,
+            zone,
+            signal_type,
+            atr,
+            min_breakout_body_ratio,
+            max_breakout_wick_ratio,
+            min_close_atr_multiplier,
+        )
         volume_multiplier = min_volume_multiplier if signal_type == "breakout" else (min_probe_volume_multiplier or min_volume_multiplier)
         volume_threshold = avg_volume * max(0.0, volume_multiplier)
         volume_passed = not avg_volume or latest.volume >= volume_threshold
@@ -824,6 +901,12 @@ def detect_breakouts(
                 "threshold": volume_threshold,
             },
             "signal_type": {"passed": signal_type is not None, "value": signal_type},
+            "min_natr_pct": {
+                "passed": natr_passed,
+                "required": min_natr_pct,
+                "actual": round(natr_pct, 6),
+            },
+            **breakout_checks,
             "max_publish_distance": {
                 "passed": max_publish_distance["passed"],
                 "edge": max_publish_distance["edge"],
@@ -844,6 +927,14 @@ def detect_breakouts(
             rejection_reason = "min_retreat_not_reached"
         elif signal_type is None:
             rejection_reason = "price_not_at_zone"
+        elif not natr_passed:
+            rejection_reason = "natr_below_minimum"
+        elif not bool(breakout_checks["min_breakout_body_ratio"]["passed"]):
+            rejection_reason = "breakout_body_ratio_below_minimum"
+        elif not bool(breakout_checks["max_breakout_wick_ratio"]["passed"]):
+            rejection_reason = "breakout_opposite_wick_ratio_exceeded"
+        elif not bool(breakout_checks["min_close_atr_multiplier"]["passed"]):
+            rejection_reason = "breakout_close_atr_below_minimum"
         elif not bool(max_publish_distance["passed"]):
             rejection_reason = "max_publish_distance_exceeded"
         elif zone.score < min_score_to_publish:

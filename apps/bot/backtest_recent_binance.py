@@ -36,6 +36,10 @@ WANTED_REASONS = {
     "min_retreat_not_reached": "min_retreat",
     "liquidity_below_minimum": "liquidity",
     "price_not_at_zone": "price_not_at_zone",
+    "natr_below_minimum": "min_natr_pct",
+    "breakout_body_ratio_below_minimum": "min_breakout_body_ratio",
+    "breakout_opposite_wick_ratio_exceeded": "max_breakout_wick_ratio",
+    "breakout_close_atr_below_minimum": "min_close_atr_multiplier",
     "max_publish_distance_exceeded": "max_publish_distance",
     "score_below_minimum": "score",
 }

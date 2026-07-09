@@ -66,6 +66,15 @@ Signals below `MIN_24H_VOLUME_USD` are rejected after symbol metadata is availab
 candidate zone, the detector writes a structured JSON `signal_candidate_decision` log entry
 with the exact checks and rejection reason or publish decision.
 
+Breakout signals also require the breakout candle body to occupy at least
+`MIN_BREAKOUT_BODY_RATIO` of its full `high - low` range. The wick opposite to
+the breakout direction may occupy at most `MAX_BREAKOUT_WICK_RATIO` of that
+range: this is the lower wick for an upward resistance breakout and the upper
+wick for a downward support breakout. The close must penetrate the crossed zone
+edge by at least `MIN_CLOSE_ATR_MULTIPLIER * ATR`. These three checks apply only
+to `breakout` signals. `MIN_NATR_PCT` is a minimum-volatility filter for all
+signal types; its default value of `0` disables that filter.
+
 For every selected signal the bot renders a local PNG candlestick chart from the same
 Binance candles used by the detector, highlights the detected level zone,
 draws source pivot lines, and displays NATR, touches, and score in the footer.
