@@ -227,7 +227,7 @@ def load_settings() -> Settings:
         impulse_threshold_atr=max(0.0, _float_env("IMPULSE_THRESHOLD_ATR", 2.0)),
         impulse_lookback_candles=max(1, _int_env("IMPULSE_LOOKBACK_CANDLES", _int_env("IMPULSE_SEARCH_WINDOW", 200))),
         breakout_distance_pct=max(0.01, _float_env("BREAKOUT_DISTANCE_PCT", 0.35)),
-        min_breakout_body_ratio=max(0.0, min(1.0, _float_env("MIN_BREAKOUT_BODY_RATIO", 0.55))),
+        min_breakout_body_ratio=max(0.0, min(1.0, _float_env("MIN_BREAKOUT_BODY_RATIO", 0.40))),
         min_volume_multiplier=max(1.0, _float_env("MIN_VOLUME_MULTIPLIER", 1.8)),
         min_probe_volume_multiplier=max(1.0, _float_env("MIN_PROBE_VOLUME_MULTIPLIER", 1.4)),
         level_probe_distance_pct=max(0.0, _float_env("LEVEL_PROBE_DISTANCE_PCT", 0.25)),
