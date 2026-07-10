@@ -63,15 +63,21 @@ async def run(args: argparse.Namespace) -> None:
     }
 
     async with bt.BinanceHistory(settings.binance_base_url, cache_dir, args.refresh_cache) as history:
+        min_quote_volume_24h = (
+            args.min_quote_volume_24h
+            if args.min_quote_volume_24h is not None
+            else settings.min_quote_volume_24h
+        )
         symbols = await history.symbols(
             settings.max_symbols,
-            settings.min_quote_volume_24h,
+            min_quote_volume_24h,
             settings.signal_symbol_allowlist,
         )
         print(
             "fresh_week_run",
             f"period={START.isoformat()}..{END.isoformat()}",
             f"symbols={len(symbols)}",
+            f"min_quote_volume_24h={min_quote_volume_24h}",
             f"timeframes={','.join(settings.timeframes)}",
             f"workers={workers}",
             flush=True,
@@ -153,7 +159,8 @@ async def run(args: argparse.Namespace) -> None:
         "period_end_utc": END.isoformat(),
         "settings": {
             "timeframes": list(settings.timeframes),
-            "min_quote_volume_24h": settings.min_quote_volume_24h,
+            "min_quote_volume_24h": min_quote_volume_24h,
+            "production_min_quote_volume_24h": settings.min_quote_volume_24h,
             "kline_limit": settings.kline_limit,
             "min_breakout_body_ratio": settings.min_breakout_body_ratio,
             "min_unconfirmed_signal_score": settings.min_unconfirmed_signal_score,
@@ -186,6 +193,7 @@ def main() -> None:
     parser.add_argument("--workers", type=int, default=0)
     parser.add_argument("--refresh-cache", action="store_true")
     parser.add_argument("--overwrite-series", action="store_true")
+    parser.add_argument("--min-quote-volume-24h", type=float, default=None)
     args = parser.parse_args()
     asyncio.run(run(args))
 

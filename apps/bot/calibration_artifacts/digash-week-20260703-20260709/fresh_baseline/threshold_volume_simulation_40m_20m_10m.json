@@ -1,0 +1,169 @@
+{
+  "method": "research-only: detector run at current 10M universe, then subset by current /ticker/24hr symbol sets and replay current publication policy",
+  "results": [
+    {
+      "threshold": 60000000,
+      "symbols_count_current_ticker": 55,
+      "symbols_with_candidates_in_dataset": 55,
+      "raw_total": 416279,
+      "raw_per_day_avg": 59468.43,
+      "published_total": 80021,
+      "published_per_day_avg": 11431.57,
+      "published_by_day": {
+        "2026-07-03": 10757,
+        "2026-07-04": 10099,
+        "2026-07-05": 9637,
+        "2026-07-06": 12141,
+        "2026-07-07": 12610,
+        "2026-07-08": 12518,
+        "2026-07-09": 12259
+      },
+      "raw_by_day": {
+        "2026-07-03": 58318,
+        "2026-07-04": 49667,
+        "2026-07-05": 44050,
+        "2026-07-06": 60336,
+        "2026-07-07": 67753,
+        "2026-07-08": 71977,
+        "2026-07-09": 64178
+      },
+      "published_by_type": {
+        "test": 58071,
+        "breakout": 21950
+      },
+      "raw_by_type": {
+        "test": 382131,
+        "breakout": 34148
+      },
+      "policy_status_counts": {
+        "allowed_filter": 268994,
+        "published": 80021,
+        "signal_key_pause": 48730,
+        "batch_limit": 18534
+      }
+    },
+    {
+      "threshold": 40000000,
+      "symbols_count_current_ticker": 70,
+      "symbols_with_candidates_in_dataset": 70,
+      "raw_total": 545311,
+      "raw_per_day_avg": 77901.57,
+      "published_total": 95894,
+      "published_per_day_avg": 13699.14,
+      "published_by_day": {
+        "2026-07-03": 13283,
+        "2026-07-04": 12260,
+        "2026-07-05": 11771,
+        "2026-07-06": 14358,
+        "2026-07-07": 14769,
+        "2026-07-08": 15061,
+        "2026-07-09": 14392
+      },
+      "raw_by_day": {
+        "2026-07-03": 76918,
+        "2026-07-04": 66852,
+        "2026-07-05": 59358,
+        "2026-07-06": 79812,
+        "2026-07-07": 86665,
+        "2026-07-08": 93348,
+        "2026-07-09": 82358
+      },
+      "published_by_type": {
+        "test": 68686,
+        "breakout": 27208
+      },
+      "raw_by_type": {
+        "test": 500063,
+        "breakout": 45248
+      },
+      "policy_status_counts": {
+        "allowed_filter": 352902,
+        "published": 95894,
+        "signal_key_pause": 63556,
+        "batch_limit": 32959
+      }
+    },
+    {
+      "threshold": 20000000,
+      "symbols_count_current_ticker": 110,
+      "symbols_with_candidates_in_dataset": 110,
+      "raw_total": 851423,
+      "raw_per_day_avg": 121631.86,
+      "published_total": 129818,
+      "published_per_day_avg": 18545.43,
+      "published_by_day": {
+        "2026-07-03": 17440,
+        "2026-07-04": 16796,
+        "2026-07-05": 16118,
+        "2026-07-06": 19409,
+        "2026-07-07": 19696,
+        "2026-07-08": 20667,
+        "2026-07-09": 19692
+      },
+      "raw_by_day": {
+        "2026-07-03": 115059,
+        "2026-07-04": 106195,
+        "2026-07-05": 95753,
+        "2026-07-06": 124811,
+        "2026-07-07": 133868,
+        "2026-07-08": 145632,
+        "2026-07-09": 130105
+      },
+      "published_by_type": {
+        "test": 91650,
+        "breakout": 38168
+      },
+      "raw_by_type": {
+        "test": 778350,
+        "breakout": 73073
+      },
+      "policy_status_counts": {
+        "allowed_filter": 545737,
+        "published": 129818,
+        "signal_key_pause": 98157,
+        "batch_limit": 77711
+      }
+    },
+    {
+      "threshold": 10000000,
+      "symbols_count_current_ticker": 166,
+      "symbols_with_candidates_in_dataset": 165,
+      "raw_total": 1331522,
+      "raw_per_day_avg": 190217.43,
+      "published_total": 167000,
+      "published_per_day_avg": 23857.14,
+      "published_by_day": {
+        "2026-07-03": 22461,
+        "2026-07-04": 22383,
+        "2026-07-05": 21141,
+        "2026-07-06": 24453,
+        "2026-07-07": 25038,
+        "2026-07-08": 26268,
+        "2026-07-09": 25256
+      },
+      "raw_by_day": {
+        "2026-07-03": 174964,
+        "2026-07-04": 170805,
+        "2026-07-05": 156113,
+        "2026-07-06": 191468,
+        "2026-07-07": 208393,
+        "2026-07-08": 226550,
+        "2026-07-09": 203229
+      },
+      "published_by_type": {
+        "breakout": 53144,
+        "test": 113856
+      },
+      "raw_by_type": {
+        "test": 1216650,
+        "breakout": 114872
+      },
+      "policy_status_counts": {
+        "allowed_filter": 872258,
+        "batch_limit": 146055,
+        "published": 167000,
+        "signal_key_pause": 146209
+      }
+    }
+  ]
+}

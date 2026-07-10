@@ -1,0 +1,5 @@
+﻿threshold,symbols_count_current_ticker,symbols_with_candidates_in_dataset,raw_total,raw_per_day_avg,published_total,published_per_day_avg,raw_by_type,published_by_type,policy_status_counts
+60000000,55,55,416279,59468.43,80021,11431.57,"{""test"": 382131, ""breakout"": 34148}","{""test"": 58071, ""breakout"": 21950}","{""allowed_filter"": 268994, ""published"": 80021, ""signal_key_pause"": 48730, ""batch_limit"": 18534}"
+40000000,70,70,545311,77901.57,95894,13699.14,"{""test"": 500063, ""breakout"": 45248}","{""test"": 68686, ""breakout"": 27208}","{""allowed_filter"": 352902, ""published"": 95894, ""signal_key_pause"": 63556, ""batch_limit"": 32959}"
+20000000,110,110,851423,121631.86,129818,18545.43,"{""test"": 778350, ""breakout"": 73073}","{""test"": 91650, ""breakout"": 38168}","{""allowed_filter"": 545737, ""published"": 129818, ""signal_key_pause"": 98157, ""batch_limit"": 77711}"
+10000000,166,165,1331522,190217.43,167000,23857.14,"{""test"": 1216650, ""breakout"": 114872}","{""breakout"": 53144, ""test"": 113856}","{""allowed_filter"": 872258, ""batch_limit"": 146055, ""published"": 167000, ""signal_key_pause"": 146209}"
