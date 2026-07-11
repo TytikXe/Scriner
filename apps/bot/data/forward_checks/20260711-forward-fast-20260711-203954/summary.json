@@ -1,0 +1,100 @@
+{
+  "run_dir": "D:\\Кейсы тг боты\\Скринер\\apps\\bot\\data\\forward_checks\\20260711-forward-fast-20260711-203954",
+  "production_timezone_basis": "UTC epoch timestamps from time.time(); Binance klines UTC close times; scanner has no Europe/Minsk calendar conversion for scan slots",
+  "period_start_utc": "2026-07-11T00:00:00+00:00",
+  "period_end_utc": "2026-07-11T20:39:02.658000+00:00",
+  "settings": {
+    "scan_interval_seconds": 60,
+    "timeframes": [
+      "1m",
+      "5m",
+      "15m",
+      "1h"
+    ],
+    "min_breakout_body_ratio": 0.4,
+    "max_publish_distance_natr": 1.5,
+    "min_unconfirmed_signal_score": 60.83,
+    "max_signals_per_scan": 20,
+    "daily_signal_limit": 0,
+    "daily_breakout_priority_slots": 0,
+    "hourly_breakout_refill_slots": 0.0,
+    "hourly_other_refill_slots": 0.0,
+    "min_quote_volume_24h": 60000000.0,
+    "max_symbols": 0,
+    "alert_cooldown_minutes": 5,
+    "symbol_analysis_pause_minutes": 5
+  },
+  "symbols_count": 38,
+  "symbols": [
+    "ETHUSDT",
+    "BTCUSDT",
+    "SOLUSDT",
+    "LABUSDT",
+    "ZECUSDT",
+    "BUSDT",
+    "EVAAUSDT",
+    "SNDKUSDT",
+    "HYPEUSDT",
+    "TUSDT",
+    "SKLUSDT",
+    "XPINUSDT",
+    "XRPUSDT",
+    "BEATUSDT",
+    "XAUUSDT",
+    "WLDUSDT",
+    "DOGEUSDT",
+    "SOXLUSDT",
+    "BNBUSDT",
+    "SKHYNIXUSDT",
+    "1000PEPEUSDT",
+    "VIRTUALUSDT",
+    "SXTUSDT",
+    "ADAUSDT",
+    "AAVEUSDT",
+    "SPCXUSDT",
+    "UNIUSDT",
+    "MMTUSDT",
+    "DEXEUSDT",
+    "MUUSDT",
+    "SUIUSDT",
+    "ARBUSDT",
+    "CLOUSDT",
+    "PARTIUSDT",
+    "LITUSDT",
+    "CLUSDT",
+    "ENAUSDT",
+    "NEARUSDT"
+  ],
+  "raw_detector_signals": 35038,
+  "published_total": 6789,
+  "published_by_type": {
+    "breakout": 1778,
+    "test": 5011
+  },
+  "published_by_timeframe": {
+    "1m": 4189,
+    "5m": 1892,
+    "15m": 562,
+    "1h": 146
+  },
+  "sample_count": 10,
+  "sample_type_mix": {
+    "breakout": 3,
+    "test": 7
+  },
+  "filtering": {
+    "candidate_decisions_total": 719145,
+    "debug_published_decisions_before_publication_rules": 35038,
+    "rejected_total": 684107,
+    "rejected_by_reason": {
+      "max_publish_distance": 232637,
+      "min_retreat": 141469,
+      "max_breakout_wick_ratio": 6353,
+      "price_not_at_zone": 192626,
+      "ttl": 91527,
+      "min_breakout_body_ratio": 17626,
+      "min_close_atr_multiplier": 140,
+      "score": 1729
+    }
+  }
+}
